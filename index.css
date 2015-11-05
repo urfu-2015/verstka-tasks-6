@@ -1,1 +1,85 @@
-
+body {
+    width: 900px;
+    margin: 0 auto;
+}
+input {
+    display: none;
+}
+.galery {
+    width: 800px;
+    height: 160px;
+    margin: 200px auto;
+    overflow: hidden;
+    font-size: 0;
+}
+img {
+    width: 100%;
+}
+.images {
+    display: none;
+    width: 156px;
+    height: 160px;
+    padding: 2px;
+    vertical-align: top;
+    color: red;
+    font-size: 20px;
+    color: red;
+}
+.extra {
+    width: 300px;
+    display: none;
+    margin-left: -50px;
+    margin-top: -50px;
+}
+.images:hover > .extra {
+    display: block;
+    position: absolute;
+    background: #fff;
+    box-shadow: 4px 4px 4px rgba(50, 50, 50, .5),
+    	-4px 4px 4px rgba(50, 50, 50, .5),
+    	4px -4px 4px rgba(50, 50, 50, .5),
+    	-4px -4px 4px rgba(50, 50, 50, .5);
+}
+.extra:focus ~ .paranja {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(50, 50, 50, .8);
+    cursor: zoom-out;
+}
+.extra:focus + img {
+    position: absolute;
+    top: 15%;
+    left:30%;
+    width: 40%;
+    z-index: 10;
+}
+label {
+    display: none;
+    width: 80px;
+    padding: 50px 0;
+    height: 60px;
+    font-size: 30px;
+    vertical-align: top;
+    color: rgba(50, 50, 50, .8);
+    font:normal normal normal 60px FontAwesome;
+    text-rendering:auto;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    text-align: center;
+}
+input:checked ~ label {
+    display: inline-block;
+}
+input:checked ~ .images {
+    display: inline-block;
+}
+.left:before {
+    content:"\f053";
+}
+.right:before {
+    content:"\f054";
+}
