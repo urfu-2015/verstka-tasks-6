@@ -1,85 +1,162 @@
-body {
-    width: 900px;
-    margin: 0 auto;
-}
-input {
-    display: none;
-}
-.galery {
-    width: 800px;
-    height: 160px;
-    margin: 200px auto;
-    overflow: hidden;
-    font-size: 0;
-}
-img {
-    width: 100%;
-}
-.images {
-    display: none;
-    width: 156px;
-    height: 160px;
-    padding: 2px;
-    vertical-align: top;
-    color: red;
-    font-size: 20px;
-    color: red;
-}
-.extra {
-    width: 300px;
-    display: none;
-    margin-left: -50px;
-    margin-top: -50px;
-}
-.images:hover > .extra {
-    display: block;
-    position: absolute;
-    background: #fff;
-    box-shadow: 4px 4px 4px rgba(50, 50, 50, .5),
-    	-4px 4px 4px rgba(50, 50, 50, .5),
-    	4px -4px 4px rgba(50, 50, 50, .5),
-    	-4px -4px 4px rgba(50, 50, 50, .5);
-}
-.extra:focus ~ .paranja {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(50, 50, 50, .8);
-    cursor: zoom-out;
-}
-.extra:focus + img {
-    position: absolute;
-    top: 15%;
-    left:30%;
-    width: 40%;
-    z-index: 10;
-}
-label {
-    display: none;
-    width: 80px;
-    padding: 50px 0;
-    height: 60px;
-    font-size: 30px;
-    vertical-align: top;
-    color: rgba(50, 50, 50, .8);
-    font:normal normal normal 60px FontAwesome;
-    text-rendering:auto;
-    -webkit-font-smoothing:antialiased;
-    -moz-osx-font-smoothing:grayscale;
-    text-align: center;
-}
-input:checked ~ label {
-    display: inline-block;
-}
-input:checked ~ .images {
-    display: inline-block;
-}
-.left:before {
-    content:"\f053";
-}
-.right:before {
-    content:"\f054";
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <title>Galery</title>
+</head>
+<body>
+    <div class="galery">
+        <form class="gal">
+            <input type="radio" name="gal"  id="leftOne" checked>
+            <input type="radio" name="gal" id="end">
+            <label for="start" class="left"></label>
+            <div class="images">
+                <figure  class="extra" tabindex="0">
+                    <img src="https://clck.ru/9bu2X" alt="Cabbage">
+                    <figcaption>Cabbage Cabbage Cabbage Cabbage Cabbage Cabbage Cabbage Cabbage Cabbage
+                    </figcaption>
+                </figure>
+                <img src="https://clck.ru/9bu2X" alt="Cabbage">
+                <div class="paranja"></div>
+            </div>
+            <div class="images">
+                <figure  class="extra" tabindex="0">
+                    <img src="https://clck.ru/9bu2g" alt="Brokkoli">
+                    <figcaption>Brokkoli Brokkoli Brokkoli Brokkoli Brokkoli Brokkoli Brokkoli Brokkoli 
+                        Brokkoli Brokkoli Brokkoli Brokkoli Brokkoli Brokkoli </figcaption>
+                </figure>
+                <img src="https://clck.ru/9bu2g" alt="Brokkoli">
+                <div class="paranja"></div>
+            </div>
+            <div class="images">
+                <figure  class="extra">
+                    <img src="https://clck.ru/9bu79" alt="Pumpkin">
+                    <figcaption>Pumpkin Pumpkin Pumpkin Pumpkin Pumpkin Pumpkin Pumpkin </figcaption>
+                </figure>
+                <img src="https://clck.ru/9bu79" alt="Pumpkin">
+                <div class="paranja"></div>
+            </div>
+            <div class="images">
+                <figure  class="extra">
+                    <img src="https://clck.ru/9bu7C" alt="Beet">
+                    <figcaption>Beet Beet Beet Beet Beet Beet </figcaption>
+                </figure>
+                <img src="https://clck.ru/9bu7C" alt="Beet">
+                <div class="paranja"></div>
+            </div>
+            <label for="rightOne" class="right"></label>   
+            <input type="radio" name="gal"  id="rightOne">
+            <input type="radio" name="gal"  id="leftTwo">
+            <label for="leftOne" class="left"></label>
+            <div class="images">
+                <figure  class="extra" tabindex="0">
+                    <img src="https://clck.ru/9bu2z" alt="Сarrot">
+                    <figcaption>Сarrot Сarrot Сarrot Сarrot Сarrot </figcaption>
+                </figure>
+                <img src="https://clck.ru/9bu2z" alt="Сarrot">
+                <div class="paranja"></div>
+            </div>
+            <div class="images">
+                <figure  class="extra" tabindex="0">
+                    <img src="https://clck.ru/9bu2x" alt="Onion">
+                    <figcaption>Onion Onion Onion Onion </figcaption>
+                </figure>
+                <img src="https://clck.ru/9bu2x" alt="Onion">
+                <div class="paranja"></div>
+            </div>
+            <div class="images">
+                <figure  class="extra" tabindex="0">
+                    <img src="https://clck.ru/9bu2i" alt="Tomato">
+                    <figcaption>Tomato Tomato Tomato Tomato Tomato </figcaption>
+                </figure>
+                <img src="https://clck.ru/9bu2i" alt="Tomato">
+                <div class="paranja"></div>
+            </div>
+            <div class="images">
+                <figure  class="extra" tabindex="0">
+                    <img src="https://clck.ru/9bu3A" alt="Avocados">
+                    <figcaption>Avocados Avocados Avocados Avocados Avocados </figcaption>
+                </figure>
+                <img src="https://clck.ru/9bu3A" alt="Avocados">
+                <div class="paranja"></div>
+            </div>
+            <label for="rightTwo" class="right"></label>
+            <input type="radio" name="gal"  id="rightTwo">
+            <input type="radio" name="gal"  id="leftThree">
+            <label for="leftTwo" class="left"></label>
+            <div class="images">
+                <figure  class="extra" tabindex="0">
+                    <img src="https://clck.ru/9bu7J" alt="Kiwi">
+                    <figcaption>Kiwi Kiwi Kiwi Kiwi </figcaption>
+                </figure>
+                <img src="https://clck.ru/9bu7J" alt="Kiwi">
+                <div class="paranja"></div>
+            </div>
+            <div class="images">
+                <figure  class="extra" tabindex="0">
+                    <img src="https://clck.ru/9bu7M" alt="Apple">
+                    <figcaption>Apple Apple Apple Apple Apple Apple </figcaption>
+                </figure>
+                <img src="https://clck.ru/9bu7M" alt="Apple">
+                <div class="paranja"></div>
+            </div>
+            <div class="images">
+                <figure  class="extra" tabindex="0">
+                    <img src="https://clck.ru/9bu7N" alt="Strawberry">
+                    <figcaption>Strawberry Strawberry Strawberry Strawberry Strawberry </figcaption>
+                </figure>
+                <img src="https://clck.ru/9bu7N" alt="Strawberry">
+                <div class="paranja"></div>
+            </div>
+            <div class="images">
+                <figure  class="extra" tabindex="0">
+                    <img src="https://clck.ru/9bu7Q" alt="Banana">
+                    <figcaption>Banana Banana Banana Banana Banana Banana Banana Banana </figcaption>
+                </figure>
+                <img src="https://clck.ru/9bu7Q" alt="Banana">
+                <div class="paranja"></div>
+            </div>
+            <label for="rightThree" class="right" ></label>
+            <input type="radio" name="gal"  id="rightThree" >
+            <input type="radio" name="gal"  id="start">
+            <label for="leftThree" class="left"></label>
+            <div class="images">
+                <figure  class="extra" tabindex="0">
+                    <img src="https://clck.ru/9bu7W" alt="Mango">
+                    <figcaption>Mango Mango Mango Mango Mango Mango </figcaption>
+                </figure>
+                <img src="https://clck.ru/9bu7W" alt="Mango">
+                <div class="paranja"></div>
+            </div>
+            <div class="images">
+                <figure  class="extra" tabindex="0">
+                    <img src="https://clck.ru/9bu7Z" alt="Orange">
+                    <figcaption>Orange Orange Orange Orange Orange Orange Orange Orange </figcaption>
+                </figure>
+                <img src="https://clck.ru/9bu7Z" alt="Orange">
+                <div class="paranja"></div>
+            </div>
+            <div class="images">
+                <figure  class="extra" tabindex="0">
+                    <img src="https://clck.ru/9bu7c" alt="Pineapple">
+                    <figcaption>Pineapple Pineapple Pineapple Pineapple Pineapple Pineapple 
+                        Pineapple </figcaption>
+                </figure>
+                <img src="https://clck.ru/9bu7c" alt="Pineapple">
+                <div class="paranja"></div>
+            </div>
+            <div class="images">
+                <figure  class="extra" tabindex="0">
+                    <img src="https://clck.ru/9bu7e" alt="Cherry">
+                    <figcaption>Cherry Cherry Cherry Cherry Cherry Cherry Cherry </figcaption>
+                </figure>
+                <img src="https://clck.ru/9bu7e" alt="Cherry">
+                <div class="paranja"></div>
+            </div>
+            <label for="end" class="right"></label>
+        </form>
+    </div>
+</body>
+</html>
