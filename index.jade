@@ -1,0 +1,41 @@
+mixin generate-state(n)
+    - for (var i=0; i<n; i++)
+        input(id='state-'+ i, type='radio', name='state', checked=i==0)
+
+mixin generate-slider(n, reverse)
+    .sliders-group(class=reverse ? 'reverse' : '')
+        - for (var i=n; i>0; i--)
+            label(for='state-'+ (i - 1 - (reverse ? -1 : 1)), class='slider slider-' + i)
+
+mixin generate-image-group(n)
+    .image-group(class='image-group-' + n)
+        - for (var i=0; i<4; i++)
+            - var min = 200, max = 300;
+            - var w = Math.floor(Math.random() * (min - max) + max);
+            - var h = Math.floor(Math.random() * (min - max) + max);
+            - var id = i + '-' + n
+            - var src = 'https://placeholdit.imgix.net/~text?txtsize=33&txt='+ i + '_' + n +'&w='+ w +'&h=' + h;
+            .fake-image
+                img(alt="image preview", src!=src)
+                .image-info.lightbox(id="image-"+id)
+                    .close
+                        a(href="#") x
+                    a.image-info-image(href="#image-"+id)
+                        img(alt="image preview", src!=src)
+                    .description!= '\ndsdfs f sdf sdf sdf sdf sdf sdf sdf sdgf ogmsdogn odfsgnsdfiopnasdip asgdfiopg nauiop fd\n'
+
+
+doctype html
+html(lang='ru')
+    head
+        meta(charset='utf-8')
+        title Бабуленькин урожай
+        link(rel='stylesheet', href='index.css')
+    body
+        .container
+            .box
+                +generate-state(3)
+                +generate-slider(3)
+                - for (var i=0; i<3; i++)
+                    +generate-image-group(i)
+                +generate-slider(3, true)
