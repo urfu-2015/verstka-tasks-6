@@ -1,7 +1,8 @@
 *{
     -moz-user-select: none;
     -webkit-user-select: none;
-    -ms-user-select: none; user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 body {
     width: 900px;
@@ -27,12 +28,14 @@ img {
     padding: 2px;
     vertical-align: top;
     font-size: 20px;
+    cursor: zoom-out;
 }
 .extra {
     width: 300px;
     display: none;
     margin-left: -50px;
     margin-top: -50px;
+    cursor: pointer;
 }
 .images:hover > .extra {
     display: block;
@@ -52,6 +55,7 @@ img {
     bottom: 0;
     background: rgba(50, 50, 50, .8);
     cursor: zoom-out;
+    color: red;
 }
 .extra:focus + img {
     position: absolute;
