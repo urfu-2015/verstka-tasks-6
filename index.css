@@ -1,4 +1,4 @@
-@import url(https: //fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic);
+@import url(https://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic);
 
 body
 {
@@ -16,7 +16,7 @@ h1
 {
     background: rgba(253,247,234,0.85);
     color: #712f4b;
-    font: 3.5em Lobster cursive;
+    font: 3.5em 'Lobster' cursive;
     left: 0;
     margin: auto;
     padding-bottom: 5px;
