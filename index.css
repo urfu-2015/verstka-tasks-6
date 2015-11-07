@@ -1,1 +1,254 @@
+@import url(https: //fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic);
 
+body
+{
+    background-image: url(./background.jpg);
+}
+
+header
+{
+    height: 300px;
+    position: relative;
+    text-align: center;
+}
+
+h1
+{
+    background: rgba(253,247,234,0.85);
+    color: #712f4b;
+    font: 3.5em Lobster cursive;
+    left: 0;
+    margin: auto;
+    padding-bottom: 5px;
+    position: absolute;
+    right: 0;
+    top: 130px;
+    width: 800px;
+    z-index: 3;
+}
+
+header img
+{
+    height: 300px;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+}
+
+.gallery
+{
+    height: 300px;
+    margin: auto;
+    position: relative;
+    width: 1320px;
+}
+
+.one
+{
+    left: 200px;
+}
+
+input[value="full"]:not(:checked) + .one:hover
+{
+    left: 100px;
+}
+
+.two
+{
+    left: 430px;
+}
+
+input[value="full"]:not(:checked) + .two:hover
+{
+    left: 330px;
+}
+
+.three
+{
+    left: 660px;
+}
+
+input[value="full"]:not(:checked) + .three:hover
+{
+    left: 560px;
+}
+
+.four
+{
+    left: 890px;
+}
+
+input[value="full"]:not(:checked) + .four:hover
+{
+    left: 790px;
+}
+
+.img img
+{
+    bottom: 2px;
+    left: 2px;
+    margin: auto;
+    max-height: 300px;
+    position: absolute;
+    right: 2px;
+    top: 2px;
+    width: 200px;
+}
+
+.img
+{
+    background: #f1dfb4;
+    border: 2px solid #712f4b;
+    height: 300px;
+    position: relative;
+    width: 100%;
+}
+
+.vegetable
+{
+    display: inline;
+    float: left;
+    margin: 10px;
+    position: absolute;
+    width: 210px;
+    z-index: 1;
+}
+
+p
+{
+    display: none;
+    width: 400px;
+}
+
+input[value="full"]:not(:checked) + .vegetable:hover
+{
+    background: #fff;
+    border: 4px solid #712f4b;
+    padding: 10px;
+    width: 400px;
+    z-index: 2;
+}
+
+input[value="full"]:not(:checked) + .vegetable:hover .img
+{
+    height: 300px;
+    width: 400px;
+}
+
+input[value="full"]:not(:checked) + .vegetable:hover img,
+input[value="full"]:not(:checked) + .vegetable:hover .full-label::after
+{
+    max-height: 300px;
+    width: 396px;
+}
+
+input[value="full"]:checked + .vegetable
+{
+    background-color: rgba(0,0,0,0.6);
+    height: 100%;
+    left: 0;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+}
+
+input[value="full"]:checked + .vegetable .img
+{
+    border: 4px solid #712f4b;
+    height: 700px;
+    left: 100px;
+    margin: auto;
+    max-width: 1010px;
+    position: absolute;
+    right: 100px;
+    top: 100px;
+}
+
+.section
+{
+    height: auto;
+    position: relative;
+}
+
+.min-lable
+{
+    position: relative;
+    z-index: 1000;
+}
+
+input
+{
+    z-index: 1000;
+}
+
+input[value="full"]:checked + .vegetable .img img
+{
+    max-height: 700px;
+    width: auto;
+}
+
+.full-label::after
+{
+    bottom: 2px;
+    content: "";
+    left: 2px;
+    margin: auto;
+    max-height: 300px;
+    position: absolute;
+    right: 2px;
+    top: 2px;
+    width: 200px;
+    z-index: 7;
+}
+
+input[value="full"]:checked + .vegetable .min-lable::after
+{
+    background-image: url(./close.png);
+    content: "";
+    height: 60px;
+    position: fixed;
+    right: 200px;
+    top: 200px;
+    width: 60px;
+}
+
+.next
+{
+    background-image: url(./next.png);
+    content: "";
+    height: 120px;
+    position: fixed;
+    right: 410px;
+    top: 420px;
+    width: 120px;
+}
+
+.prev
+{
+    background-image: url(./prev.png);
+    content: "";
+    height: 120px;
+    left: 410px;
+    position: fixed;
+    top: 420px;
+    width: 120px;
+}
+
+input[value="full"]:not(:checked) + .vegetable:hover p,
+input[value="page1"]:checked + div,
+input[value="page2"]:checked + div,
+input[value="page3"]:checked + div
+{
+    display: block;
+}
+
+input[type="radio"],
+.page1,
+.page2,
+.page3
+{
+    display: none;
+}
