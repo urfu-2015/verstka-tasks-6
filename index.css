@@ -1,1 +1,185 @@
+@import url(https://fonts.googleapis.com/css?family=Arimo:400,700&subset=latin,cyrillic);
 
+figure
+{
+    margin: 0;
+}
+figcaption
+{
+    text-align: left;
+    display: none;
+    font-family: 'Arimo', sans-serif;
+}
+.images > *
+{
+    display: none;
+}
+.images
+{
+    min-width: 900px;
+}
+.wrapper
+{
+    margin: 50px;
+    text-align: center;
+}
+.block
+{
+    display: inline-block;
+    position: relative;
+    width: 180px;
+}
+img
+{
+    max-width: 100%;
+    max-height: 100%;
+    vertical-align: middle;
+}
+.block input
+{
+    visibility: hidden;
+}
+
+.block:hover input:not(:checked) + figure
+{
+    position: absolute;
+    top: -20px;
+    left: -50px;
+    width: 300px;
+    padding: 20px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, .5);
+    background-color: #fff;
+    z-index: 2;
+}
+.block:hover input:not(:checked) + figure figcaption
+{
+    display: inline-block;
+}
+.block > img
+{
+    display: none;
+}
+.block:hover > img
+{
+    display: inline;
+}
+input:checked ~ figure .bigImage
+{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: 1000;
+    display: inline-block;
+    background-color: rgba(0,0,0, 0.4);
+}
+input:checked ~ figure .bigImage label .close
+{
+    display: inline;
+}
+
+input:checked ~ figure .bigImage label
+{
+    text-align: center;
+    line-height: 100vh;
+}
+input:checked ~ figure .bigImage label img
+{
+    vertical-align: middle;
+    max-width: auto;
+    max-height: auto;
+}
+.border
+{
+    display: block;
+}
+.hidden
+{
+    display: none;
+}
+
+.nav1,
+.nav2,
+.nav3,
+.nav4
+{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: url(image/radio.png);
+    padding: 0;
+    background-position: 0 0;
+}
+
+#nav1:checked ~ .navigation .nav1,
+#nav2:checked ~ .navigation .nav2,
+#nav3:checked ~ .navigation .nav3,
+#nav4:checked ~ .navigation .nav4
+{
+    background-position: -30px 0;
+}
+#nav1:checked ~ .images .section1,
+#nav2:checked ~ .images .section2,
+#nav3:checked ~ .images .section3,
+#nav4:checked ~ .images .section4
+{
+    display: inline-block;
+}
+#nav1:checked ~ .images .buttonRight2,
+#nav1:checked ~ .images .buttonLeft4,
+#nav2:checked ~ .images .buttonRight3,
+#nav2:checked ~ .images .buttonLeft1,
+#nav3:checked ~ .images .buttonRight4,
+#nav3:checked ~ .images .buttonLeft2,
+#nav4:checked ~ .images .buttonLeft3,
+#nav4:checked ~ .images .buttonRight1
+{
+    display: inline-block;
+}
+#nav1:checked ~ .images .buttonLeft4,
+#nav4:checked ~ .images .buttonRight1
+{
+    background-position: -40px 0;
+}
+.button
+{
+    width: 40px;
+    height: 70px;
+    vertical-align: middle;
+    display: none;
+    margin: 20px;
+}
+.button:hover
+{
+    background-position: -80px 0;
+}
+
+.buttonLeft1,
+.buttonLeft2,
+.buttonLeft3,
+.buttonLeft4
+{
+    background: url(image/left.png);
+    background-position: 0 0;
+}
+.buttonRight1,
+.buttonRight2,
+.buttonRight3,
+.buttonRight4
+{
+    background: url(image/left.png);
+    transform: scale(-1, 1);
+    background-position: 0 0;
+}
+.close
+{
+    display:none;
+    position: fixed;
+    top: 5%;
+    right: 5%;
+    width: 60px;
+    height: 60px;
+    background: url(image/close.png);
+    z-index: 1001;
+}
