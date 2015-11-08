@@ -90,3 +90,50 @@ input:checked ~ .images {
 .right:before {
     content:"\f054";
 }
+.bar{
+    position: absolute;
+    top: 375px;
+    margin: 0 78px;
+    width: 640px;
+    height: 10px;
+    z-index: -2;
+    border-radius: 10px;
+    background: rgba(160,160,160,.4);
+    border:solid 2px rgba(150, 150, 150, .8);
+}
+.progress{
+    position: absolute;
+    top: 377px;
+    margin: 0 80px;
+    height: 10px;
+    z-index: -1;
+    font-size: 100px;
+    background: rgba( 20, 20, 20, .2);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    -moz-transition: width 1s linear;
+    -o-transition: width 1s linear;
+    -webkit-transition: width 1s linear;
+    transition: width 1s linear;
+}
+input[id="end"]:checked ~ .progress,
+input[id="leftOne"]:checked ~ .progress{
+    width: 160px;
+}
+input[id="rightOne"]:checked ~ .progress,
+input[id="leftTwo"]:checked ~ .progress{
+    width: 320px;
+}
+input[id="rightTwo"]:checked ~ .progress,
+input[id="leftThree"]:checked ~ .progress{
+    width: 480px;
+}
+input[id="rightThree"]:checked ~ .progress,
+input[id="start"]:checked ~ .progress{
+    width: 640px;
+    border-radius: 10px;
+    -moz-transition: all 1s linear;
+    -o-transition: all 1s linear;
+    -webkit-transition: all 1s linear;
+    transition: all 1s linear;
+}
