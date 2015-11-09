@@ -1,1 +1,145 @@
+@import url(https://fonts.googleapis.com/css?family=Arimo:400,700&subset=latin,cyrillic);
 
+figure
+{
+    margin: 0;
+}
+figcaption
+{
+    text-align: left;
+    display: none;
+    font-family: 'Arimo', sans-serif;
+}
+.wrapper > section
+{
+    display: none;
+}
+.images
+{
+    min-width: 900px;
+}
+.wrapper
+{
+    margin: 50px;
+    text-align: center;
+}
+.full-image-modal
+{
+    display: inline-block;
+    position: relative;
+    width: 180px;
+}
+img
+{
+    max-width: 100%;
+    max-height: 100%;
+    vertical-align: middle;
+}
+.full-image-modal input
+{
+    visibility: hidden;
+}
+
+.full-image-modal:hover input:not(:checked) + figure
+{
+    position: absolute;
+    top: -20px;
+    left: -50px;
+    width: 300px;
+    padding: 20px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, .5);
+    background-color: #fff;
+    z-index: 2;
+}
+.full-image-modal:hover input:not(:checked) + figure figcaption
+{
+    display: inline-block;
+}
+.full-image-modal > img
+{
+    display: none;
+}
+.full-image-modal:hover > img
+{
+    display: inline;
+}
+input:checked ~ figure .bigImage
+{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: 1000;
+    display: inline-block;
+    background-color: rgba(0,0,0, 0.4);
+}
+input:checked ~ figure .bigImage label .close
+{
+    display: inline;
+}
+
+input:checked ~ figure .bigImage label
+{
+    text-align: center;
+    line-height: 100vh;
+}
+input:checked ~ figure .bigImage label img
+{
+    vertical-align: middle;
+    max-width: auto;
+    max-height: auto;
+}
+.border
+{
+    display: block;
+}
+.hidden
+{
+    display: none;
+}
+
+.collection:checked + section
+{
+    display: inline-block;
+}
+
+.button
+{
+    vertical-align: top;
+    position: relative;
+    top: 30px;
+    display: inline-block;
+    margin: 20px;
+}
+
+.buttonLeft
+{
+    border: 60px solid transparent;
+    border-right: 60px solid #888;
+}
+.buttonRight
+{
+    border: 60px solid transparent;
+    border-left: 60px solid #888;
+}
+.buttonLeft:hover
+{
+    border-right: 60px solid #333;
+}
+.buttonRight:hover
+{
+    border-left: 60px solid #333;
+}
+
+.close
+{
+    display:none;
+    position: fixed;
+    top: 5%;
+    right: 5%;
+    width: 60px;
+    height: 60px;
+    background: url(image/close.png);
+    z-index: 1001;
+}
