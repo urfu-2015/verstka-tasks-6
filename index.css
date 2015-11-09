@@ -10,7 +10,7 @@ figcaption
     display: none;
     font-family: 'Arimo', sans-serif;
 }
-.images > *
+.wrapper > section
 {
     display: none;
 }
@@ -23,7 +23,7 @@ figcaption
     margin: 50px;
     text-align: center;
 }
-.block
+.full-image-modal
 {
     display: inline-block;
     position: relative;
@@ -35,12 +35,12 @@ img
     max-height: 100%;
     vertical-align: middle;
 }
-.block input
+.full-image-modal input
 {
     visibility: hidden;
 }
 
-.block:hover input:not(:checked) + figure
+.full-image-modal:hover input:not(:checked) + figure
 {
     position: absolute;
     top: -20px;
@@ -51,15 +51,15 @@ img
     background-color: #fff;
     z-index: 2;
 }
-.block:hover input:not(:checked) + figure figcaption
+.full-image-modal:hover input:not(:checked) + figure figcaption
 {
     display: inline-block;
 }
-.block > img
+.full-image-modal > img
 {
     display: none;
 }
-.block:hover > img
+.full-image-modal:hover > img
 {
     display: inline;
 }
@@ -99,79 +99,39 @@ input:checked ~ figure .bigImage label img
     display: none;
 }
 
-.nav1,
-.nav2,
-.nav3,
-.nav4
+.collection:checked + section
 {
     display: inline-block;
-    width: 30px;
-    height: 30px;
-    background: url(image/radio.png);
-    padding: 0;
-    background-position: 0 0;
 }
 
-#nav1:checked ~ .navigation .nav1,
-#nav2:checked ~ .navigation .nav2,
-#nav3:checked ~ .navigation .nav3,
-#nav4:checked ~ .navigation .nav4
-{
-    background-position: -30px 0;
-}
-#nav1:checked ~ .images .section1,
-#nav2:checked ~ .images .section2,
-#nav3:checked ~ .images .section3,
-#nav4:checked ~ .images .section4
-{
-    display: inline-block;
-}
-#nav1:checked ~ .images .buttonRight2,
-#nav1:checked ~ .images .buttonLeft4,
-#nav2:checked ~ .images .buttonRight3,
-#nav2:checked ~ .images .buttonLeft1,
-#nav3:checked ~ .images .buttonRight4,
-#nav3:checked ~ .images .buttonLeft2,
-#nav4:checked ~ .images .buttonLeft3,
-#nav4:checked ~ .images .buttonRight1
-{
-    display: inline-block;
-}
-#nav1:checked ~ .images .buttonLeft4,
-#nav4:checked ~ .images .buttonRight1
-{
-    background-position: -40px 0;
-}
 .button
 {
-    width: 40px;
-    height: 70px;
-    vertical-align: middle;
-    display: none;
+    vertical-align: top;
+    position: relative;
+    top: 30px;
+    display: inline-block;
     margin: 20px;
 }
-.button:hover
+
+.buttonLeft
 {
-    background-position: -80px 0;
+    border: 60px solid transparent;
+    border-right: 60px solid #888;
+}
+.buttonRight
+{
+    border: 60px solid transparent;
+    border-left: 60px solid #888;
+}
+.buttonLeft:hover
+{
+    border-right: 60px solid #333;
+}
+.buttonRight:hover
+{
+    border-left: 60px solid #333;
 }
 
-.buttonLeft1,
-.buttonLeft2,
-.buttonLeft3,
-.buttonLeft4
-{
-    background: url(image/left.png);
-    background-position: 0 0;
-}
-.buttonRight1,
-.buttonRight2,
-.buttonRight3,
-.buttonRight4
-{
-    background: url(image/left.png);
-    transform: scale(-1, 1);
-    background-position: 0 0;
-}
 .close
 {
     display:none;
