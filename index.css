@@ -144,10 +144,6 @@ input
     display: block;
 }
 
-.menu > hr {
-    margin: 8px 0;
-}
-
 .menu > input[type=radio][id=slide1]:checked ~ .menu-container > :nth-child(1),
 .menu > input[type=radio][id=slide1]:checked ~ .menu-container > :nth-child(2),
 .menu > input[type=radio][id=slide1]:checked ~ .menu-container > :nth-child(3),
