@@ -114,11 +114,13 @@ input
     max-height: 100%;
 }
 
-.menu > .menu-container > .menu-item > input[type=radio]:checked ~ .menu-big-image {
+.menu > .menu-container > .menu-item > input[type=radio]:checked ~ .menu-big-image
+{
     display: table;
 }
 
-.menu > .menu-container > .menu-item > input[type=radio]:checked ~ .menu-big-image > div {
+.menu > .menu-container > .menu-item > input[type=radio]:checked ~ .menu-big-image > div
+{
     text-align: center;
     display: table-cell;
     vertical-align: middle;
@@ -137,7 +139,8 @@ input
     text-shadow: 0 0 32px black;
 }
 
-.menu > .menu-container > .menu-item > input[type=radio]:checked ~ .menu-big-image > .menu-big-image-close {
+.menu > .menu-container > .menu-item > input[type=radio]:checked ~ .menu-big-image > .menu-big-image-close
+{
     display: block;
 }
 
