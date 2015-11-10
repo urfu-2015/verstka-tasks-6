@@ -1,29 +1,35 @@
-body {
+body
+{
     overflow: hidden;
 }
 
-* {
+*
+{
     box-sizing: border-box;
 }
 
-.container {
+.container
+{
     margin: 50px auto;
     height: 240px;
     width: 1000px;
 }
 
 .container > input,
-.item .desc {
+.item .desc
+{
     display: none;
 }
 
-.slider {
+.slider
+{
     height: 180px;
     width: 900px;
     margin: 0 auto;
 }
 
-.page {
+.page
+{
     position: absolute;
     width: inherit;
     height: inherit;
@@ -31,7 +37,8 @@ body {
     opacity: 0;
 }
 
-.item {
+.item
+{
     margin: 5px;
     padding: 10px;
     width: calc(25% - 10px);
@@ -40,13 +47,15 @@ body {
     background-color: #fff;
 }
 
-.item .pic {
+.item .pic
+{
     display: block;
     height: 150px;
     width: 100%;
 }
 
-.item .pic img {
+.item .pic img
+{
     position: relative;
     top: 10%;
     display: block;
@@ -54,26 +63,31 @@ body {
     margin: auto;
 }
 
-.item .pic:hover {
+.item .pic:hover
+{
     cursor: pointer;
 }
 
-.item:hover .desc {
+.item:hover .desc
+{
     display: block;
 }
 
 .controls label:hover,
-.arrow-controls label:hover {
+.arrow-controls label:hover
+{
     cursor: pointer;
     opacity: .8;
 }
 
-.arrow-controls {
+.arrow-controls
+{
     position: relative;
     bottom: 50%;
 }
 
-.arrow-controls label {
+.arrow-controls label
+{
     position: absolute;
     display: block;
     border-top: 30px solid transparent;
@@ -81,13 +95,15 @@ body {
     opacity: .2;
 }
 
-.controls {
+.controls
+{
     position: relative;
     top: 30px;
     left: calc(50% - 45px);
 }
 
-.controls label {
+.controls label
+{
     margin: 5px;
     display: block;
     height: 20px;
@@ -100,27 +116,31 @@ body {
 
 input#page1:checked ~ .slider .page1,
 input#page2:checked ~ .slider .page2,
-input#page3:checked ~ .slider .page3 {
+input#page3:checked ~ .slider .page3
+{
     z-index: 1;
     opacity: 1;
 }
 
 input#page1:checked ~ .controls label:nth-of-type(1),
 input#page2:checked ~ .controls label:nth-of-type(2),
-input#page3:checked ~ .controls label:nth-of-type(3) {
+input#page3:checked ~ .controls label:nth-of-type(3)
+{
     opacity: .6;
 }
 
 input#page1:checked ~ .arrow-controls label:nth-of-type(3),
 input#page2:checked ~ .arrow-controls label:nth-of-type(1),
-input#page3:checked ~ .arrow-controls label:nth-of-type(2) {
+input#page3:checked ~ .arrow-controls label:nth-of-type(2)
+{
     border-right: 40px solid #000;
     left: 0;
 }
 
 input#page1:checked ~ .arrow-controls label:nth-of-type(2),
 input#page2:checked ~ .arrow-controls label:nth-of-type(3),
-input#page3:checked ~ .arrow-controls label:nth-of-type(1) {
+input#page3:checked ~ .arrow-controls label:nth-of-type(1)
+{
     border-left: 40px solid #000;
     right: 0;
 }
@@ -136,7 +156,8 @@ input#pic8:checked ~ .slider .page:nth-child(2) .item:nth-child(4) .pic,
 input#pic9:checked ~ .slider .page:nth-child(3) .item:nth-child(1) .pic,
 input#pic10:checked ~ .slider .page:nth-child(3) .item:nth-child(2) .pic,
 input#pic11:checked ~ .slider .page:nth-child(3) .item:nth-child(3) .pic,
-input#pic12:checked ~ .slider .page:nth-child(3) .item:nth-child(4) .pic {
+input#pic12:checked ~ .slider .page:nth-child(3) .item:nth-child(4) .pic
+{
     position: fixed;
     top: calc(50% - 300px);
     left: calc(50% - 400px);
