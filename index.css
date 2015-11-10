@@ -1,1 +1,182 @@
+html,
+body
+{
+    height: 98%;
+    width: 100%;
+    overflow-x: hidden;
+}
 
+body > section
+{
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 300px;
+    width: 80%;
+    min-width: 1200px;
+    margin: auto;
+}
+
+section > section
+{
+    display: inline-block;
+    position: relative;
+    height: 300px;
+    width: 25%;
+    min-width: 300px;
+    vertical-align: middle;
+    font-size: 300px;
+    text-align: center;
+    margin: -2.5px;
+}
+
+.description
+{
+    display: none;
+    margin: 5px;
+    width: 98%;
+    font-size: 16px;
+    text-align: left;
+}
+
+section > article:hover
+{
+    box-shadow: 0 0 10px #000;
+}
+section > section:hover input:not(:checked) ~ .description
+{
+    display: block;
+    margin-top: -70px;
+}
+
+img
+{
+    margin-top: 5px;
+    max-height: 300px;
+    max-width: 95%;
+    font-size: 16px;
+}
+
+input
+{
+    display: none;
+}
+
+input:first-of-type:checked ~ section:nth-of-type(1)
+{
+    display: inline-block;
+}
+
+body > input:nth-of-type(2):checked ~ section:nth-of-type(2)
+{
+    display: inline-block;
+}
+
+body > input:nth-of-type(3):checked ~ section:nth-of-type(3)
+{
+    display: inline-block;
+}
+
+.close
+{
+    display: none;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    height: 50px;
+    width: 50px;
+    z-index: 6;
+    background: url('http://s1.iconbird.com/ico/0612/prettyoffice/w256h2561339405847Delete256.png');
+    background-size: contain;
+}
+
+article input:checked ~ img
+{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    max-height: none;
+    height: 500px;
+    z-index: 7;
+}
+
+article input:checked ~ .shadow:before
+{
+    content: '';
+    position: absolute;
+    top: -500000px;
+    left: -50000px;
+    height: 1000000px;
+    width: 1000000px;
+    background: #000;
+    opacity: .5;
+    z-index: 4;
+}
+
+article input:checked ~ .close
+{
+    display: block;
+}
+
+body > label
+{
+    display: none;
+    position: absolute;
+    top: 50%;
+    height: 40px;
+    width: 40px;
+    background: url(
+        'http://s1.iconbird.com/ico/0612/GooglePlusInterfaceIcons/w128h1281338911579directionalright.png');
+    background-size: contain;
+}
+
+body > input:first-of-type:checked ~ label:nth-of-type(2)
+{
+    display: block;
+    right: 20px;
+}
+
+body > input:first-of-type:checked ~ label:nth-of-type(3)
+{
+    display: block;
+    left: 20px;
+    background: url(
+        'http://s1.iconbird.com/ico/0612/GooglePlusInterfaceIcons/w128h1281338911640directionalleft.png');
+    background-size: contain;
+}
+
+body > input:nth-of-type(2):checked ~ label:nth-of-type(3)
+{
+    display: block;
+    right: 20px;
+}
+
+body > input:nth-of-type(2):checked ~ label:nth-of-type(1)
+{
+    display: block;
+    left: 20px;
+    background: url(
+        'http://s1.iconbird.com/ico/0612/GooglePlusInterfaceIcons/w128h1281338911640directionalleft.png');
+    background-size: contain;
+}
+
+body > input:nth-of-type(3):checked ~ label:nth-of-type(1)
+{
+    display: block;
+    right: 20px;
+}
+
+body > input:nth-of-type(3):checked ~ label:nth-of-type(2)
+{
+    display: block;
+    left: 20px;
+    background: url(
+        'http://s1.iconbird.com/ico/0612/GooglePlusInterfaceIcons/w128h1281338911640directionalleft.png');
+    background-size: contain;
+}
