@@ -159,8 +159,6 @@ input#pic11:checked ~ .slider .page:nth-child(3) .item:nth-child(3) .pic,
 input#pic12:checked ~ .slider .page:nth-child(3) .item:nth-child(4) .pic
 {
     position: fixed;
-    top: calc(50% - 300px);
-    left: calc(50% - 400px);
     top: 0;
     left: 0;
     height: 100%;
