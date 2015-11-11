@@ -1,1 +1,108 @@
+html,
+body
+{
+    width: 100%;
+    height: 100%;
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
 
+input
+{
+    opacity: 0;
+}
+
+img
+{
+    width: 100%;
+    vertical-align: bottom;
+    z-index: 1;
+    position: relative;
+}
+
+.slider
+{
+    text-align: center;
+}
+
+.description
+{
+    visibility: hidden;
+    vertical-align: top;
+    width: 100%;
+}
+
+img.bigPic
+{
+    display: none;
+}
+
+div:first-child
+{
+    padding-left: 1%;
+}
+
+.slider label
+{
+    vertical-align: bottom;
+    text-align: center;
+    border-radius: 5px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: #ccc none repeat scroll 0% 0%;
+}
+
+div div
+{
+    width: 20%;
+    margin-right: 4%;
+}
+
+.firstSlide div,
+.secondSlide div,
+.thirdSlide div
+{
+    display: none;
+}
+
+img[tabindex='0']:focus ~ img.bigPic
+{
+    display: inline;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 400px;
+    margin: auto;
+    box-shadow: 4px 4px 20px #000, 0 0 0 500px rgba(191, 191, 191, .5);
+    z-index: 10;
+}
+
+div.veg:hover > .description
+{
+    visibility: visible;
+}
+
+div.veg:hover
+{
+    box-shadow: 2px 2px 5px 5px #ccc;
+    position: relative;
+    z-index: 2;
+}
+
+input[value='first']:checked ~ .slider label.first,
+input[value='second']:checked ~ .slider label.second,
+input[value='third']:checked ~ .slider label.third
+{
+    background: #000 none repeat scroll 0% 0%;
+}
+
+input[value='first']:checked ~ main .firstSlide div,
+input[value='second']:checked ~ main .secondSlide div,
+input[value='third']:checked ~ main .thirdSlide div
+{
+    display: inline-block;
+}
