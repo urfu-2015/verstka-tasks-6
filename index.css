@@ -22,7 +22,8 @@
     position: relative;
 }
 
-.invisible {
+.invisible
+{
     visibility: hidden;
 }
 
@@ -61,7 +62,7 @@ INFO BLOCK
     width: 200px;
     display: none;
     background: rgba(255, 255, 255, 1);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px rgba(192,192,192,0.5);
 }
 
 .servantblockImg:hover .infoImg
@@ -94,9 +95,9 @@ WRAP BLOCK
 
 .modal-wrap:before
 {
-    content: "";
+    content: '';
     display: none;
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(192,192,192,0.9);
     position: fixed;
     top: 0;
     left: 0;
@@ -155,8 +156,8 @@ WRAP BLOCK
 
 .modal-body
 {
-  padding: 20px;
-  display: block;
+    padding: 20px;
+    display: block;
 }
 
 .modal-body img
@@ -188,16 +189,17 @@ SCROL PANEL
     height: 10px;
     border-radius: 100%;
     display: inline-block;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(192,192,192, 0.4);
 }
 
 .nav-dots .nav-dot:hover
 {
     cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(192,192,192,0.8);
 }
 
-input[name=radio-btn] {
+input[name=radio-btn]
+{
     visibility: hidden;
 }
 
