@@ -1,1 +1,122 @@
+main
+{
+    margin: 100px;
+    text-align: center;
+}
 
+main > section,
+.group
+{
+    display: none;
+}
+
+.group:checked + section
+{
+    display: inline-block;
+}
+
+.left-button,
+.right-button
+{
+    vertical-align: top;
+    position: relative;
+    top: 70px;
+    display: inline-block;
+    margin: 20px;
+    width: 64px;
+    height: 64px;
+}
+
+.left-button
+{
+    background: url('images/left-arrow(1).png');
+}
+
+.right-button
+{
+    background: url('images/right-arrow(1).png');
+}
+
+.left-button:hover
+{
+    background: url('images/left-arrow.png');
+}
+
+.right-button:hover
+{
+    background: url('images/right-arrow.png');
+}
+
+p
+{
+    display: none;
+    text-align: left;
+}
+
+img
+{
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.short-description
+{
+    width: 20%;
+    display: inline-block;
+    position: relative;
+}
+
+.short-description input
+{
+    visibility: hidden;
+}
+
+.short-description > img
+{
+    display: none;
+}
+
+.short-description:hover > img,
+input:checked ~ .full-description label .close-image
+{
+    display: inline;
+}
+
+.short-description:hover input:not(:checked) + .full-description
+{
+    position: fixed;
+    top: 100px;
+    z-index: 10;
+    width: 250px;
+    padding: 15px;
+    box-shadow: 2px 2px 7px rgba(0,0,0,.3);
+    background-color: #fff;
+}
+
+.short-description:hover input:not(:checked) + .full-description p
+{
+    display: inline-block;
+}
+
+input:checked ~ .full-description
+{
+    position: fixed;
+    display: inline-block;
+    z-index: 20;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.3);
+}
+
+.close-image
+{
+    display: none;
+    position: absolute;
+    z-index: 30;
+    top: 3%;
+    right: 3%;
+    width: 40px;
+    height: 40px;
+}
