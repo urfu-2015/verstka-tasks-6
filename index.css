@@ -1,1 +1,235 @@
+html
+{
+    height: 100%;
+}
 
+h1
+{
+    text-align: center;
+}
+
+img
+{
+    max-width: 95%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+section
+{
+    display: table;
+    position: absolute;
+    left: 0;
+    width: 100%;
+}
+
+article
+{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.image-card
+{
+    display: inline-block;
+    margin: 3px 3px 0;
+    vertical-align: top;
+    width: 250px;
+    height: 100%;
+    text-align: left;
+    padding: 10px 10px 0;
+}
+
+.image-card > p
+{
+    display: none;
+}
+
+.image-card:hover
+{
+    -webkit-box-shadow: 1px 2px 15px #cecba8;
+    -moz-box-shadow: 1px 2px 15px #cecba8;
+    box-shadow: 1px 2px 15px #cecba8;
+    border: 1px dotted #cdcdcd;
+    width: 300px;
+}
+
+.image-card:hover > p
+{
+    display: block;
+}
+
+.image-card:hover > img
+{
+    max-width: 100%;
+}
+
+.control
+{
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#display-page1:checked ~ #page1
+{
+    display: block;
+}
+
+#display-page1:checked ~ article:not(#page1)
+{
+    display: none;
+}
+
+#display-page1:checked ~ .control #label1
+{
+    background-position: bottom right;
+}
+
+#display-page1:checked ~ .control #label1:hover
+{
+    background-position: top right;
+}
+
+#display-page2:checked ~ #page2
+{
+    display: block;
+}
+
+#display-page2:checked ~ article:not(#page2)
+{
+    display: none;
+}
+
+#display-page2:checked ~ .control #label2
+{
+    background-position: bottom right;
+}
+
+#display-page2:checked ~ .control #label2:hover
+{
+    background-position: top right;
+}
+
+#display-page3:checked ~ #page3
+{
+    display: block;
+}
+
+#display-page3:checked ~ article:not(#page3)
+{
+    display: none;
+}
+
+#display-page3:checked ~ .control #label3
+{
+    background-position: bottom right;
+}
+
+#display-page3:checked ~ .control #label3:hover
+{
+    background-position: top right;
+}
+
+input
+{
+    display: none;
+}
+
+label
+{
+    position: absolute;
+    background: url(img/radio.png) bottom left;
+    width: 23px;
+    height: 23px;
+    top: 550px;
+}
+@media (max-width: 700px) {
+    #label1 {
+        left: 40%;
+    }
+
+    #label2 {
+        left: 45%;
+    }
+
+    #label3 {
+        left: 50%;
+    }
+}
+
+@media (max-width: 1000px) {
+    #label1 {
+        left: 44%;
+    }
+
+    #label2 {
+        left: 48%;
+    }
+
+    #label3 {
+        left: 52%;
+    }
+}
+
+@media (min-width: 1000px) {
+    #label1 {
+        left: 48%;
+    }
+
+    #label2 {
+        left: 50%;
+    }
+
+    #label3 {
+        left: 52%;
+    }
+}
+label:hover
+{
+    background-position: top left;
+}
+
+.full-img
+{
+    position: absolute;
+    top: 5%;
+    left: 25%;
+    display: none;
+    z-index: 100;
+}
+
+.full-img:target
+{
+    display: block;
+}
+
+.full-img:target > img
+{
+    display: block;
+    max-width: 70%;
+    width: 70%;
+}
+
+.full-img:target ~ .blackout
+{
+    background-color: #000;
+    height: 100%;
+    left: 0;
+    opacity: 0.6;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+.full-img a[href="#close"]
+{
+    position: absolute;
+    right: 15%;
+    top: 0;
+    text-decoration: none;
+    color: #fff;
+    font: 800 60px sans-serif;
+}
