@@ -7,6 +7,9 @@ body
 .part
 {
     width: 80%;
+    position: absolute;
+    bottom: 37%;
+    left: 11%;
 }
 
 .thumb
@@ -15,6 +18,8 @@ body
     margin: 10px;
     float: left;
     width: 20%;
+    position: relative;
+    bottom: 100%;
 }
 
 img
@@ -52,13 +57,6 @@ img
     display: none;
 }
 
-.part
-{
-    position: absolute;
-    bottom: 35%;
-    left: 11%;
-}
-
 .description
 {
     display: none;
@@ -75,10 +73,12 @@ img
     background-color: cadetblue;
     border: 1px solid #000;
 }
+
 .modal
 {
     display: none;
 }
+
 .selector:checked + .modal
 {
     display: block;
@@ -90,20 +90,25 @@ img
     height: 200%;
     margin-left: -150px;
     margin-top: -100px;
-    /*background-color: #f1c40f;*/
     background-color: #000;
     opacity: .95;
     z-index: 10;
-    outline: 9999px solid rgba(0, 0, 0, .5);
+    outline: 9999px solid rgba(0, 0, 0, .9);
 }
 
 .selector:checked + .modal .fullsize img
 {
-    width: 300px;
-    height: 300px;
+    /*width: 300px;*/
+    width: 540px;
+    height: auto;
+    /*height: 300px;*/
     position: absolute;
-    left: 25%;
-    top: 20%;
+    left: -40%;
+    right: 0;
+    margin: auto;
+    top: -35%;
+    bottom: 0;
+    /*bottom: ;*/
     display: block;
 }
 
@@ -121,6 +126,7 @@ img
     left: 25%;
     top: 20%;
 }
+
 .cross img
 {
     width: 32px;
@@ -129,5 +135,35 @@ img
     right: 0;
     top: 0;
     display: block;
+}
 
+#switch-1
+{
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+
+#switch-2
+{
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
+
+#switch-1:checked ~ .first
+{
+    display: block;
+}
+#switch-1:not(:checked) ~ .first
+{
+    display: none;
+}
+#switch-2:checked ~ .second
+{
+    display: block;
+}
+#switch-2:not(:checked) ~ .second
+{
+    display: none;
 }
