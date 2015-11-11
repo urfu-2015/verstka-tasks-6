@@ -1,1 +1,214 @@
+.container
+{
+    width: 1000px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
+.blockImg img
+{
+    width: 200px;
+    vertical-align: bottom;
+}
+
+.blockImg
+{
+    float: left;
+    width: 200px;
+    height: 300px;
+    padding: 10px;
+    margin: 10px;
+    position: relative;
+}
+
+.invisible
+{
+    visibility: hidden;
+}
+
+/*
+==============================
+INFO BLOCK
+==============================
+*/
+
+.servantblockImg img
+{
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    position: relative;
+    opacity: 1;
+}
+
+.servantblockImg:hover
+{
+    z-index: 1;
+}
+
+.servantblockImg:hover img
+{
+    z-index: 2;
+    opacity: 1;
+}
+
+.servantblockImg .infoImg
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 250px 10px 10px;
+    width: 200px;
+    display: none;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+}
+
+.servantblockImg:hover .infoImg
+{
+    display: block;
+}
+
+/*
+==============================
+WRAP BLOCK
+==============================
+*/
+
+.modal .btn-close
+{
+    color: #aaa;
+    cursor: pointer;
+    font-size: 30px;
+    text-decoration: none;
+    position: fixed;
+    right: 5px;
+    top: 0;
+    z-index: 103;
+}
+
+.modal .btn-close:hover
+{
+    color: red;
+}
+
+.modal-wrap:before
+{
+    content: '';
+    display: none;
+    background: rgba(0, 0, 0, .9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 101;
+}
+
+.modal-overlay
+{
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 102;
+}
+
+.modal-wrap
+{
+    display: none;
+}
+
+.modal-open:checked ~ .modal-wrap
+{
+    display: block;
+}
+
+.modal-open:checked ~ .modal-wrap:before
+{
+    display: block;
+}
+
+.modal-wrap .modal-dialog
+{
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    top: 20%;
+}
+
+.modal-dialog
+{
+    background: #fefefe;
+    border: none;
+    border-radius: 5px;
+    position: fixed;
+    width: 80%;
+    max-width: 600px;
+    left: 50%;
+    top: -100%;
+    z-index: 103;
+}
+
+.modal-body
+{
+    padding: 20px;
+    display: block;
+}
+
+.modal-body img
+{
+    width: 100%;
+    height: auto;
+}
+
+/*
+=============================
+SCROL PANEL
+=============================
+*/
+
+.block
+{
+    display: block;
+    position: relative;
+}
+
+.nav-dots
+{
+    text-align: center;
+}
+
+.nav-dots .nav-dot
+{
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, .4);
+}
+
+.nav-dots .nav-dot:hover
+{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, .8);
+}
+
+input[name=radio-btn]
+{
+    visibility: hidden;
+}
+
+input[name=radio-btn] + div.block
+{
+    display: none;
+}
+
+input[name=radio-btn]:checked + div.block
+{
+    display: block;
+}
