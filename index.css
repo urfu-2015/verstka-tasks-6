@@ -1,1 +1,124 @@
+body
+{
+    /*background: green;*/
+}
+.all_cards
+{
+    display: block;
+    margin: auto;
+    border: 10px solid black;
+    width: 80%;
+    padding: 0;
+}
+.card
+{
+    /*position: absolute;*/
+    vertical-align: baseline;
+    position: relative;
+    z-index: 1;
+    width: 24.5%;
+    /*border: 10px solid aqua;*/
+    margin: auto;
+}
+.card
+{
+    display: none;
+}
+.card.first
+{
+    left: 0;
+}
+.card.second
+{
+    left: 0%;
+}
+.card.third
+{
+    left: 0%;
+}
+.card.fourth
+{
+    left: 0%;
+}
+.small
+{
+    margin: auto;
+    width: 100%;
+    display: inline-block;
+}
+.card p
+{
+    display: inline-block;
+    /*border-top-width: 0;*/
+    visibility: hidden;
+    font-size: small;
+}
+.card:hover
+{
+    /*z-index: 1000;
+    border: 10px solid white;s
+    position: relative;*/
+}
+.card:hover p
+{
+    position: relative;
+    border-top-width: 0;
+    background-color: white;
+    visibility: visible;
+}
+form
+{
+    /*border: 10px solid rebeccapurple;*/
+    margin: auto;
+    width: 100px;
+    display: block;
+}
+.big
+{
+    display: none;
+}
+.card:hover
+{
+    position: relative;
+    z-index: 3;
+    /*border-bottom-width: 0;*/
+}
+.card:hover .big
+{
+    border: 20px solid black;
+    top: -20px;
+    left: -20px;
+    /*border-top-width: 0;*/
+    width: 100%;
+    position: absolute;
+    display: block;
+}
+.card:hover .big
+{
+    vertical-align: baseline;
+    margin: auto;
+    width: 120%;
+    display: block;
+    /*display: inline-block;*/
+}
+.card:hover .small
+{
+    visibility: hidden;
+}
+.one{
+    display: inline-block;
+}
+input#page1:checked ~ .all_cards > .one
+{
+    display: inline-block;
+}
 
+input#page2:checked ~ .card.two
+{
+    display: inline-block;
+}
+
+input#page3:checked ~ .card.three
+{
+    display: inline-block;
+}
