@@ -46,7 +46,7 @@ body
     cursor: pointer;
 }
 
-.picture-info > label >img
+.picture-info > label > img
 {
     width: 100%;
 }
