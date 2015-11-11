@@ -24,7 +24,7 @@ img
 
 .selector
 {
-    /*display: none;*/
+    display: none;
 }
 
 #closeButton
@@ -131,8 +131,3 @@ img
     display: block;
 
 }
-
-/*.selector:not(:checked) + .modal + .cross + .fullsize*/
-/*{*/
-    /*display: none;*/
-/*}*/
