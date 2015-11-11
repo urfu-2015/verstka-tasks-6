@@ -145,47 +145,61 @@ label
     height: 23px;
     top: 550px;
 }
-@media (max-width: 700px) {
-    #label1 {
+
+@media (max-width: 700px)
+{
+    #label1
+    {
         left: 40%;
     }
 
-    #label2 {
+    #label2
+    {
         left: 45%;
     }
 
-    #label3 {
+    #label3
+    {
         left: 50%;
     }
 }
 
-@media (max-width: 1000px) {
-    #label1 {
+@media (max-width: 1000px)
+{
+    #label1
+    {
         left: 44%;
     }
 
-    #label2 {
+    #label2
+    {
         left: 48%;
     }
 
-    #label3 {
+    #label3
+    {
         left: 52%;
     }
 }
 
-@media (min-width: 1000px) {
-    #label1 {
+@media (min-width: 1000px)
+{
+    #label1
+    {
         left: 48%;
     }
 
-    #label2 {
+    #label2
+    {
         left: 50%;
     }
 
-    #label3 {
+    #label3
+    {
         left: 52%;
     }
 }
+
 label:hover
 {
     background-position: top left;
