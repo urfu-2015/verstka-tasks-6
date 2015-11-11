@@ -97,7 +97,7 @@ img
     outline: 9999px solid rgba(0, 0, 0, .5);
 }
 
-.selector:checked + .modal img
+.selector:checked + .modal .fullsize img
 {
     width: 300px;
     height: 300px;
@@ -106,10 +106,6 @@ img
     top: 20%;
     display: block;
 }
-
-/*.cross img*/
-/*{*/
-/*}*/
 
 .selector:not(:checked) + .modal > .cross
 {
@@ -124,23 +120,19 @@ img
     position: absolute;
     left: 25%;
     top: 20%;
-    /*z-index: 20;*/
-    /*display: none;*/
 }
-.selector:checked + .modal .cross img
+.cross img
 {
     width: 32px;
     height: 32px;
-    position: absolute;
+    position: fixed;
+    right: 0;
+    top: 0;
     display: block;
-    left: 25%;
-    top: 20%;
-    /*top: 0;*/
-    /*right: 0;*/
-    /*left: auto;*/
+
 }
 
-.selector:not(:checked) + .modal + .cross + .fullsize
-{
-    display: none;
-}
+/*.selector:not(:checked) + .modal + .cross + .fullsize*/
+/*{*/
+    /*display: none;*/
+/*}*/
