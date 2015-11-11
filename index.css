@@ -10,6 +10,7 @@ header
     height: 300px;
     position: relative;
     text-align: center;
+    min-width: 1350px;
 }
 
 h1
@@ -162,9 +163,10 @@ input[value="full"]:checked + .vegetable .img
     left: 100px;
     margin: auto;
     max-width: 1010px;
+    width: 70%;
     position: absolute;
     right: 100px;
-    top: 100px;
+    top: 150px;
 }
 
 .section
@@ -175,7 +177,6 @@ input[value="full"]:checked + .vegetable .img
 
 .min-lable
 {
-    position: relative;
     z-index: 1000;
 }
 
@@ -186,8 +187,8 @@ input
 
 input[value="full"]:checked + .vegetable .img img
 {
-    max-height: 700px;
-    width: auto;
+	max-height: 100%;
+	width: 98%;
 }
 
 .full-label::after
@@ -209,9 +210,9 @@ input[value="full"]:checked + .vegetable .min-lable::after
     background-image: url(./close.png);
     content: "";
     height: 60px;
-    position: fixed;
-    right: 200px;
-    top: 200px;
+    position: absolute;
+    right: 100px;
+    top: 50px;
     width: 60px;
 }
 
@@ -220,10 +221,10 @@ input[value="full"]:checked + .vegetable .min-lable::after
     background-image: url(./next.png);
     content: "";
     height: 120px;
-    position: fixed;
-    right: 410px;
-    top: 420px;
-    width: 120px;
+    position: absolute;
+    right: 100px;
+    top: 40%;
+    width: 100px;
 }
 
 .prev
@@ -231,10 +232,10 @@ input[value="full"]:checked + .vegetable .min-lable::after
     background-image: url(./prev.png);
     content: "";
     height: 120px;
-    left: 410px;
-    position: fixed;
-    top: 420px;
-    width: 120px;
+    left: 100px;
+    position: absolute;
+    top: 40%;
+    width: 100px;
 }
 
 input[value="full"]:not(:checked) + .vegetable:hover p,
