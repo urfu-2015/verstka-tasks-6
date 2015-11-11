@@ -238,7 +238,7 @@ label:hover
     z-index: 99;
 }
 
-.full-img a[href="#close"]
+.full-img a[href='#close']
 {
     position: absolute;
     right: 15%;
