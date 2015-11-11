@@ -4,8 +4,9 @@
     top: 50%;
     left: 50%;
     width: 1000px;
-    transform: translate3d(-50%,-50%, 0);
+    transform: translate3d(-50%, -50%, 0);
     white-space: nowrap;
+    text-align: center;
 }
 
 html,
@@ -15,6 +16,7 @@ body
     width: 100%;
     height: 100%;
     position: relative;
+    overflow: hidden;
 }
 
 .card
@@ -141,7 +143,9 @@ input[name=viewpic]
 #viewpic-stan:checked ~ .fullscreen-content,
 #viewpic-kyle:checked ~ .fullscreen-content,
 #viewpic-cartman:checked ~ .fullscreen-content,
-#viewpic-kenny:checked ~ .fullscreen-content
+#viewpic-kenny:checked ~ .fullscreen-content,
+#viewpic-butters:checked ~ .fullscreen-content,
+#viewpic-tweek:checked ~ .fullscreen-content
 {
     display: block;
 }
@@ -149,7 +153,105 @@ input[name=viewpic]
 #viewpic-stan:checked ~ .fullscreen-content #pic-stan,
 #viewpic-kyle:checked ~ .fullscreen-content #pic-kyle,
 #viewpic-cartman:checked ~ .fullscreen-content #pic-cartman,
-#viewpic-kenny:checked ~ .fullscreen-content #pic-kenny
+#viewpic-kenny:checked ~ .fullscreen-content #pic-kenny,
+#viewpic-butters:checked ~ .fullscreen-content #pic-butters,
+#viewpic-tweek:checked ~ .fullscreen-content #pic-tweek
 {
     display: inline;
 }
+
+.right-arrow
+{
+    position: relative;
+    background: url('pics/rightarrow.png');
+    width: 32px;
+    height: 32px;
+    background-size: contain;
+    cursor: pointer;
+    display: none;
+    margin: 15px;
+    z-index: 10000;
+}
+
+.left-arrow
+{
+    position: relative;
+    background: url('pics/leftarrow.png');
+    width: 32px;
+    height: 32px;
+    background-size: contain;
+    cursor: pointer;
+    display: none;
+    z-index: 2;
+    margin: 15px;
+}
+
+.empty-arrow
+{
+    position: relative;
+    width: 32px;
+    height: 32px;
+    background-size: contain;
+    display: none;
+    z-index: 2;
+    margin: 15px;
+}
+
+.longlist
+{
+    width: 800px;
+    display: inline-block;
+    position: relative;
+}
+
+.longlist:hover
+{
+    z-index: 10 !important;
+}
+
+input[name=startpic]
+{
+    display: none;
+}
+
+.longroll
+{
+    position: relative;
+    transition: all 0.7s ease-out;
+}
+
+#startpic-stan:checked ~ .centered-content .hide-if-stan,
+#startpic-kyle:checked ~ .centered-content .hide-if-kyle,
+#startpic-cartman:checked ~ .centered-content .hide-if-cartman
+{
+    visibility: hidden;
+}
+
+#startpic-stan:checked ~ .centered-content #stan-left-arrow,
+#startpic-stan:checked ~ .centered-content #stan-right-arrow, 
+#startpic-kyle:checked ~ .centered-content #kyle-left-arrow,
+#startpic-kyle:checked ~ .centered-content #kyle-right-arrow, 
+#startpic-cartman:checked ~ .centered-content #cartman-left-arrow,
+#startpic-cartman:checked ~ .centered-content #cartman-right-arrow
+{
+    display: inline-block;
+}
+
+#startpic-stan:checked ~.centered-content .longroll
+{
+    left: 0;
+}
+
+#startpic-kyle:checked ~.centered-content .longroll
+{
+    left: -205px;
+}
+
+#startpic-cartman:checked ~.centered-content .longroll
+{
+    left: -410px;
+}
+
+
+
+

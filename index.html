@@ -11,85 +11,135 @@
         <input type="radio" name="viewpic" id="viewpic-kyle" value="kyle">
         <input type="radio" name="viewpic" id="viewpic-cartman" value="cartman">
         <input type="radio" name="viewpic" id="viewpic-kenny" value="kenny">
+        <input type="radio" name="viewpic" id="viewpic-butters" value="butters">
+        <input type="radio" name="viewpic" id="viewpic-tweek" value="tweek">
+        <input type="radio" name="startpic" id="startpic-stan" value="stan" checked>
+        <input type="radio" name="startpic" id="startpic-kyle" value="kyle">
+        <input type="radio" name="startpic" id="startpic-cartman" value="cartman">
         <div class="centered-content">
-            <div class="card">
-                <img src="pics/stan.png" class="small-pic" alt="Stan">
-                <div class="preview">
-                    <div class="preview-click">
-                        <img src="pics/stan.png" class="pic" alt="Stan">
-                        <label for="viewpic-stan" />
+            <div id="stan-left-arrow" class="empty-arrow"></div>
+            <label for="startpic-stan" id="kyle-left-arrow" class="left-arrow"></label>
+            <label for="startpic-kyle" id="cartman-left-arrow" class="left-arrow"></label>
+            <div class="longlist">
+                <div class="longroll">
+                    <div class="card hide-if-kyle hide-if-cartman">
+                        <img src="pics/stan.png" class="small-pic" alt="Stan">
+                        <div class="preview">
+                            <div class="preview-click">
+                                <img src="pics/stan.png" class="pic" alt="Stan">
+                                <label for="viewpic-stan" />
+                            </div>
+                            <p>
+                                Стэнли Рэндалл «Стэн» Марш (англ. Stanley Randall «Stan» Marsh) — 
+                                вымышленный персонаж анимационного сериала Южный парк. 
+                                Он озвучивается и создан на основе соавтора мультфильма Трея Паркера. 
+                                Стэн является одним из четырёх центральных персонажей шоу, вместе со 
+                                своими друзьями Кайлом Брофловски, Кенни Маккормиком и Эриком Картманом.
+                                Он дебютировал на телевидении, когда Южный Парк вышел первый раз в эфир 
+                                13 августа 1997 года, после того, как впервые появился в короткометражке
+                                Дух Рождества, созданной Паркером вместе со своим другом Мэттом Стоуном, 
+                                которая в себя включает две части, вышедшую в 1992 году «Иисус против Фрости» 
+                                (англ. Jesus vs. Frosty) и в 1995 «Иисус против Санты»
+                                (англ. Jesus vs. Santa).
+                            </p>
+                        </div>
                     </div>
-                    <p>
-                        Стэнли Рэндалл «Стэн» Марш (англ. Stanley Randall «Stan» Marsh) — 
-                        вымышленный персонаж анимационного сериала Южный парк. 
-                        Он озвучивается и создан на основе соавтора мультфильма Трея Паркера. 
-                        Стэн является одним из четырёх центральных персонажей шоу, вместе со 
-                        своими друзьями Кайлом Брофловски, Кенни Маккормиком и Эриком Картманом.
-                        Он дебютировал на телевидении, когда Южный Парк вышел первый раз в эфир 
-                        13 августа 1997 года, после того, как впервые появился в короткометражке
-                        Дух Рождества, созданной Паркером вместе со своим другом Мэттом Стоуном, 
-                        которая в себя включает две части, вышедшую в 1992 году «Иисус против Фрости» 
-                        (англ. Jesus vs. Frosty) и в 1995 «Иисус против Санты»
-                        (англ. Jesus vs. Santa).
-                    </p>
+                    <div class="card hide-if-cartman">
+                        <img src="pics/kyle.jpg" class="small-pic" alt="Kyle">
+                        <div class="preview">
+                            <div class="preview-click">
+                                <img src="pics/kyle.jpg" class="pic" alt="Kyle">
+                                <label for="viewpic-kyle" />
+                            </div>
+                            <p>
+                                Кайл Брофло́вски (англ. Kyle Broflovski), 
+                                персонаж мультсериала «Южный парк». Он один из четырёх главных героев,
+                                учеников четвёртого класса. Еврей по национальности. Фамилия Кайла, 
+                                вероятно, восходит к восточноевропейской фамилии Братиславский,
+                                Бреславский или Вроцлавский. Одет обычно в ярко-зелёную шапку-ушанку
+                                (намёк на восточноевропейское происхождение семьи Кайла), оранжевую курточку,
+                                темно-зелёные штаны и зелёные перчатки. Кайл даже спит в ушанке, когда у него
+                                перевязана голова, то бинты наложены поверх шапки, но в тех редких сериях, 
+                                где он её снимает, видна пышная ярко-красная причёска в стиле афро.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="pics/cartman.gif" class="small-pic" alt="Cartman">
+                        <div class="preview">
+                            <div class="preview-click">
+                                <img src="pics/cartman.gif" class="pic" alt="Cartman">
+                                <label for="viewpic-cartman" />
+                            </div>
+                            <p>
+                                Э́рик Теодо́р Ка́ртман (англ. Eric Theodore Cartman) — 
+                                персонаж сериала «Южный парк»,
+                                один из четырёх главных героев, учеников четвёртого класса. Практически все, 
+                                кроме матери Лиэн Картман, Джимми, Баттерса и работников начальной школы,
+                                зовут его по фамилии, а мать ласково называет его «Жирным Поросёночком».
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="pics/kenny.jpg" class="small-pic" alt="Kenny">
+                        <div class="preview">
+                            <div class="preview-click">
+                                <img src="pics/kenny.jpg" class="pic" alt="Kenny">
+                                <label for="viewpic-kenny" />
+                            </div>
+                            <p>
+                                Ке́нни Макко́рмик (англ. Kenny McCormick) — 
+                                персонаж мультсериала «Южный парк». Он один из четырёх
+                                главных героев, учеников четвёртого класса. Хотя на
+                                официальном сайте сериала фамилия персонажа написана 
+                                как McCormick, в самом сериале (например, в заставке 4-5 сезонов)
+                                иногда используется вариант McKormick. Один из самых харизматичных
+                                и культовых героев сериала. По происхождению,
+                                судя по фамилии, возможно, ирландец.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card hide-if-stan">
+                        <img src="pics/butters.jpg" class="small-pic" alt="Butters">
+                        <div class="preview">
+                            <div class="preview-click">
+                                <img src="pics/butters.jpg" class="pic" alt="Butters">
+                                <label for="viewpic-butters" />
+                            </div>
+                            <p>
+                                Ба́ттерс (англ. Butters, урождённый Леопольд Стотч, англ. Leopold Stotch)
+                                — один из ведущих персонажей мультипликационного сериала «Южный парк». 
+                                Несмотря на то, что Баттерса на самом деле зовут Леопольд, и родители,
+                                и знакомые зовут его исключительно по прозвищу, которое является 
+                                каламбуром: «Баттерс Стотч» — butter-scotch (ириска). 
+                                Когда в серии 909 Баттерс изображает девочку, он берёт 
+                                себе имя Марджорин, что тоже является каламбуром: butter —
+                                сливочное масло, marjarine — маргарин.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card hide-if-stan hide-if-kyle">
+                        <img src="pics/tweek.gif" class="small-pic" alt="Tweek">
+                        <div class="preview">
+                            <div class="preview-click">
+                                <img src="pics/tweek.gif" class="pic" alt="Tweek">
+                                <label for="viewpic-tweek" />
+                            </div>
+                            <p>
+                                Твик Твик (англ. Tweek Tweak) — ученик четвертого класса, 
+                                одноклассник (одно время — лучший друг) главных героев. 
+                                Твик — гиперактивный мальчик, и он — единственный в классе,
+                                кто по настоящему страдает СДВГ
+                                (Синдромом дефицита внимания и гиперактивности),
+                                которым в серии «Тимми 2000» якобы заболевают все ученики.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="card">
-                <img src="pics/kyle.jpg" class="small-pic" alt="Kyle">
-                <div class="preview">
-                    <div class="preview-click">
-                        <img src="pics/kyle.jpg" class="pic" alt="Kyle">
-                        <label for="viewpic-kyle" />
-                    </div>
-                    <p>
-                        Кайл Брофло́вски (англ. Kyle Broflovski), 
-                        персонаж мультсериала «Южный парк». Он один из четырёх главных героев,
-                        учеников четвёртого класса. Еврей по национальности. Фамилия Кайла, 
-                        вероятно, восходит к восточноевропейской фамилии Братиславский,
-                        Бреславский или Вроцлавский. Одет обычно в ярко-зелёную шапку-ушанку
-                        (намёк на восточноевропейское происхождение семьи Кайла), оранжевую курточку,
-                        темно-зелёные штаны и зелёные перчатки. Кайл даже спит в ушанке, когда у него
-                        перевязана голова, то бинты наложены поверх шапки, но в тех редких сериях, 
-                        где он её снимает, видна пышная ярко-красная причёска в стиле афро.
-                    </p>
-                </div>
-            </div>
-            <div class="card">
-                <img src="pics/cartman.gif" class="small-pic" alt="Cartman">
-                <div class="preview">
-                    <div class="preview-click">
-                        <img src="pics/cartman.gif" class="pic" alt="Cartman">
-                        <label for="viewpic-cartman" />
-                    </div>
-                    <p>
-                        Э́рик Теодо́р Ка́ртман (англ. Eric Theodore Cartman) — 
-                        персонаж сериала «Южный парк»,
-                        один из четырёх главных героев, учеников четвёртого класса. Практически все, 
-                        кроме матери Лиэн Картман, Джимми, Баттерса и работников начальной школы,
-                        зовут его по фамилии, а мать ласково называет его «Жирным Поросёночком».
-                    </p>
-                </div>
-            </div>
-            <div class="card">
-                <img src="pics/kenny.jpg" class="small-pic" alt="Kenny">
-                <div class="preview">
-                    <div class="preview-click">
-                        <img src="pics/kenny.jpg" class="pic" alt="Kenny">
-                        <label for="viewpic-kenny" />
-                    </div>
-                    <p>
-                        Ке́нни Макко́рмик (англ. Kenny McCormick) — 
-                        персонаж мультсериала «Южный парк». Он один из четырёх
-                        главных героев, учеников четвёртого класса. Хотя на
-                        официальном сайте сериала фамилия персонажа написана 
-                        как McCormick, в самом сериале (например, в заставке 4-5 сезонов)
-                        иногда используется вариант McKormick. Один из самых харизматичных
-                        и культовых героев сериала. По происхождению,
-                        судя по фамилии, возможно, ирландец.
-                    </p>
-                </div>
-            </div>
-        </div>
+            <label for="startpic-kyle" id="stan-right-arrow" class="right-arrow"></label>
+            <label for="startpic-cartman" id="kyle-right-arrow" class="right-arrow"></label>
+            <div id="cartman-right-arrow" class="empty-arrow"></div>
         </div>
         <div class="fullscreen-content">
             <label for="viewpic-none" class="exit-cross"></label>
@@ -98,6 +148,8 @@
                     <img src="pics/kyle.jpg" alt="Kyle" id="pic-kyle" class="fullscreen-pic">
                     <img src="pics/cartman.gif" alt="Cartman" id="pic-cartman" class="fullscreen-pic">
                     <img src="pics/kenny.jpg" alt="Kenny" id="pic-kenny" class="fullscreen-pic">
+                    <img src="pics/butters.jpg" alt="Butters" id="pic-butters" class="fullscreen-pic">
+                    <img src="pics/tweek.gif" alt="Tweek" id="pic-tweek" class="fullscreen-pic">
                 </div>
             </div>
         </div>
