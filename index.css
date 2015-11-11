@@ -1,1 +1,137 @@
+body
+{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
 
+.picture-list
+{
+    white-space: nowrap;
+}
+
+.picture-item
+{
+    position: relative;
+    display: none;
+    width: 250px;
+    margin: 5px;
+    vertical-align: middle;
+}
+
+.picture-item > img
+{
+    width: 100%;
+}
+
+.picture-item > .picture-info
+{
+    position: absolute;
+    display: none;
+    top: 0;
+    left: calc(100% - 300px);
+    width: 300px;
+    padding: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 10px 10px 25px 0 rgba(0,0,0,.5);
+    -moz-box-shadow: 10px 10px 25px 0 rgba(0,0,0,.5);
+    box-shadow: 10px 10px 25px 0 rgba(0,0,0,.5);
+    background-color: #fff;
+    border: 2px solid #555;
+}
+
+.picture-info > label
+{
+    cursor: pointer;
+}
+
+.picture-info > label >img
+{
+    width: 100%;
+}
+
+.picture-info > p
+{
+    font-size: 16px;
+    white-space: normal;
+    text-align: justify;
+}
+
+.picture-item > img:hover ~ .picture-info,
+.picture-item > .picture-info:hover
+{
+    z-index: 100;
+    display: inline-block;
+}
+
+.picture-item > .picture-big
+{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background-color: rgba(0,0,0,.8);
+}
+
+.picture-big > img
+{
+    position: fixed;
+    top: 200px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    width: auto;
+    height: auto;
+    max-width: calc(100% - 200px);
+    max-height: calc(100% - 200px);
+    z-index: 101;
+}
+
+.picture-big > .close
+{
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    color: white;
+    font-size: 100px;
+    cursor: pointer;
+    z-index: 101;
+}
+
+.service:checked ~ .picture-big
+{
+    display: table;
+}
+
+.button
+{
+    display: none;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 200px;
+    vertical-align: middle;
+}
+
+.select-slide
+{
+    cursor: pointer;
+}
+
+.service
+{
+    display: none;
+}
+
+.slide > .select-slide[id=slide-1]:checked ~ .picture-list > .slide-1
+{
+    display: inline-block;
+}
+
+.slide > .select-slide[id=slide-2]:checked ~ .picture-list > .slide-2
+{
+    display: inline-block;
+}

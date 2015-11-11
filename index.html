@@ -4,8 +4,190 @@
         <meta charset="utf-8">
         <title>Бабуленькин урожай</title>
         <link rel="stylesheet" href="index.css">
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     </head>
     <body>
-        <!-- Здесь прикладывать основное усилие -->
+        <main>
+            <div class="slide">
+                <input class="select-slide" type="radio" id="slide-1" name="slides" checked>
+                <input class="select-slide" type="radio" id="slide-2" name="slides">
+
+                <div class="picture-list">
+                    <label class="button slide-1" for="slide-2">
+                        <span class="fa fa-caret-left"></span>
+                    </label>
+                    <div class="picture-item slide-1">
+                        <img src="http://www.udec.ru/images/gorchica-10.jpg" alt="Картинка с овощем">
+                        <input class="service" type="checkbox" id="picture-1" name="picture-1">
+                        <div class="picture-info">
+                            <label for="picture-1">
+                                <img src="http://www.udec.ru/images/gorchica-10.jpg" alt="Картинка с овощем">
+                            </label>
+                            <p>
+                                Это травянистое однолетнее растение из семейства капустных.
+                                Широко распространена в Китае, Японии и Индии, откуда и
+                                была вывезена в другие страны. В нашей стране
+                                выращивается в ограниченном количестве на огородах.
+                            </p>
+                        </div>
+                        <div class="picture-big">
+                            <img src="http://www.udec.ru/images/gorchica-10.jpg" alt="Картинка с овощем">
+                            <label class="close" for="picture-1"><span class="fa fa-times"></span></label>
+                        </div>
+                    </div>
+                    <div class="picture-item slide-1">
+                        <img src="http://www.udec.ru/images/2803d01.jpg" alt="Картинка с овощем">
+                        <input class="service" type="checkbox" id="picture-2" name="picture-2">
+                        <div class="picture-info">
+                            <label for="picture-2">
+                                <img src="http://www.udec.ru/images/2803d01.jpg" alt="Картинка с овощем">
+                            </label>
+                            <p>
+                                Лук-порей относится к семейству лилейные.
+                                Родина его – побережье Средиземного моря.
+                                Эта культура была известна еще древним грекам и римлянам,
+                                она также выращивалась и на Северном побережье Африки
+                                (Египет, Карфаген, Алжир, Марокко).
+                            </p>
+                        </div>
+                        <div class="picture-big">
+                            <img src="http://www.udec.ru/images/2803d01.jpg" alt="Картинка с овощем">
+                            <label class="close" for="picture-2"><span class="fa fa-times"></span></label>
+                        </div>
+                    </div>
+                    <div class="picture-item slide-1">
+                        <img src="http://www.udec.ru/images/artishok-1.jpg" alt="Картинка с овощем">
+                        <input class="service" type="checkbox" id="picture-3" name="picture-3">
+                        <div class="picture-info">
+                            <label for="picture-3">
+                                <img src="http://www.udec.ru/images/artishok-1.jpg" alt="Картинка с овощем">
+                            </label>
+                            <p>
+                                Артишок - растение с крупными перисто-рассеченными листьями
+                                серовато-зеленого цвета, снизу опушенными, собранными в
+                                прикорневую розетку, прямым стеблем 0, 5 – 1 м высотой и
+                                шаровидными соцветиями из мелких трубчатых цветов,
+                                собранных в корзинки.
+                            </p>
+                        </div>
+                        <div class="picture-big">
+                            <img src="http://www.udec.ru/images/artishok-1.jpg" alt="Картинка с овощем">
+                            <label class="close" for="picture-3"><span class="fa fa-times"></span></label>
+                        </div>
+                    </div>
+                    <div class="picture-item slide-1">
+                        <img src="http://www.udec.ru/images/3103.jpg" alt="Картинка с овощем">
+                        <input class="service" type="checkbox" id="picture-4" name="picture-4">
+                        <div class="picture-info">
+                            <label for="picture-4">
+                                <img src="http://www.udec.ru/images/3103.jpg" alt="Картинка с овощем">
+                            </label>
+                            <p>
+                                Сладкий перец – чрезвычайно ценный вид овоща.
+                                В его плодах содержится до 7 % сахара, до 2,6 %
+                                белка, по содержанию витамина С перец сладкий занимает
+                                первое место среди всех овощных культур (до 150–400 мг на 100 г).
+                                В плодах имеется также много каротина и витамина PP.
+                            </p>
+                        </div>
+                        <div class="picture-big">
+                            <img src="http://www.udec.ru/images/3103.jpg" alt="Картинка с овощем">
+                            <label class="close" for="picture-4"><span class="fa fa-times"></span></label>
+                        </div>
+                    </div>
+                    <label class="button slide-1" for="slide-2">
+                        <span class="fa fa-caret-right"></span>
+                    </label>
+
+                    <label class="button slide-2" for="slide-1">
+                        <span class="fa fa-caret-left"></span>
+                    </label>
+                    <div class="picture-item slide-2">
+                        <img src="http://www.udec.ru/images/3103.jpg" alt="Картинка с овощем">
+                        <input class="service" type="checkbox" id="picture-5" name="picture-5">
+                        <div class="picture-info">
+                            <label for="picture-5">
+                                <img src="http://www.udec.ru/images/3103.jpg" alt="Картинка с овощем">
+                            </label>
+                            <p>
+                                Сладкий перец – чрезвычайно ценный вид овоща.
+                                В его плодах содержится до 7 % сахара, до 2,6 %
+                                белка, по содержанию витамина С перец сладкий занимает
+                                первое место среди всех овощных культур (до 150–400 мг на 100 г).
+                                В плодах имеется также много каротина и витамина PP.
+                            </p>
+                        </div>
+                        <div class="picture-big">
+                            <img src="http://www.udec.ru/images/3103.jpg" alt="Картинка с овощем">
+                            <label class="close" for="picture-5"><span class="fa fa-times"></span></label>
+                        </div>
+                    </div>
+                    <div class="picture-item slide-2">
+                        <img src="http://www.udec.ru/images/2803d01.jpg" alt="Картинка с овощем">
+                        <input class="service" type="checkbox" id="picture-6" name="picture-6">
+                        <div class="picture-info">
+                            <label for="picture-6">
+                                <img src="http://www.udec.ru/images/2803d01.jpg" alt="Картинка с овощем">
+                            </label>
+                            <p>
+                                Лук-порей относится к семейству лилейные.
+                                Родина его – побережье Средиземного моря.
+                                Эта культура была известна еще древним грекам и римлянам,
+                                она также выращивалась и на Северном побережье Африки
+                                (Египет, Карфаген, Алжир, Марокко).
+                            </p>
+                        </div>
+                        <div class="picture-big">
+                            <img src="http://www.udec.ru/images/2803d01.jpg" alt="Картинка с овощем">
+                            <label class="close" for="picture-6"><span class="fa fa-times"></span></label>
+                        </div>
+                    </div>
+                    <div class="picture-item slide-2">
+                        <img src="http://www.udec.ru/images/gorchica-10.jpg" alt="Картинка с овощем">
+                        <input class="service" type="checkbox" id="picture-7" name="picture-7">
+                        <div class="picture-info">
+                            <label for="picture-7">
+                                <img src="http://www.udec.ru/images/gorchica-10.jpg" alt="Картинка с овощем">
+                            </label>
+                            <p>
+                                Это травянистое однолетнее растение из семейства капустных.
+                                Широко распространена в Китае, Японии и Индии, откуда и
+                                была вывезена в другие страны. В нашей стране
+                                выращивается в ограниченном количестве на огородах.
+                            </p>
+                        </div>
+                        <div class="picture-big">
+                            <img src="http://www.udec.ru/images/gorchica-10.jpg" alt="Картинка с овощем">
+                            <label class="close" for="picture-7"><span class="fa fa-times"></span></label>
+                        </div>
+                    </div>
+                    <div class="picture-item slide-2">
+                        <img src="http://www.udec.ru/images/artishok-1.jpg" alt="Картинка с овощем">
+                        <input class="service" type="checkbox" id="picture-8" name="picture-8">
+                        <div class="picture-info">
+                            <label for="picture-8">
+                                <img src="http://www.udec.ru/images/artishok-1.jpg" alt="Картинка с овощем">
+                            </label>
+                            <p>
+                                Артишок - растение с крупными перисто-рассеченными листьями
+                                серовато-зеленого цвета, снизу опушенными, собранными в
+                                прикорневую розетку, прямым стеблем 0, 5 – 1 м высотой и
+                                шаровидными соцветиями из мелких трубчатых цветов,
+                                собранных в корзинки.
+                            </p>
+                        </div>
+                        <div class="picture-big">
+                            <img src="http://www.udec.ru/images/artishok-1.jpg" alt="Картинка с овощем">
+                            <label class="close" for="picture-8"><span class="fa fa-times"></span></label>
+                        </div>
+                    </div>
+                    <label class="button slide-2" for="slide-1">
+                        <span class="fa fa-caret-right"></span>
+                    </label>
+                </div>
+            </div>
+        </main>
     </body>
 </html>
