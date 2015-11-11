@@ -21,7 +21,7 @@ section
 .box
 {
     padding: 25px;
-    margin: 10px; 
+    margin: 10px;
     width: 200px;
     display: inline-block;
     position: relative;
@@ -31,7 +31,7 @@ section
 
 .discription
 {
-	  display: none;
+    display: none;
 }
 
 .box:hover
@@ -48,7 +48,7 @@ section
     white-space: normal;
 }
 
-img[tabindex="0"]:focus 
+img[tabindex='0']:focus 
 {
     z-index: 1;
     position: fixed;
@@ -61,9 +61,9 @@ img[tabindex="0"]:focus
     margin: auto;
 }
 
-img[tabindex="0"]:focus ~ .paranja
+img[tabindex='0']:focus ~ .paranja
 {
-  display: block;
+    display: block;
 }
 
 .paranja
@@ -80,37 +80,37 @@ img[tabindex="0"]:focus ~ .paranja
 
 input
 {
-  position: fixed;
-  left: 50%;
-  top: 90%;
-  z-index:-2;
+    position: fixed;
+    left: 50%;
+    top: 90%;
+    z-index:-2;
 }
 
 .slide-two
 {
-  margin-left: 30px;
+    margin-left: 30px;
 }
 
 .slide-three
 {
-  margin-left: 54px;
+    margin-left: 54px;
 }
 
 .slide-four
 {
-  margin-left: 79px;
+    margin-left: 79px;
 }
 
-input[value="2"]:checked ~ section .box
+input[value='2']:checked ~ section .box
 {
-  left: -100%;
+    left: -100%;
 }
-input[value="3"]:checked ~ section .box
+input[value='3']:checked ~ section .box
 {
-  left: -200%;
+    left: -200%;
 }
 
-input[value="4"]:checked ~ section .box
+input[value='4']:checked ~ section .box
 {
-  left: -300%;
+    left: -300%;
 }
