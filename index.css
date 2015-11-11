@@ -1,1 +1,153 @@
+*
+{
+    box-sizing: border-box;
+}
 
+body
+{
+    overflow: hidden;
+}
+
+.main
+{
+    height: 240px;
+    width: 1000px;
+    margin: 100px auto;
+}
+
+.main > input,
+.instance .description
+{
+    display: none;
+}
+
+.list
+{
+    position: absolute;
+    width: inherit;
+    height: inherit;
+}
+
+.show
+{
+    height: 180px;
+    width: 900px;
+    margin: 0 auto;
+}
+
+.instance
+{
+    margin: 5px;
+    padding: 10px;
+    width: calc(25% - 10px);
+    float: left;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, .3);
+    background-color: white;
+}
+
+.instance .img
+{
+    display: block;
+    height: 150px;
+    width: 100%;
+}
+
+.instance .img img
+{
+    position: relative;
+    display: block;
+    height: 80%;
+    top: 5%;
+    margin: auto;
+}
+
+.instance:hover .description
+{
+    display: block;
+}
+
+.arrows
+{
+    position: relative;
+    bottom: 50%;
+}
+
+.arrows label
+{
+    position: absolute;
+    display: block;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+}
+
+input#list1:checked ~ .arrows label:nth-of-type(3),
+input#list2:checked ~ .arrows label:nth-of-type(1),
+input#list3:checked ~ .arrows label:nth-of-type(2)
+{
+    left: 0;
+    border-right: 40px solid gray;
+}
+
+input#list1:checked ~ .arrows label:nth-of-type(2),
+input#list2:checked ~ .arrows label:nth-of-type(3),
+input#list3:checked ~ .arrows label:nth-of-type(1)
+{
+    right: 0;
+    border-left: 40px solid gray;
+}
+
+.radio
+{
+    position: relative;
+    left: calc(50% - 55px);
+    top: 30px;
+}
+
+.radio label
+{
+    display: block;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    margin: 3px;
+    opacity: .3;
+    background-color: gray;
+    float: left;
+}
+
+input#list1:checked ~ .show .list1,
+input#list2:checked ~ .show .list2,
+input#list3:checked ~ .show .list3
+{
+    z-index: 1;
+    opacity: 1;
+}
+
+input#list1:checked ~ .radio label:nth-of-type(1),
+input#list2:checked ~ .radio label:nth-of-type(2),
+input#list3:checked ~ .radio label:nth-of-type(3)
+{
+    opacity: .5;
+}
+
+input#img1:checked ~ .show .list:nth-child(1) .instance:nth-child(1) .img,
+input#img2:checked ~ .show .list:nth-child(1) .instance:nth-child(2) .img,
+input#img3:checked ~ .show .list:nth-child(1) .instance:nth-child(3) .img,
+input#img4:checked ~ .show .list:nth-child(1) .instance:nth-child(4) .img,
+input#img5:checked ~ .show .list:nth-child(2) .instance:nth-child(1) .img,
+input#img6:checked ~ .show .list:nth-child(2) .instance:nth-child(2) .img,
+input#img7:checked ~ .show .list:nth-child(2) .instance:nth-child(3) .img,
+input#img8:checked ~ .show .list:nth-child(2) .instance:nth-child(4) .img,
+input#img9:checked ~ .show .list:nth-child(3) .instance:nth-child(1) .img,
+input#img10:checked ~ .show .list:nth-child(3) .instance:nth-child(2) .img,
+input#img11:checked ~ .show .list:nth-child(3) .instance:nth-child(3) .img,
+input#img12:checked ~ .show .list:nth-child(3) .instance:nth-child(4) .img
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .6);
+    z-index: 2;
+}
