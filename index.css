@@ -1,1 +1,55 @@
+.wrapper{
+    width:auto ;
+    height:200px;
+}
+
+.container{
+    width:300px ;
+    height:200px;
+
+}
+
+.image {
+    display: inline-block;
+    position: relative;
+    width:300px ;
+    height:200px;
+}
+
+.image:hover::after {
+    content: attr(data-text); /* Выводим текст всплывающей подсказки*/
+    position: absolute;
+    left: 0; right: 0; bottom: -80%;/* Положение всплывающей подсказки */
+    margin: 10px -15px -20px;
+    z-index: 1; /* Отображаем подсказку поверх других элементов */
+    background: rgba(251, 255, 253, 0.6); /* Цвет (RGB) и степень его прозрачности */
+    color: #000000; /* Цвет текста */
+    text-align: center; /* Выравниваем текст по центру */
+    font-family: Arial, sans-serif; /* Гарнитура шрифта */
+    font-size: 11px; /* Размер текста подсказки */
+    font-weight: bold;
+    font-kerning: auto;
+    padding: 15px 50px; /* Поля */
+    border: 0 solid #333; /* Параметры рамки */
+    box-shadow:0 0 20px #555555;
+}
+
+img[tabindex="0"]:focus {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: auto;
+    height: auto;
+    max-width: 99%;
+    max-height: 99%;
+    margin: auto;
+    box-shadow: 0 0 20px #000, 0 0 0 1000px rgba(0, 0, 0, 0.4);
+}
+
+.slider{
+    text-align: center;
+}
 
