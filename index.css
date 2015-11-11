@@ -17,7 +17,7 @@ body
 
 .card
 {
-    display: inline-block;
+    display: none;
     width: 200px;
     height: 300px;
     position: relative;
@@ -72,18 +72,18 @@ body
 }
 
 /** Полноэранный режим **/
-.container > .cards > .card > input[type=radio]:checked ~ .card-full-screen
+.container > .cards > .card > input:checked ~ .card-full-screen
 {
     display: table;
 }
 
-.container > .cards > .card > input[type=radio]:checked ~ .card-full-screen > .card-image-placeholder
+.container > .cards > .card > input:checked ~ .card-full-screen > .card-image-placeholder
 {
     display: table-cell;
     vertical-align: middle;
 }
 
-.container > .cards > .card > input[type=radio]:checked ~ .card-full-screen > .card-full-screen-close
+.container > .cards > .card > input:checked ~ .card-full-screen > .card-full-screen-close
 {
     display: block;
 }
@@ -108,7 +108,35 @@ body
     width: 100%;
 }
 
-input:not(#s1)
+.container > .cards > .card > input
 {
     display: none;
+}
+
+.container > .cards > #close-pseudo-butt
+{
+    display: none;
+}
+
+.container > #s1:checked ~ .cards > .card-1,
+.container > #s1:checked ~ .cards > .card-2,
+.container > #s1:checked ~ .cards > .card-3,
+.container > #s1:checked ~ .cards > .card-4
+{
+    display: inline-block;
+}
+
+.container > #s2:checked ~ .cards > .card-4,
+.container > #s2:checked ~ .cards > .card-5,
+.container > #s2:checked ~ .cards > .card-6,
+.container > #s2:checked ~ .cards > .card-7
+{
+    display: inline-block;
+}
+
+.container > #s3:checked ~ .cards > .card-7,
+.container > #s3:checked ~ .cards > .card-8,
+.container > #s3:checked ~ .cards > .card-9
+{
+    display: inline-block;
 }
