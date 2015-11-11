@@ -1,1 +1,146 @@
+body
+{
+    margin: 0;
+    padding: 0;
+}
 
+.part
+{
+    width: 80%;
+}
+
+.thumb
+{
+    padding: 0;
+    margin: 10px;
+    float: left;
+    width: 20%;
+}
+
+img
+{
+    width: 100%;
+}
+
+.selector
+{
+    /*display: none;*/
+}
+
+#closeButton
+{
+    position: absolute;
+    display: block;
+    left: auto;
+    right: 0;
+    width: 38px;
+    height: 32px;
+}
+
+#default-selector:checked ~ #closeButton
+{
+    display: none;
+}
+
+#selector-0:not(:checked) + label > img
+{
+    display: block;
+}
+
+#selector-0:checked + label > img
+{
+    display: none;
+}
+
+.part
+{
+    position: absolute;
+    bottom: 35%;
+    left: 11%;
+}
+
+.description
+{
+    display: none;
+    height: auto;
+}
+
+.thumb:hover .description,
+.description:hover
+{
+    position: fixed;
+    display: block;
+    height: auto;
+    width: 220px;
+    background-color: cadetblue;
+    border: 1px solid #000;
+}
+.modal
+{
+    display: none;
+}
+.selector:checked + .modal
+{
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200%;
+    line-height: 200px;
+    height: 200%;
+    margin-left: -150px;
+    margin-top: -100px;
+    /*background-color: #f1c40f;*/
+    background-color: #000;
+    opacity: .95;
+    z-index: 10;
+    outline: 9999px solid rgba(0, 0, 0, .5);
+}
+
+.selector:checked + .modal img
+{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: 25%;
+    top: 20%;
+    display: block;
+}
+
+/*.cross img*/
+/*{*/
+/*}*/
+
+.selector:not(:checked) + .modal > .cross
+{
+    display: none;
+}
+
+.selector:checked + .modal .cross
+{
+    display: block;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: 25%;
+    top: 20%;
+    /*z-index: 20;*/
+    /*display: none;*/
+}
+.selector:checked + .modal .cross img
+{
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    display: block;
+    left: 25%;
+    top: 20%;
+    /*top: 0;*/
+    /*right: 0;*/
+    /*left: auto;*/
+}
+
+.selector:not(:checked) + .modal + .cross + .fullsize
+{
+    display: none;
+}
