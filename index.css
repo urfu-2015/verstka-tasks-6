@@ -19,9 +19,13 @@ body
     float: left;
     width: 20%;
     position: relative;
-    bottom: 100%;
+    bottom: 0;
 }
-
+.thumb .small
+{
+    width: 200px;
+    height: auto;
+}
 img
 {
     width: 100%;
