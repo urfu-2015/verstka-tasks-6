@@ -186,3 +186,7 @@
     max-height: 500px;
 }
 
+.modal-link {
+    text-align: center;
+    margin: 100px;
+}
