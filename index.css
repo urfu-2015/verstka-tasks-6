@@ -217,7 +217,7 @@ input[name=startpic]
 .longroll
 {
     position: relative;
-    transition: all 0.7s ease-out;
+    transition: all .7s ease-out;
 }
 
 #startpic-stan:checked ~ .centered-content .hide-if-stan,
@@ -228,30 +228,26 @@ input[name=startpic]
 }
 
 #startpic-stan:checked ~ .centered-content #stan-left-arrow,
-#startpic-stan:checked ~ .centered-content #stan-right-arrow, 
+#startpic-stan:checked ~ .centered-content #stan-right-arrow,
 #startpic-kyle:checked ~ .centered-content #kyle-left-arrow,
-#startpic-kyle:checked ~ .centered-content #kyle-right-arrow, 
+#startpic-kyle:checked ~ .centered-content #kyle-right-arrow,
 #startpic-cartman:checked ~ .centered-content #cartman-left-arrow,
 #startpic-cartman:checked ~ .centered-content #cartman-right-arrow
 {
     display: inline-block;
 }
 
-#startpic-stan:checked ~.centered-content .longroll
+#startpic-stan:checked ~ .centered-content .longroll
 {
     left: 0;
 }
 
-#startpic-kyle:checked ~.centered-content .longroll
+#startpic-kyle:checked ~ .centered-content .longroll
 {
     left: -205px;
 }
 
-#startpic-cartman:checked ~.centered-content .longroll
+#startpic-cartman:checked ~ .centered-content .longroll
 {
     left: -410px;
-}
-
-
-
-
+} 
