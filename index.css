@@ -3,11 +3,13 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 900px;
+    width: 1000px;
     transform: translate3d(-50%,-50%, 0);
+    white-space: nowrap;
 }
 
-html, body
+html,
+body
 {
     margin: 0;
     width: 100%;
@@ -45,6 +47,7 @@ html, body
 .preview p
 {
     font-size: 10px;
+    white-space: normal;
 }
 
 .preview .pic
@@ -120,7 +123,7 @@ input[name=viewpic]
 {
     position: absolute;
     width: 70%;
-    height: 70%; 
+    height: 70%;
     top: 50%;
     left: 50%;
     transform: translate3d(-50%,-50%, 0);
@@ -135,20 +138,18 @@ input[name=viewpic]
     display: none;
 }
 
-#viewpic-stan:checked~.fullscreen-content,
-#viewpic-kyle:checked~.fullscreen-content,
-#viewpic-cartman:checked~.fullscreen-content,
-#viewpic-kenny:checked~.fullscreen-content
+#viewpic-stan:checked ~ .fullscreen-content,
+#viewpic-kyle:checked ~ .fullscreen-content,
+#viewpic-cartman:checked ~ .fullscreen-content,
+#viewpic-kenny:checked ~ .fullscreen-content
 {
     display: block;
 }
 
-#viewpic-stan:checked~.fullscreen-content #pic-stan,
-#viewpic-kyle:checked~.fullscreen-content #pic-kyle,
-#viewpic-cartman:checked~.fullscreen-content #pic-cartman,
-#viewpic-kenny:checked~.fullscreen-content #pic-kenny
+#viewpic-stan:checked ~ .fullscreen-content #pic-stan,
+#viewpic-kyle:checked ~ .fullscreen-content #pic-kyle,
+#viewpic-cartman:checked ~ .fullscreen-content #pic-cartman,
+#viewpic-kenny:checked ~ .fullscreen-content #pic-kenny
 {
     display: inline;
 }
-
-
