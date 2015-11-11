@@ -1,1 +1,222 @@
+main
+{
+    position: relative;
+    width: 1500px;
+    margin: 0 auto;
+}
 
+.imageRadio
+{
+    display: none;
+}
+
+.imageBackground
+{
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #000;
+    opacity: .8;
+    z-index: 3000;
+}
+
+.exitImageView
+{
+    display: none;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 128px;
+    height: 128px;
+    background-image: url("cross.png");
+    z-index: 3002;
+}
+
+.imageRadio:checked:not(#noImage) ~ .imageBackground,
+.imageRadio:checked:not(#noImage) ~ .exitImageView
+{
+    display: block;
+}
+
+.bigImage
+{
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 40%;
+    margin: auto;
+    z-index: 3001;
+}
+
+#image1:checked ~ .image1
+{
+    display: block;
+}
+
+#image2:checked ~ .image2
+{
+    display: block;
+}
+
+#image3:checked ~ .image3
+{
+    display: block;
+}
+
+#image4:checked ~ .image4
+{
+    display: block;
+}
+
+#image5:checked ~ .image5
+{
+    display: block;
+}
+
+#image6:checked ~ .image6
+{
+    display: block;
+}
+
+#image7:checked ~ .image7
+{
+    display: block;
+}
+
+#image8:checked ~ .image8
+{
+    display: block;
+}
+
+#image9:checked ~ .image9
+{
+    display: block;
+}
+
+#image10:checked ~ .image10
+{
+    display: block;
+}
+
+#image11:checked ~ .image11
+{
+    display: block;
+}
+
+#image12:checked ~ .image12
+{
+    display: block;
+}
+
+.setRadio
+{
+    display: none;
+}
+
+.rightButton,
+.leftButton
+{
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    width: 128px;
+    height: 128px;
+}
+
+.rightButton
+{
+    right: 0;
+    background-image: url("right.png");
+}
+
+.leftButton
+{
+    left: 0;
+    background-image: url("left.png");
+}
+
+#set1:checked ~ .rightButtonSet1
+{
+    display: block;
+}
+
+#set2:checked ~ .rightButtonSet2
+{
+    display: block;
+}
+
+#set2:checked ~ .leftButtonSet2
+{
+    display: block;
+}
+
+#set3:checked ~ .leftButtonSet3
+{
+    display: block;
+}
+
+.setContainer
+{
+    display: none;
+    text-align: center;
+}
+
+#set1:checked ~ .set1Container
+{
+    display: block;
+}
+
+#set2:checked ~ .set2Container
+{
+    display: block;
+}
+
+#set3:checked ~ .set3Container
+{
+    display: block;
+}
+
+.setItem
+{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 300px;
+    max-height: 300px;
+}
+
+.setItemImage
+{
+    width: 100%;
+}
+
+.setItemDescription
+{
+    display: none;
+    text-align: left;
+}
+
+.setItem:hover
+{
+    z-index: 1;
+}
+
+.setItem:hover .itemContainer
+{
+    background-color: #fff;
+    width: 400px;
+    border: 1px solid black;
+}
+
+.setItem:hover .setItemDescription
+{
+    display: block;
+}
