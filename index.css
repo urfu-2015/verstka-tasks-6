@@ -187,8 +187,8 @@ input
 
 input[value="full"]:checked + .vegetable .img img
 {
-	max-height: 100%;
-	width: 98%;
+    max-height: 100%;
+    width: 98%;
 }
 
 .full-label::after
