@@ -31,7 +31,7 @@ main
     top: 0;
     width: 128px;
     height: 128px;
-    background-image: url("cross.png");
+    background-image: url('cross.png');
     z-index: 3002;
 }
 
@@ -134,13 +134,13 @@ main
 .rightButton
 {
     right: 0;
-    background-image: url("right.png");
+    background-image: url('right.png');
 }
 
 .leftButton
 {
     left: 0;
-    background-image: url("left.png");
+    background-image: url('left.png');
 }
 
 #set1:checked ~ .rightButtonSet1
