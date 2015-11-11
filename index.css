@@ -15,7 +15,7 @@ header
 
 h1
 {
-    background: rgba(253,247,234,0.85);
+    background: rgba(253, 247, 234, .85);
     color: #712f4b;
     font: 3.5em 'Lobster' cursive;
     left: 0;
@@ -146,7 +146,7 @@ input[value="full"]:not(:checked) + .vegetable:hover .full-label::after
 
 input[value="full"]:checked + .vegetable
 {
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(0, 0, 0, .6);
     height: 100%;
     left: 0;
     margin: 0;
