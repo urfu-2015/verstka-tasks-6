@@ -9,11 +9,11 @@ body
     margin: 0 auto;
 }
 
-.cards
-{
-    display: table-cell;
-    vertical-align: middle;
-}
+/*.cards*/
+/*{*/
+/*display: table-cell;*/
+/*vertical-align: middle;*/
+/*}*/
 
 .card
 {
@@ -108,7 +108,13 @@ body
     width: 100%;
 }
 
+/** Скрываем input **/
 .container > .cards > .card > input
+{
+    display: none;
+}
+
+.container > input
 {
     display: none;
 }
@@ -117,6 +123,29 @@ body
 {
     display: none;
 }
+
+/** Свои checkbox **/
+.container > .slides-place > label
+{
+    background: #999;
+    height: 16px;
+    width: 16px;
+    display:inline-block;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.container > #s1:checked ~ .slides-place > .slide1,
+.container > #s2:checked ~ .slides-place > .slide2,
+.container > #s3:checked ~ .slides-place > .slide3
+{
+    background: #0080FF;
+    height: 16px;
+    width: 16px;
+    display:inline-block;
+    margin: 5px;
+}
+/** ----- **/
 
 .container > #s1:checked ~ .cards > .card-1,
 .container > #s1:checked ~ .cards > .card-2,
