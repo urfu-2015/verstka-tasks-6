@@ -20,6 +20,32 @@ body
     display: none;
 }
 
+.photos
+{
+    text-align: center;
+}
+
+.slides
+{
+    z-index: 0;
+    display: none;
+}
+
+#slide1:checked ~ .slide1,
+#slide2:checked ~ .slide2,
+#slide3:checked ~ .slide3
+{
+    display: block;
+    z-index: 1;
+}
+
+.photos .controls
+{
+    left: 50%;
+    position: absolute;
+}
+
+
 .control
 {
     position: relative;
@@ -85,7 +111,6 @@ body
 
 .item:hover .image:focus ~ .modal img
 {
-    /*vertical-align: middle; Не понимаю почему не работает*/
     top: 150px;
     position: relative;
     height: 60%;
