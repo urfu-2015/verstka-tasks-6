@@ -139,7 +139,7 @@ body
 .container > #s2:checked ~ .slides-place > .slide2,
 .container > #s3:checked ~ .slides-place > .slide3
 {
-    background: #0080FF;
+    background: #0080ff;
     height: 16px;
     width: 16px;
     display:inline-block;
