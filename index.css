@@ -1,8 +1,8 @@
 
 div.gallery
 {
-    height: 520px;
-    width: 1100px;
+    height: 480px;
+    width: 940px;
     margin: 200px auto auto auto;
 }
 
@@ -11,33 +11,14 @@ div.navigation
     margin-left: auto;
     margin-right: auto;
     width: 100px;
-
 }
 
 figure
 {
-    height: 150px;
+    height: 130px;
     width: 100%;
     margin: 0;
     position: relative;
-}
-
-img
-{
-    max-height: 100%;
-    max-width: 100%;
-    bottom: 0;
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-section
-{
-    height: 400px;
-    width: 250px;
-    float: left;
-    padding: 5px;
 }
 
 figure:hover ~ article
@@ -45,25 +26,31 @@ figure:hover ~ article
     display: block;
 }
 
+section
+{
+    height: 450px;
+    width: 200px;
+    float: left;
+    padding: 1px;
+}
+
+section img
+{
+    max-height: 100%;
+    max-width: 100%;
+    bottom: 0;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+
 article
 {
     height: 200px;
     display: none;
-}
-
-#first:not(:checked) ~ .first
-{
-    display: none;
-}
-
-#second:not(:checked) ~ .second
-{
-    display: none;
-}
-
-#fs-background
-{
-    display: none;
+    text-align: center;
 }
 
 div.fs-background
@@ -77,10 +64,64 @@ div.fs-background
     position: absolute;
     top: 0;
     left: 0;
-    /*width: 100vw;
-    height: 100vh;*/
     width: 100%;
     height: 730px;
+}
+
+input[name="fs-img"]
+{
+    display: none;
+}
+
+input[name="nav"]
+{
+    display: none;
+}
+
+img.fs
+{
+    display: none;
+}
+
+img.fs-close
+{
+    position: relative;
+    z-index: 3;
+    margin-left: 92vw;
+    margin-top: 1vw;
+    display: inline;
+}
+
+img.nav-arrow
+{
+    margin: 45px 5px auto 5px;
+    height: 50px;
+    float: left;
+}
+
+#first:not(:checked) ~ .first
+{
+    display: none;
+}
+
+#first:not(:checked) ~ input[for="first"]
+{
+    display: none;
+}
+
+#second:not(:checked) ~ .second
+{
+    display: none;
+}
+
+#second:not(:checked) ~ input[for="second"]
+{
+    display: none;
+}
+
+#fs-background
+{
+    display: none;
 }
 
 #img1:checked ~ .fs-background
@@ -129,6 +170,9 @@ div.fs-background
     z-index: 3;
     max-height: 80vh;
     min-width: 80vw;
+    top: 10vh;
+    left: 10vw;
+    position: absolute;
 }
 
 #img2:checked ~ img.img2
@@ -137,6 +181,9 @@ div.fs-background
     z-index: 3;
     max-height: 80vh;
     min-width: 80vw;
+    top: 10vh;
+    left: 10vw;
+    position: absolute;
 }
 
 #img3:checked ~ img.img3
@@ -145,6 +192,9 @@ div.fs-background
     z-index: 3;
     max-height: 80vh;
     min-width: 80vw;
+    top: 10vh;
+    left: 10vw;
+    position: absolute;
 }
 
 #img4:checked ~ img.img4
@@ -153,6 +203,9 @@ div.fs-background
     z-index: 3;
     max-height: 80vh;
     min-width: 80vw;
+    top: 10vh;
+    left: 10vw;
+    position: absolute;
 }
 
 #img5:checked ~ img.img5
@@ -161,6 +214,9 @@ div.fs-background
     z-index: 3;
     max-height: 80vh;
     min-width: 80vw;
+    top: 10vh;
+    left: 10vw;
+    position: absolute;
 }
 
 #img6:checked ~ img.img6
@@ -169,6 +225,9 @@ div.fs-background
     z-index: 3;
     max-height: 80vh;
     min-width: 80vw;
+    top: 10vh;
+    left: 10vw;
+    position: absolute;
 }
 
 #img7:checked ~ img.img7
@@ -177,6 +236,9 @@ div.fs-background
     z-index: 3;
     max-height: 80vh;
     min-width: 80vw;
+    top: 10vh;
+    left: 10vw;
+    position: absolute;
 }
 
 #img8:checked ~ img.img8
@@ -185,14 +247,7 @@ div.fs-background
     z-index: 3;
     max-height: 80vh;
     min-width: 80vw;
-}
-
-input[name="fs-img"]
-{
-    display: none;
-}
-
-img.fs
-{
-    display: none;
+    top: 10vh;
+    left: 10vw;
+    position: absolute;
 }
