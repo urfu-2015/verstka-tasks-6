@@ -17,6 +17,8 @@ section
 }
 .card
 {
+    text-decoration: none;
+    color: black;
     width: 24%;
     display: none;
 }
@@ -48,6 +50,14 @@ section
     position: relative;
 }
 input#page1:checked ~ #page_first
+{
+    display: block;
+}
+input#page2:checked ~ #page_second
+{
+    display: block;
+}
+input#page3:checked ~ #page_third
 {
     display: block;
 }
@@ -112,12 +122,10 @@ input#page1:checked ~ #page_first
     left: 25%;
     top: 10%;
 }
-.close:target
-{
-
-}
 .close
 {
+    background: white;
+    color: black;
     text-align: center;
     right: 10px;
     top: 10px;
