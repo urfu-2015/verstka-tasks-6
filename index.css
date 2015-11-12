@@ -57,9 +57,7 @@ div.fs-background
 {
     display: none;
     z-index: 2;
-    height: 100px;
-    width: 100px;
-    opacity: 0.8;
+    opacity: .8;
     background-color: gray;
     position: absolute;
     top: 0;
@@ -68,12 +66,12 @@ div.fs-background
     height: 730px;
 }
 
-input[name="fs-img"]
+input[name='fs-img']
 {
     display: none;
 }
 
-input[name="nav"]
+input[name='nav']
 {
     display: none;
 }
@@ -104,7 +102,7 @@ img.nav-arrow
     display: none;
 }
 
-#first:not(:checked) ~ input[for="first"]
+#first:not(:checked) ~ input[for='first']
 {
     display: none;
 }
@@ -114,7 +112,7 @@ img.nav-arrow
     display: none;
 }
 
-#second:not(:checked) ~ input[for="second"]
+#second:not(:checked) ~ input[for='second']
 {
     display: none;
 }
