@@ -109,14 +109,14 @@ article
     transition: all 1s;
 }
 
-input.first-nav:checked ~ .shift-left:not([for="first-nav"]),
-input.first-nav:checked ~ .shift-right:not([for="second-nav"]),
-input.second-nav:checked ~ .shift-left:not([for="first-nav"]),
-input.second-nav:checked ~ .shift-right:not([for="third-nav"]),
-input.third-nav:checked ~ .shift-left:not([for="second-nav"]),
-input.third-nav:checked ~ .shift-right:not([for="fourth-nav"]),
-input.fourth-nav:checked ~ .shift-left:not([for="third-nav"]),
-input.fourth-nav:checked ~ .shift-right:not([for="fourth-nav"])
+input.first-nav:checked ~ .shift-left:not([for='first-nav']),
+input.first-nav:checked ~ .shift-right:not([for='second-nav']),
+input.second-nav:checked ~ .shift-left:not([for='first-nav']),
+input.second-nav:checked ~ .shift-right:not([for='third-nav']),
+input.third-nav:checked ~ .shift-left:not([for='second-nav']),
+input.third-nav:checked ~ .shift-right:not([for='fourth-nav']),
+input.fourth-nav:checked ~ .shift-left:not([for='third-nav']),
+input.fourth-nav:checked ~ .shift-right:not([for='fourth-nav'])
 {
     display: none;
 }
