@@ -4,7 +4,7 @@ body
     position: relative;
 }
 
-input
+input[name='switch']
 {
     position: absolute;
     bottom: 0;
@@ -12,12 +12,12 @@ input
     z-index: 1;
 }
 
-input + input
+input[name='switch'] + input[name='switch']
 {
     margin-left: 21px;
 }
 
-input + input + input
+input[name='switch'] + input[name='switch'] + input[name='switch']
 {
     margin-left: 37px;
 }
@@ -32,9 +32,9 @@ input + input + input
 .wrappers
 {
     width: 100%; /*сумма ширин фото + margin'ы?*/
-    height: 400px;
+    height: 660px;
     position: relative;
-    margin: 10% 0;
+    margin-top: 50px;
     text-align: center;
 }
 
@@ -55,19 +55,84 @@ input + input + input
 .vegetable-card
 {
     display: inline-block;
+    position: relative;
+    vertical-align: top;
+    width: 360px;
+    height: 610px;
 }
 
 img
 {
     position: relative;
+    vertical-align: top;
     width: 300px;
+    padding: 0 9px;
 }
 
 .description
 {
-    /*visibility: hidden;*/
+    visibility: hidden;
+    padding: 3px;
+    border-bottom: 1px solid #999;
+    border-left: 1px solid #999;
+    border-right: 1px solid #999;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.description p
+{
+    font: 14px Arial, sans-serif;
+    text-align: left;
+    margin: 1px 0;
+}
+
+label:hover ~ .description
+{
+    /*display: block;*/
+    visibility: visible;
+}
+
+label:hover > img
+{
+    width: 340px;
+    border-top: 1px solid #999;
+    border-right: 1px solid #999;
+    border-left: 1px solid #999;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+input[name='photo']:checked + label img
+{
+    z-index: 3;
+    width: 500px;
+    position: relative;
+    /*top: 20%;*/
+    /*margin-left: 15%;*/
+    /*line-height: 500px;*/
+    text-align: center;
+}
+
+input[name='photo']
+{
     display: none;
+}
+
+input[name='photo']:checked ~ .description
+{
+    visibility: hidden;
+}
+
+input[name='photo']:checked ~ .darkness
+{
+    display: block;
     z-index: 2;
+}
+
+input[name='photo']:not(:checked) ~ .darkness
+{
+    display: none;
 }
 
 .darkness
