@@ -3,44 +3,141 @@ body
 {
     width: 100%;
     height: 100%;
-    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    font-family: 'Play', sans-serif;
+    line-height: 1.3em;
     margin: 0;
     padding: 0;
 }
 
+main
+{
+    height: 400px;
+    width: 100%;
+    margin-left: 20px;
+    display: inline;
+}
+
 input
 {
-    opacity: 0;
+    display: none;
 }
 
 img
 {
-    width: 100%;
+    width: 250px;
     vertical-align: bottom;
     z-index: 1;
     position: relative;
 }
 
+.slide
+{
+    margin-left: -20px;
+    /*width: 1200px;*/
+}
+
+.firstSlide
+{
+    margin-left: 120px;
+}
+
 .slider
 {
+    position: absolute;
+    top: 550px;
+    left: 600px;
     text-align: center;
+    vertical-align: bottom;
 }
 
 .description
 {
-    visibility: hidden;
+    display: none;
     vertical-align: top;
     width: 100%;
+    background-color: #fff;
+    margin-top: 10px;
+    text-align: left;
 }
 
-img.bigPic
+.bigPic
 {
     display: none;
 }
 
-div:first-child
+.peas
 {
-    padding-left: 1%;
+    width: 60%;
+}
+
+.label
+{
+    width: 128px;
+    height: 300px;
+}
+
+label.pointer
+{
+    margin-top: 100px;
+    margin-right: 0;
+    vertical-align: bottom;
+    height: 115px;
+    width: 128px;
+    background: url('https://www.dropbox.com/s/v9i240pqa2x8baz/121.png?dl=1') no-repeat;
+    background-size: 256px 256px;
+    float: right;
+}
+
+label.left
+{
+    background-position: 0 0;
+}
+
+label.left:hover
+{
+    background-position: -128px 0;
+}
+
+label.right
+{
+    background-position: 0 -128px;
+}
+
+label.right:hover
+{
+    background-position: -128px -128px;
+}
+
+.back,
+.close
+{
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+.close
+{
+    background: url('http://bit.ly/1SLkxCs') no-repeat;
+    background-size: 30px;
+    position: fixed;
+    background-position: 0 0;
+    width: 30px;
+    height: 30px;
+    top: 20px;
+}
+
+.close:hover
+{
+    background-position: 0 -30px;
+    width: 30px;
+    height: 30px;
+}
+
+div.veg + div
+{
+    width: 0;
 }
 
 .slider label
@@ -54,10 +151,24 @@ div:first-child
     background: #ccc none repeat scroll 0% 0%;
 }
 
-div div
+div div.veg,
+div.veg:hover + div
 {
-    width: 20%;
-    margin-right: 4%;
+    width: 250px;
+    margin-right: 10px;
+    background-color: #fff;
+    vertical-align: top;
+    text-align: center;
+}
+
+div.veg:hover + div
+{
+    margin-right: 14px;
+}
+
+div.veg:hover > img
+{
+    width: 240px;
 }
 
 .firstSlide div,
@@ -75,21 +186,43 @@ img[tabindex='0']:focus ~ img.bigPic
     left: 0;
     bottom: 0;
     right: 0;
-    width: 400px;
+    width: 500px;
     margin: auto;
-    box-shadow: 4px 4px 20px #000, 0 0 0 500px rgba(191, 191, 191, .5);
     z-index: 10;
+}
+
+img[tabindex='0']:focus ~ .back
+{
+    position: fixed;
+    visibility: visible;
+    z-index: 9;
+    opacity: .7;
+    display: inline;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    margin: auto;
+}
+
+img[tabindex='0']:focus ~ .close
+{
+    position: fixed;
+    visibility: visible;
+    z-index: 9;
 }
 
 div.veg:hover > .description
 {
-    visibility: visible;
+    display: block;
 }
 
 div.veg:hover
 {
+    width: 330px;
     box-shadow: 2px 2px 5px 5px #ccc;
-    position: relative;
+    position: fixed;
     z-index: 2;
 }
 
@@ -100,9 +233,9 @@ input[value='third']:checked ~ .slider label.third
     background: #000 none repeat scroll 0% 0%;
 }
 
-input[value='first']:checked ~ main .firstSlide div,
-input[value='second']:checked ~ main .secondSlide div,
-input[value='third']:checked ~ main .thirdSlide div
+input[value='first']:checked ~ main .firstSlide div:not(.description),
+input[value='second']:checked ~ main .secondSlide div:not(.description),
+input[value='third']:checked ~ main .thirdSlide div:not(.description)
 {
     display: inline-block;
 }
