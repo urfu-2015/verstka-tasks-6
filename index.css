@@ -33,7 +33,6 @@ img
 .slide
 {
     margin-left: -20px;
-    /*width: 1200px;*/
 }
 
 .firstSlide
@@ -45,8 +44,7 @@ img
 {
     position: absolute;
     top: 550px;
-    left: 600px;
-    text-align: center;
+    left: 50%;
     vertical-align: bottom;
 }
 
@@ -54,15 +52,21 @@ img
 {
     display: none;
     vertical-align: top;
-    width: 100%;
+    width: 90%;
     background-color: #fff;
     margin-top: 10px;
     text-align: left;
+    padding: 2%;
 }
 
 .bigPic
 {
     display: none;
+}
+
+div.slide div.veg img.cucumber
+{
+    padding-top: 50px;
 }
 
 .peas
@@ -83,7 +87,7 @@ label.pointer
     vertical-align: bottom;
     height: 115px;
     width: 128px;
-    background: url('https://www.dropbox.com/s/v9i240pqa2x8baz/121.png?dl=1') no-repeat;
+    background: url('http://bit.ly/1O5TFvo') no-repeat;
     background-size: 256px 256px;
     float: right;
 }
@@ -140,6 +144,11 @@ div.veg + div
     width: 0;
 }
 
+.slide .veg img:first-child
+{
+    padding-top: 10px;
+}
+
 .slider label
 {
     vertical-align: bottom;
@@ -186,7 +195,9 @@ img[tabindex='0']:focus ~ img.bigPic
     left: 0;
     bottom: 0;
     right: 0;
-    width: 500px;
+    width: 50%;
+    max-width: 400px;
+    max-height: 500px;
     margin: auto;
     z-index: 10;
 }
@@ -215,7 +226,7 @@ img[tabindex='0']:focus ~ .close
 
 div.veg:hover > .description
 {
-    display: block;
+    display: inline-block;
 }
 
 div.veg:hover
