@@ -159,14 +159,16 @@ input[value="full"]:checked + .vegetable
 input[value="full"]:checked + .vegetable .img
 {
     border: 4px solid #712f4b;
-    height: 700px;
-    left: 100px;
+    height: 70%;
+    left: 20%;
     margin: auto;
     max-width: 1010px;
-    width: 70%;
+    width: auto;
+    max-height: 70%;
+    margin-bottom: 100px;
     position: absolute;
     right: 100px;
-    top: 150px;
+    top: 20%;
 }
 
 .section
@@ -210,10 +212,10 @@ input[value="full"]:checked + .vegetable .min-lable::after
     background-image: url(./close.png);
     content: "";
     height: 60px;
-    position: absolute;
-    right: 100px;
-    top: 50px;
     width: 60px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
 }
 
 .next
