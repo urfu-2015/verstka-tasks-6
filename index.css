@@ -4,16 +4,16 @@ h1
     text-align: center;
 }
 
+.text
+{
+    font-size: 13px;
+}
+
 .img,
 .text,
 .close
 {
     position: relative;
-}
-
-.big
-{
-    width: 100%;
 }
 
 .text,
@@ -39,6 +39,7 @@ article
     overflow: visible;
     position: relative;
     padding: 8px;
+    padding-top: 0;
     width: 230px;
     left: 0;
     display: none;
@@ -118,10 +119,15 @@ a:focus ~ .big
 
 a:focus ~ .big img
 {
-    top: 5%;
     width: 35%;
-    position: relative;
+    position: fixed;
     z-index: 6;
+    margin: auto;
+    padding: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
 }
 
 a:focus ~ a .close
