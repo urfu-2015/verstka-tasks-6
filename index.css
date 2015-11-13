@@ -152,7 +152,7 @@ input.photo:checked ~ label.cross
 label.cross
 {
     background-image: url(img/close.png);
-    opacity: 0.5;
+    opacity: .5;
     background-size: contain;
     width: 50px;
     height: 50px;
@@ -177,7 +177,7 @@ input.cross:checked ~ .darkness
     width: 100%;
     height: 100%;
     background-color: black;
-    opacity: 0.7;
+    opacity: .7;
     position: fixed;
     top: 0;
     left: 0;
