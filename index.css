@@ -24,7 +24,7 @@ input[name='switch'] + input[name='switch'] + input[name='switch']
 .wrappers
 {
     width: 100%;
-    height: 660px;
+    height: 650px;
     position: relative;
     margin-top: 50px;
     text-align: center;
@@ -64,7 +64,7 @@ img
 .description
 {
     visibility: hidden;
-    padding: 3px;
+    padding: 7px;
     border-bottom: 1px solid #999;
     border-left: 1px solid #999;
     border-right: 1px solid #999;
@@ -76,7 +76,7 @@ img
 {
     font: 14px Arial, sans-serif;
     text-align: left;
-    margin: 1px 0;
+    margin: 5px 0 0;
 }
 
 label:hover ~ .description
@@ -92,6 +92,7 @@ label:hover > img
     border-left: 1px solid #999;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    cursor: pointer;
 }
 
 input.photo:checked + label img
@@ -100,11 +101,34 @@ input.photo:checked + label img
     width: 500px;
     border: none;
     text-align: center;
+    cursor: auto;
+    margin-top: 50px;
 }
 
 input.photo
 {
     display: none;
+}
+
+/*костыли костыльные*/
+.wrappers .vegetable-card:first-of-type input.photo:checked + label img
+{
+    margin-left: 125%;
+}
+
+.wrappers .vegetable-card:nth-of-type(2) input.photo:checked + label img
+{
+    margin-left: 30%;
+}
+
+.wrappers .vegetable-card:nth-of-type(3) input.photo:checked + label img
+{
+    margin-left: -80%;
+}
+
+.wrappers .vegetable-card:last-of-type input.photo:checked + label img
+{
+    margin-left: -275%;
 }
 
 input.photo:checked ~ .description
@@ -122,11 +146,12 @@ input.photo:checked ~ label.cross
 {
     display: block;
     z-index: 3;
+    cursor: pointer;
 }
 
 label.cross
 {
-    background-image: url("img/close.png");
+    background-image: url(img/close.png);
     opacity: 0.5;
     background-size: contain;
     width: 50px;
