@@ -1,3 +1,8 @@
+main
+{
+    margin-left: 95px;
+}
+
 h1
 {
     font-family: Dancing Script, cursive;
@@ -67,18 +72,37 @@ article
     display: block;
 }
 
-#first:checked ~ .one,
-#second:checked ~ .two,
-#third:checked ~ .three
+#first:checked ~ main .one,
+#first:checked ~ label .right,
+#second:checked ~ main .two,
+#second:checked ~ label .left,
+#second:checked ~ label .right,
+#third:checked ~ main .three,
+#third:checked ~ label .left
 {
     display: inline-block;
 }
 
 input
 {
-    position: relative;
+    margin: 0;
+    position: absolute;
+    top: 400px;
+}
+
+#first
+{
+    left: 48%;
+}
+
+#second
+{
     left: 50%;
-    top: 340px;
+}
+
+#third
+{
+    left: 52%;
 }
 
 article:hover
@@ -138,4 +162,50 @@ a:focus ~ a .close
     right: 10px;
     z-index: 6;
     width: 50px;
+}
+
+#right,
+.right
+{
+    position: fixed;
+    margin: 0 30px;
+    margin-top: 135px;
+    top: 6%;
+    right: 10px;
+    display: none;
+}
+
+#left,
+.left
+{
+    position: fixed;
+    margin: 0 30px;
+    margin-top: 135px;
+    top: 6%;
+    left: 10px;
+    display: none;
+}
+
+.left,
+.right
+{
+    width: 30px;
+}
+
+#left:checked + label ~ main .one,
+#right:checked + label ~ main .three
+{
+    display: inline-block;
+}
+
+#left:checked + label ~ main .three,
+#right:checked + label ~ main .one
+{
+    display: none;
+}
+
+#left:checked + label,
+#right:checked + label
+{
+    display: none;
 }
