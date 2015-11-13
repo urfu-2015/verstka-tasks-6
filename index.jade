@@ -14,7 +14,7 @@ mixin generate-image-group(n)
             - var w = Math.floor(Math.random() * (min - max) + max);
             - var h = Math.floor(Math.random() * (min - max) + max);
             - var id = i + '-' + n
-            - var src = 'https://placeholdit.imgix.net/~text?txtsize=33&txt='+ i + '_' + n +'&w='+ w +'&h=' + h;
+            - var src = 'http://placekitten.com/'+ w + '/' + h;
             .fake-image
                 img(alt="image preview", src!=src)
                 .image-info.lightbox(id="image-"+id)
