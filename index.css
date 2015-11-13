@@ -62,7 +62,7 @@ h1
 .slider 
 {
     text-align: center;
-    margin: auto; 
+    margin: auto;
 }
 input 
 {
@@ -131,8 +131,8 @@ input
 {
     margin-left:-200%;
 }
-#slide1:checked ~ .controls label:nth-child(2), 
-#slide2:checked ~ .controls label:nth-child(3), 
+#slide1:checked ~ .controls label:nth-child(2),
+#slide2:checked ~ .controls label:nth-child(3),
 #slide3:checked ~ .controls label:nth-child(1)
 {
     -webkit-transform: scale(-1, 1);
@@ -152,7 +152,7 @@ input
 #slide2:checked ~ .active label:nth-child(2),
 #slide3:checked ~ .active label:nth-child(3)
 {
-    background: #116062;;
+    background: #116062;
 }
 .modal
 {
@@ -163,7 +163,7 @@ input
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0,0,0, 0.7);
+    background: rgba(0,0,0, .7);
     z-index: 10;
     -webkit-transition: opacity 500ms ease-in;
     opacity: 0;
@@ -179,13 +179,13 @@ input
     margin-top: 150px;
     z-index: 15;
 }
-.modal a[href="#close"]
+.modal a[href='close']
 {
     position: absolute;
     right: 0;
     top: 0;
 }
-.modal a[href="#close"]:after 
+.modal a[href='#close']:after 
 {
     content: 'X';
     display: block;
@@ -198,6 +198,7 @@ input
     color: #fff;
     font: 50px 'Dosis', sans-serif;
 }
-.modal a[href="#close"]:hover:after {
+.modal a[href='#close']:hover:after 
+{
     -webkit-transform: scale(1.1,1.1);
 }
