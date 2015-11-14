@@ -9,6 +9,11 @@ body
     margin: 0 auto;
 }
 
+.cards
+{
+    height: 350px;
+}
+
 .card
 {
     display: none;
