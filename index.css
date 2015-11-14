@@ -1,4 +1,4 @@
-*
+body
 {
     margin: 0;
     padding: 0;
@@ -37,12 +37,6 @@
 .wrapper > input
 {
     display: none;
-}
-.slides
-{
-    height: inherit;
-    position: absolute;
-    width: inherit;
 }
 .wrapper .controls
 {
@@ -105,9 +99,9 @@
 .slides
 {
     height: inherit;
+    width: inherit;
     opacity: 0;
     position: absolute;
-    width: inherit;
     z-index: 0;
     -webkit-transform: scale(1.5);
     -moz-transform: scale(1.5);
@@ -160,7 +154,7 @@
     display: inline-block;
 }
 
-.modalDialog
+.modal-dialog
 {
     text-align: center;
     position: fixed;
@@ -177,7 +171,7 @@
     transition: opacity 400ms ease-in;
     pointer-events: none;
 }
-.modalDialog:target
+.modal-dialog:target
 {
     opacity:1;
     pointer-events: auto;
