@@ -9,12 +9,6 @@ body
     margin: 0 auto;
 }
 
-/*.cards*/
-/*{*/
-/*display: table-cell;*/
-/*vertical-align: middle;*/
-/*}*/
-
 .card
 {
     display: none;
