@@ -10,7 +10,7 @@ mixin generate-slider(n, reverse)
 mixin generate-image-group(n)
     .image-group(class='image-group-' + n)
         - for (var i=0; i<4; i++)
-            - var min = 2000, max = 3000;
+            - var min = 1000, max = 2000;
             - var w = Math.floor(Math.random() * (min - max) + max);
             - var h = Math.floor(Math.random() * (min - max) + max);
             - var id = i + '-' + n
