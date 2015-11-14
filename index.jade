@@ -14,7 +14,7 @@ mixin generate-image-group(n)
             - var w = Math.floor(Math.random() * (min - max) + max);
             - var h = Math.floor(Math.random() * (min - max) + max);
             - var id = i + '-' + n
-            - var src = 'http://placekitten.com/'+ w + '/' + h;
+            - var src = '//pipsum.com/'+ w + 'x' + h + '.jpg';
             .fake-image
                 img(alt="image preview", src!=src)
                 .image-info.lightbox(id="image-"+id)
