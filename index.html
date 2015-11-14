@@ -6,65 +6,83 @@
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-    <input type="radio" name="point" id="slide1" checked>
-    <input type="radio" name="point" id="slide2">
-    <input type="radio" name="point" id="slide3">
-    <input type="radio" name="point" id="slide4">
-    <div class="controls">
-		<label for="slide1"></label>
-		<label for="slide2"></label>
-		<label for="slide3"></label>
-		<label for="slide4"></label>
-	</div>
-    <div class="slides slide1">
-        <img src="http://static.diary.ru/userdir/6/6/2/0/662044/78270223.jpg" alt="Морковь">
-        <dl class="text">
-            <dt>Морковь</dt><dd>—двулетнее растение (редко одно- или многолетнее),
-            в первый год жизни образует розетку листьев и корнеплод,
-            во второй год жизни — семенной куст и семена.</dd>
-        </dl>
+    <input type="radio" name="point" class="radios slide1" checked>
+    <input type="radio" name="point" class="radios slide2">
+    <input type="radio" name="point" class="radios slide3">
     </div>
-    <div class="slides slide2">
-        <img src="http://s00.yaplakal.com/pics/pics_original/2/8/0/1526082.jpg" alt="Помидор">
-        <dl class="text">
-            <dt>Томат</dt><dd>—однолетнее или
+    <div class="slides img1">
+        <img class="picture" src="http://static.diary.ru/userdir/6/6/2/0/662044/78270223.jpg" tabindex = "0" alt="Морковь">
+        <span class="text"> Морковь — двулетнее растение (редко одно- или многолетнее),
+                в первый год жизни образует розетку листьев и корнеплод,
+                во второй год жизни — семенной куст и семена.
+        </span>
+        <div class="blackout">
+        </div>
+        <img class="closer" src="http://img571.imageshack.us/img571/759/closer.png" alt="Крестик">
+    </div>
+    <div class="slides img2">
+        <img class="picture" src="http://s00.yaplakal.com/pics/pics_original/2/8/0/1526082.jpg" tabindex = "0" alt="Помидор">
+        <span class="text">Томат—однолетнее или
             многолетнее травянистое растение, вид рода Паслён (Solanum)
             семейства Паслёновые (Solanaceae). Возделывается как овощная культура.
-            Плод томата (ягода) в разговорной речи называется помидор.</dd>
-        </dl>
+            Плод томата (ягода) в разговорной речи называется помидор.
+        </span>
+        <div class="blackout">
+        </div>
+        <img class="closer" src="http://img571.imageshack.us/img571/759/closer.png" alt="Крестик">
     </div>
-    <div class="slides slide3">
+    <div class="slides img3">
         <img src="http://fotoninja.nl/data/uploads/posts_resized/and-not-a-single-fuck-was-given-that-day-1360008334.jpg"
-            alt="Капуста">
-        <dl class="text">
+            alt="Капуста" tabindex = "0" class='picture'>
+        <span class="text">
+        <dl>
             <dt>Капуста</dt><dd>—двулетнее растение, сельскохозяйственная культура;
             вид рода Капуста (лат. Brassica) семейства Капустные (Крестоцветные).</dd>
         </dl>
+        </span>
+        <div class="blackout">
+        </div>
+        <img class="closer" src="http://img571.imageshack.us/img571/759/closer.png" alt="Крестик">
     </div>
-    <div class="slides slide4">
-        <img src="http://cs540108.vk.me/c540104/v540104799/38a9/QayRxzWq37s.jpg" alt="Цветная капуста">
-        <dl class="text">
+    <div class="slides img4">
+        <img class='picture' src="http://cs540108.vk.me/c540104/v540104799/38a9/QayRxzWq37s.jpg" tabindex = "0" alt="Цветная капуста">
+        <span class="text">
+        <dl>
             <dt>Цветная капуста</dt><dd>—распространённая овощная культура,
             один из культурных сортов вида Капуста огородная.
             Относится к сортовой группе botrytis, как и романеско.</dd>
         </dl>
+        </span>
+        <div class="blackout">
+        </div>
+        <img class="closer" src="http://img571.imageshack.us/img571/759/closer.png" alt="Крестик">
     </div>
-    <div class="slides slide5">
-        <img src="http://cs10425.vkontakte.ru/u5026944/149126737/y_8627c226.jpg" alt="Баклажан">
-        <dl class="text">
+    <div class="slides img5">
+        <img class='picture' src="http://cs10425.vkontakte.ru/u5026944/149126737/y_8627c226.jpg" tabindex = "0" alt="Баклажан">
+        <span class="text">
+        <dl>
             <dt>Баклажан</dt><dd>—вид многолетних травянистых растений рода Паслён (Solanum).
             Известен также под названием бадриджан (редко бубриджан),
             а в южных районах России и Украины баклажаны называют синенькими</dd>
         </dl>
+        </span>
+        <div class="blackout">
+        </div>
+        <img class="closer" src="http://img571.imageshack.us/img571/759/closer.png" alt="Крестик">
     </div>
-    <div class="slides slide6">
-        <img src="http://ckyka.ru/uploads/posts/2009-07/1248686758_kot_00018.jpg" alt="Перец">
-        <dl class="text">
+    <div class="slides img6">
+        <img class="picture" src="http://ckyka.ru/uploads/posts/2009-07/1248686758_kot_00018.jpg" tabindex = "0" alt="Перец">
+        <span class="text">
+        <dl>
             <dt>Перец</dt><dd>—вид однолетних травянистых растений рода Capsicum
             семейства Паслёновые, или его плоды. Сельскохозяйственная культура.
             Сорта перца стручкового делят на сладкие и горькие,
             последним острый вкус придаёт алкалоид капсаицин. </dd>
         </dl>
+        </span>
+        <div class="blackout">
+        </div>
+        <img class="closer" src="http://img571.imageshack.us/img571/759/closer.png" alt="Крестик">
     </div>
     </body>
 </html>
