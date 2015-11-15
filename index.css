@@ -43,12 +43,10 @@ section
 .box:hover .discription
 {
     display: block;
-    background-color: rgba(72,209,204,.4);
-    border: 5px solid #0ff;
     white-space: normal;
 }
 
-img[tabindex='0']:focus 
+img:focus 
 {
     z-index: 1;
     position: fixed;
@@ -61,7 +59,7 @@ img[tabindex='0']:focus
     margin: auto;
 }
 
-img[tabindex='0']:focus ~ .paranja
+img:focus ~ .paranja
 {
     display: block;
 }
@@ -76,6 +74,18 @@ img[tabindex='0']:focus ~ .paranja
     height: 100%;
     z-index: -1;
     display: none;
+}
+
+.mark
+{
+    position: absolute;
+    left: 90%;
+    top: 10%;
+    background-image: url("http://s1.iconbird.com/ico/0612/GooglePlusInterfaceIcons/w128h1281338911337cross.png");
+    width: 120px;
+    height:120px;
+    color: #fff;
+    border: 0;
 }
 
 input
