@@ -89,7 +89,7 @@ body
 }
 .left-arrow:hover
 {
-    cursor: pointer
+    cursor: pointer;
 }
 .right-arrow:hover
 {
@@ -113,7 +113,9 @@ body
     -o-transform: scale(1);
     transform: scale(1);
 }
-#slide_1:checked ~ .slider >  .l-1, .l-2, .r-3
+#slide_1:checked ~ .slider > .l-1,
+.l-2,
+.r-3
 {
     display: none;
 }
@@ -129,7 +131,8 @@ body
 {
     display: block;
 }
-#slide_3:checked ~ .slider > .r-2, .r-3
+#slide_3:checked ~ .slider > .r-2,
+.r-3
 {
     display: none;
 }
