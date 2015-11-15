@@ -1,104 +1,164 @@
 main
 {
-    margin: 100px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: auto;
+}
+
+.grid
+{
+    width: 80vw;
+    height: calc((80vw - 128px)/4);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    min-width: 968px;
+}
+
+.grid,
+.arrow-block,
+.image-block
+{
+    box-sizing: border-box;
     text-align: center;
 }
 
-main > section,
-.group
+.arrow-block,
+.image-block
 {
-    display: none;
+    float: left;
 }
 
-.group:checked + section
+.image-block
 {
-    display: inline-block;
+    width: calc((80vw - 128px)/4);
+}
+
+.hidden
+{
+    opacity: 0;
 }
 
 .left-button,
 .right-button
 {
-    vertical-align: top;
-    position: relative;
-    top: 70px;
-    display: inline-block;
-    margin: 20px;
     width: 64px;
     height: 64px;
+    margin: 12vh 0;
+    cursor: pointer;
 }
 
 .left-button
 {
-    background: url('images/left-arrow(1).png');
-}
-
-.right-button
-{
-    background: url('images/right-arrow(1).png');
+    background: url('images/arrows.png') -128px 0;
 }
 
 .left-button:hover
 {
-    background: url('images/left-arrow.png');
+    background: url('images/arrows.png') 0 0;
+}
+
+.right-button
+{
+    background: url('images/arrows.png') -192px 0;
 }
 
 .right-button:hover
 {
-    background: url('images/right-arrow.png');
+    background: url('images/arrows.png') -64px 0;
 }
 
-p
+.group,
+.double-image,
+.description,
+.grid,
+.close-image
 {
     display: none;
-    text-align: left;
 }
 
-img
+.group:checked + .grid
 {
-    max-width: 100%;
-    vertical-align: middle;
-}
-
-.short-description
-{
-    width: 20%;
     display: inline-block;
-    position: relative;
 }
 
-.short-description input
+.description
+{
+    text-align: justify;
+}
+
+.gallery-image,
+.double-image
+{
+    max-width: 16vw;
+    min-width: 170px;
+}
+
+.close-image
+{
+    position: absolute;
+    z-index: 30;
+    top: 3%;
+    right: 3%;
+    min-width: 40px;
+    width: 40px;
+    height: 40px;
+}
+
+.image
+{
+    min-height: calc((80vw - 128px)/4);
+    min-width: 200px;
+}
+
+.image input
 {
     visibility: hidden;
+    position: absolute;
 }
 
-.short-description > img
+.image:hover input:not(:checked) + .expandable-block
 {
-    display: none;
-}
-
-.short-description:hover > img,
-input:checked ~ .full-description label .close-image
-{
-    display: inline;
-}
-
-.short-description:hover input:not(:checked) + .full-description
-{
-    position: fixed;
-    top: 100px;
+    position: absolute;
     z-index: 10;
-    width: 250px;
-    padding: 15px;
+    width: inherit;
+    padding: 10px;
     box-shadow: 2px 2px 7px rgba(0,0,0,.3);
     background-color: #fff;
+    margin: -10px;
+    min-width: 200px;
 }
 
-.short-description:hover input:not(:checked) + .full-description p
+.image:hover input:not(:checked) + .expandable-block p
 {
     display: inline-block;
+    min-width: 180px;
+    line-height: normal;
 }
 
-input:checked ~ .full-description
+.image:hover input:not(:checked) + .expandable-block label .gallery-image
+{
+    cursor: zoom-in;
+}
+
+input:checked ~ .expandable-block label .gallery-image
+{
+    cursor: zoom-out;
+}
+
+input:checked ~ .expandable-block label .close-image
+{
+    display: inline;
+    cursor: pointer;
+}
+
+input:checked ~ .expandable-block
 {
     position: fixed;
     display: inline-block;
@@ -107,16 +167,29 @@ input:checked ~ .full-description
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,.3);
+    background-color: rgba(0,0,0,.6);
 }
 
-.close-image
+input:checked ~ .expandable-block label
 {
-    display: none;
+    text-align: center;
+    line-height: 100vh;
+}
+
+input:checked ~ .expandable-block .gallery-image
+{
+    max-width: 50vw;
+    max-height: 90vh;
     position: absolute;
-    z-index: 30;
-    top: 3%;
-    right: 3%;
-    width: 40px;
-    height: 40px;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+input:checked ~ .double-image
+{
+    display: inline-block;
+    text-align: center;
 }
