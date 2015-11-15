@@ -9,11 +9,13 @@
     </head>
     <body>
         <section class="wrapper">
-            <h1 class="title">Лавочка у "У Бабули"</h1>
+            <h1 class="title">Лавочка "У Бабули"</h1>
             <input type="radio" name="point" id="slide_1" checked>
             <input type="radio" name="point" id="slide_2">
             <input type="radio" name="point" id="slide_3">
             <div class="slider">
+                <label for="slide_1" class="left-arrow l-1"><img class="arrow" src="./img/left.png"></label>
+                <label for="slide_2" class="left-arrow l-2"><img class="arrow" src="./img/left.png"></label>
                 <article class="slides block_1">
                     <section class="vegetable">
                         <a href="#openModal_1">
@@ -104,8 +106,8 @@
                         </p>
                     </section>
                 </article>
-                <section class="slides block_3">
-                    <article class="vegetable">
+                <article class="slides block_3">
+                    <section class="vegetable">
                         <a href="#openModal_9">
                             <img class="slide" src="./img/hur.png" alt="img">
                         </a>
@@ -114,8 +116,8 @@
                             <br>
                             Тем более хурма очень вкусная :3.
                         </p>
-                    </article>
-                    <article class="vegetable">
+                    </section>
+                    <section class="vegetable">
                         <a href="#openModal_10">
                             <img class="slide" src="./img/brok.png" alt="img">
                         </a>
@@ -124,8 +126,8 @@
                             <br>
                             Пожалуй, ничего...
                         </p>
-                    </article>
-                    <article class="vegetable">
+                    </section>
+                    <section class="vegetable">
                         <a href="#openModal_11">
                             <img class="slide" src="./img/red.png" alt="img">
                         </a>
@@ -134,8 +136,8 @@
                             <br>
                             Сомневаюсь, что её кто-то любит...
                         </p>
-                    </article>
-                    <article class="vegetable">
+                    </section>
+                    <section class="vegetable">
                         <a href="#openModal_12">
                             <img class="slide" src="./img/mork.png" alt="img">
                         </a>
@@ -145,13 +147,10 @@
                             Говорят, что для зрения очень полезная, а мы программисты - с каждым
                             днём видим всё хуже и хуже...
                         </p>
-                    </article>
-                </section>
-            </div>
-            <div class="controls">
-                <label for="slide_1"></label>
-                <label for="slide_2"></label>
-                <label for="slide_3"></label>
+                    </section>
+                </article>
+                <label for="slide_2" class="right-arrow r-2"><img class="arrow" src="./img/right.png"></label>
+                <label for="slide_3" class="right-arrow r-3"><img class="arrow" src="./img/right.png"></label>
             </div>
         </section>
         <div id="openModal_1" class="modalDialog">
