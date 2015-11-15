@@ -81,7 +81,7 @@ img:focus ~ .paranja
     position: absolute;
     left: 90%;
     top: 10%;
-    background-image: url("http://s1.iconbird.com/ico/0612/GooglePlusInterfaceIcons/w128h1281338911337cross.png");
+    background-image: url('http://s1.iconbird.com/ico/0612/GooglePlusInterfaceIcons/w128h1281338911337cross.png');
     width: 120px;
     height:120px;
     color: #fff;
