@@ -83,11 +83,14 @@ article
     display: inline-block;
 }
 
-input
+#first,
+#second,
+#third
 {
     margin: 0;
     position: absolute;
     top: 400px;
+    display: none;
 }
 
 #first
@@ -165,25 +168,25 @@ a:focus ~ a .close
 }
 
 #right,
-.right
+#right + label,
+#left,
+#left + label
 {
-    position: fixed;
-    margin: 0 30px;
-    margin-top: 135px;
-    top: 6%;
-    right: 10px;
-    display: none;
+    position: absolute;
+    margin-top: 70px;
+    display: block;
 }
 
 #left,
-.left
+#left + label
 {
-    position: fixed;
-    margin: 0 30px;
-    margin-top: 135px;
-    top: 6%;
-    left: 10px;
-    display: none;
+    margin-left:60px;
+}
+
+#right,
+#right + label
+{
+    margin-left: 1120px;
 }
 
 .left,
@@ -204,6 +207,8 @@ a:focus ~ a .close
     display: none;
 }
 
+#left,
+#right,
 #left:checked + label,
 #right:checked + label
 {
