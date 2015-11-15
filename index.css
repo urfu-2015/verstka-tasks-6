@@ -1,3 +1,14 @@
+@font-face
+{
+    font-family: 'SourceSansProLight';
+    src: url('fonts/SourceSansProLight/SourceSansProLight.eot'),
+    url('fonts/SourceSansProLight/SourceSansProLight.eot?#iefix') format('embedded-opentype'),
+    url('fonts/SourceSansProLight/SourceSansProLight.woff') format('woff'),
+    url('fonts/SourceSansProLight/SourceSansProLight.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
 main
 {
     width: 100%;
@@ -6,6 +17,7 @@ main
     top: 0;
     left: 0;
     overflow: auto;
+    -webkit-font-smoothing: antialiased;
 }
 
 .grid
@@ -38,11 +50,6 @@ main
 .image-block
 {
     width: calc((80vw - 128px)/4);
-}
-
-.hidden
-{
-    opacity: 0;
 }
 
 .left-button,
@@ -90,6 +97,7 @@ main
 
 .description
 {
+    font: 15px 'SourceSansProLight', sans-serif;
     text-align: justify;
 }
 
@@ -192,4 +200,10 @@ input:checked ~ .double-image
 {
     display: inline-block;
     text-align: center;
+}
+
+.hidden
+{
+    opacity: 0;
+    cursor: default;
 }
