@@ -76,25 +76,25 @@ img:focus ~ .cover
 
 input
 {
-    position: fixed;
-    left: 50%;
-    top: 90%;
+    position: relative;
+    left:600px;
+    top:370px;
     z-index: 2;
 }
 
-.slide-two
+input:nth-child(2)
 {
     margin-left: 30px;
 }
 
-.slide-three
+input:nth-child(3)
 {
-    margin-left: 54px;
+    margin-left: 40px;
 }
 
-.slide-four
+input:nth-child(4)
 {
-    margin-left: 79px;
+    margin-left: 50px;
 }
 
 input[value='2']:checked ~ section .box
