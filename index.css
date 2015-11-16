@@ -4,7 +4,7 @@ body
 }
 
 .invisible-p,
-input[name="nav"],
+input[name='nav'],
 .invisible-input
 {
     display: none;
@@ -115,7 +115,6 @@ input.vegetables:checked ~ label.exit
     position: relative;
     transition: all 1s;
 }
-
 
 input:nth-child(1):checked ~ .label-nav .shift-left,
 input:nth-child(1):checked ~ .label-nav .shift-right:not([for='second-nav']),
