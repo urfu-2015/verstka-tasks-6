@@ -71,11 +71,11 @@ input#page3:checked ~ #page_third
 .small:hover
 {
     display: block;
-    top: -0px;
+    top: 0px;
     width: 30%;
     z-index: 1;
 }
-.card >.big
+.card > .big
 {
     width: 100%;
 }
@@ -86,7 +86,8 @@ input#page3:checked ~ #page_third
     position: absolute;
 }
 
-.small:hover + .card, .card:hover
+.small:hover + .card,
+.card:hover
 {
     z-index: 2;
     top: -9px;
