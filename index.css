@@ -4,7 +4,7 @@ body
 }
 
 .invisible-p,
-.invisible-nav,
+input[name="nav"],
 .invisible-input
 {
     display: none;
@@ -116,35 +116,35 @@ input.vegetables:checked ~ label.exit
     transition: all 1s;
 }
 
-.label-nav label
+
+input:nth-child(1):checked ~ .label-nav .shift-left,
+input:nth-child(1):checked ~ .label-nav .shift-right:not([for='second-nav']),
+input:nth-child(2):checked ~ .label-nav .shift-left:not([for='first-nav']),
+input:nth-child(2):checked ~ .label-nav .shift-right:not([for='third-nav']),
+input:nth-child(3):checked ~ .label-nav .shift-left:not([for='second-nav']),
+input:nth-child(3):checked ~ .label-nav .shift-right:not([for='fourth-nav']),
+input:nth-child(4):checked ~ .label-nav .shift-left:not([for='third-nav']),
+input:nth-child(4):checked ~ .label-nav .shift-right
 {
     display: none;
 }
 
-input.first-nav:checked ~ .label-nav label:nth-child(4),
-input.second-nav:checked ~ .label-nav label:nth-child(4n+1),
-input.third-nav:checked ~ .label-nav label:nth-child(4n+2),
-input.fourth-nav:checked ~ .label-nav label:nth-child(3)
-{
-    display: block;
-}
-
-input.second-nav:checked ~ section .tile,
-input.second-nav:checked ~ section input
+input:nth-child(2):checked ~ section .tile,
+input:nth-child(2):checked ~ section input
 {
     left: -73%;
     transition: left 1s;
 }
 
-input.third-nav:checked ~ section .tile,
-input.third-nav:checked ~ section input
+input:nth-child(3):checked ~ section .tile,
+input:nth-child(3):checked ~ section input
 
 {
     left: -145.3%;
     transition: left 1s;
 }
 
-input.fourth-nav:checked ~ section .tile
+input:nth-child(4):checked ~ section .tile
 {
     left: -195%;
     transition: left 1s;
