@@ -113,36 +113,31 @@ body
     -o-transform: scale(1);
     transform: scale(1);
 }
-#slide_1:checked ~ .slider > .l-1,
-.l-2,
-.r-3
+#slide_1:checked ~ .slider >  .l-1,
+#slide_1:checked ~ .slider >  .l-2,
+#slide_1:checked ~ .slider >  .r-3
 {
     display: none;
 }
-#slide_2:checked ~ .slider > .l-1
-{
-    display: block;
-}
+#slide_2:checked ~ .slider > .l-2,
 #slide_2:checked ~ .slider > .r-2
 {
     display: none;
 }
+#slide_2:checked ~ .slider > .l-1,
 #slide_2:checked ~ .slider > .r-3
 {
     display: block;
 }
+#slide_3:checked ~ .slider > .l-1,
 #slide_3:checked ~ .slider > .r-2,
-.r-3
+#slide_3:checked ~ .slider > .r-3
 {
     display: none;
 }
 #slide_3:checked ~ .slider > .l-2
 {
     display: block;
-}
-#slide_3:checked ~ .slider > .l-1
-{
-    display: none;
 }
 .vegetable:hover
 {
