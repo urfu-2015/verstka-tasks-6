@@ -113,9 +113,9 @@ body
     -o-transform: scale(1);
     transform: scale(1);
 }
-#slide_1:checked ~ .slider >  .l-1,
-#slide_1:checked ~ .slider >  .l-2,
-#slide_1:checked ~ .slider >  .r-3
+#slide_1:checked ~ .slider > .l-1,
+#slide_1:checked ~ .slider > .l-2,
+#slide_1:checked ~ .slider > .r-3
 {
     display: none;
 }
