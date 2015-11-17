@@ -58,7 +58,7 @@ h1
     display: block;
 }
 
-input[name="display-page"]:checked + .page
+input[name='display-page']:checked + .page
 {
     display: block;
 }
@@ -117,19 +117,19 @@ input[name="display-page"]:checked + .page
     z-index: 100;
 }
 
-input[name="display-img"]:checked ~ .full-img
+input[name='display-img']:checked ~ .full-img
 {
     display: inline-block;
     text-align: center;
 }
 
-input[name="display-img"]:checked ~ .full-img img
+input[name='display-img']:checked ~ .full-img img
 {
     max-width: 70%;
     height: auto;
 }
 
-input[name="display-img"]:checked ~ .blackout
+input[name='display-img']:checked ~ .blackout
 {
     position: fixed;
     top: 0;
@@ -141,13 +141,13 @@ input[name="display-img"]:checked ~ .blackout
     opacity: .6;
 }
 
-input[name="display-img"]:checked ~ .full-img .label-img
+input[name='display-img']:checked ~ .full-img .label-img
 {
     display: block;
 }
 
-input[class="radio close"]:checked ~ .full-img,
-input[class="radio close"]:checked ~ .blackout
+input[class='radio close']:checked ~ .full-img,
+input[class='radio close']:checked ~ .blackout
 {
     display: none;
 }
