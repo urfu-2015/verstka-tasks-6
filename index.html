@@ -8,316 +8,399 @@
     <body>
         <main>
             <header><h1>Осенняя ярмарка</h1></header>
-            <section>
+            <section class="gallery">
                 <input type="radio" name="display-page" id="display-page1" class="radio" checked>
-                <input type="radio" name="display-page" id="display-page2" class="radio">
-                <input type="radio" name="display-page" id="display-page3" class="radio">
-                <article id="page1">
-                    <div class="image-card">
-                        <a href="#carrot"><img src="img/1.jpg"></a>
-                        <div class="full-img" id="carrot">
+                <article class="page" id="page1">
+                    <div class="wrap">
+                        <div class="image-card">
+                            <label for="display-img1" class="label-img">
+                                <img src="img/1.jpg" class="small-img">
+                            </label>
+                            <p>
+                                В ме&shy;ди&shy;цине мор&shy;ковь при&shy;ме&shy;ня&shy;ет&shy;ся при
+                                ги&shy;по-
+                                и ави&shy;та&shy;ми&shy;но&shy;зах. Спо&shy;соб&shy;ству&shy;ет
+                                эпи&shy;те&shy;ли&shy;за&shy;ции, ак&shy;ти&shy;ви&shy;ру&shy;ет
+                                внут&shy;ри&shy;кле&shy;точ&shy;ные
+                                окисли&shy;тель&shy;но-вос&shy;ста&shy;но&shy;ви&shy;тель&shy;ные
+                                про&shy;цес&shy;сы, ре&shy;гу&shy;ли&shy;ру&shy;ет угле&shy;вод&shy;ный
+                                об&shy;мен.
+                            </p>
+                            <p>
+                                Се&shy;ме&shy;на ис&shy;поль&shy;зу&shy;ют&shy;ся для
+                                по&shy;лу&shy;че&shy;ния
+                                ле&shy;кар&shy;ствен&shy;ных средств, на&shy;при&shy;мер,
+                                да&shy;у&shy;ка&shy;ри&shy;на, об&shy;ла&shy;да&shy;ю&shy;ще&shy;го
+                                спаз&shy;мо&shy;ли&shy;ти&shy;че&shy;ским дей&shy;стви&shy;ем, сход&shy;ным с
+                                дей&shy;стви&shy;ем па&shy;па&shy;ве&shy;ри&shy;на и кел&shy;ли&shy;на,
+                                рас&shy;ши&shy;ря&shy;ет ко&shy;ро&shy;нар&shy;ные со&shy;су&shy;ды;
+                                при&shy;ме&shy;ня&shy;ет&shy;ся при ате&shy;ро&shy;скле&shy;ро&shy;зе,
+                                ко&shy;ро&shy;нар&shy;ной недо&shy;ста&shy;точ&shy;но&shy;сти с
+                                яв&shy;ле&shy;ни&shy;я&shy;ми сте&shy;но&shy;кар&shy;дии.
+                            </p>
+                        </div>
+                        <input type="radio" name="display-img" id="display-img1" class="radio">
+                        <label for="display-img1" class="label-img"></label>
+                        <input type="radio" name="display-img" id="close-img1" class="radio close">
+                        <div class="full-img">
                             <img src="img/1.jpg">
-                            <a href="#close">X</a>
+                            <label for="close-img1" class="label-close">X</label>
                         </div>
                         <div class="blackout"></div>
-                        <p>
-                            В ме&shy;ди&shy;цине мор&shy;ковь при&shy;ме&shy;ня&shy;ет&shy;ся при ги&shy;по-
-                            и ави&shy;та&shy;ми&shy;но&shy;зах. Спо&shy;соб&shy;ству&shy;ет
-                            эпи&shy;те&shy;ли&shy;за&shy;ции, ак&shy;ти&shy;ви&shy;ру&shy;ет
-                            внут&shy;ри&shy;кле&shy;точ&shy;ные
-                            окисли&shy;тель&shy;но-вос&shy;ста&shy;но&shy;ви&shy;тель&shy;ные
-                            про&shy;цес&shy;сы, ре&shy;гу&shy;ли&shy;ру&shy;ет угле&shy;вод&shy;ный
-                            об&shy;мен.
-                        </p>
-                        <p>
-                            Се&shy;ме&shy;на ис&shy;поль&shy;зу&shy;ют&shy;ся для по&shy;лу&shy;че&shy;ния
-                            ле&shy;кар&shy;ствен&shy;ных средств, на&shy;при&shy;мер,
-                            да&shy;у&shy;ка&shy;ри&shy;на, об&shy;ла&shy;да&shy;ю&shy;ще&shy;го
-                            спаз&shy;мо&shy;ли&shy;ти&shy;че&shy;ским дей&shy;стви&shy;ем, сход&shy;ным с
-                            дей&shy;стви&shy;ем па&shy;па&shy;ве&shy;ри&shy;на и кел&shy;ли&shy;на,
-                            рас&shy;ши&shy;ря&shy;ет ко&shy;ро&shy;нар&shy;ные со&shy;су&shy;ды;
-                            при&shy;ме&shy;ня&shy;ет&shy;ся при ате&shy;ро&shy;скле&shy;ро&shy;зе,
-                            ко&shy;ро&shy;нар&shy;ной недо&shy;ста&shy;точ&shy;но&shy;сти с
-                            яв&shy;ле&shy;ни&shy;я&shy;ми сте&shy;но&shy;кар&shy;дии.
-                        </p>
                     </div>
-                    <div class="image-card">
-                        <a href="#cabbage"><img src="img/2.jpg"></a>
-                        <div class="full-img" id="cabbage">
+                    <div class="wrap">
+                        <div class="image-card">
+                            <label for="display-img2" class="label-img">
+                                <img src="img/2.jpg" class="small-img">
+                            </label>
+                            <p>
+                                В ка&shy;че&shy;стве ле&shy;кар&shy;ствен&shy;но&shy;го сы&shy;рья
+                                ис&shy;поль&shy;зу&shy;ют ли&shy;стья ка&shy;пу&shy;сты ого&shy;род&shy;ной.
+                                Они со&shy;дер&shy;жат ком&shy;плекс ви&shy;та&shy;ми&shy;нов, в том
+                                чис&shy;ле ви&shy;та&shy;мин C (до 70 мг%) и дру&shy;гие; ка&shy;ро&shy;тин,
+                                по&shy;ли&shy;са&shy;ха&shy;ри&shy;ды, бел&shy;ки, тио&shy;гли&shy;ко&shy;зид
+                                глю&shy;ко&shy;б&shy;рас&shy;си&shy;дин; бо&shy;га&shy;ты
+                                ми&shy;не&shy;раль&shy;ны&shy;ми со&shy;ля&shy;ми.
+                            </p>
+                            <p>
+                                Ле&shy;чеб&shy;ные свой&shy;ства ка&shy;пу&shy;сты бы&shy;ли
+                                из&shy;вест&shy;ны ещё древним рим&shy;ля&shy;нам. В на&shy;уч&shy;ную
+                                ме&shy;ди&shy;ци&shy;ну ка&shy;пу&shy;ста ого&shy;род&shy;ная бы&shy;ла
+                                вве&shy;де&shy;на по&shy;сле об&shy;на&shy;ру&shy;же&shy;ния
+                                про&shy;ти&shy;во&shy;яз&shy;вен&shy;но&shy;го фак&shy;то&shy;ра,
+                                на&shy;зван&shy;но&shy;го ви&shy;та&shy;ми&shy;ном U.
+                            </p>
+                        </div>
+                        <input type="radio" name="display-img" id="display-img2" class="radio">
+                        <input type="radio" name="display-img" id="close-img2" class="radio close">
+                        <div class="full-img">
                             <img src="img/2.jpg">
-                            <a href="#close">X</a>
+                            <label for="close-img2" class="label-close">X</label>
                         </div>
                         <div class="blackout"></div>
-                        <p>
-                            В ка&shy;че&shy;стве ле&shy;кар&shy;ствен&shy;но&shy;го сы&shy;рья
-                            ис&shy;поль&shy;зу&shy;ют ли&shy;стья ка&shy;пу&shy;сты ого&shy;род&shy;ной. Они
-                            со&shy;дер&shy;жат ком&shy;плекс ви&shy;та&shy;ми&shy;нов, в том чис&shy;ле
-                            ви&shy;та&shy;мин C (до 70 мг%) и дру&shy;гие; ка&shy;ро&shy;тин,
-                            по&shy;ли&shy;са&shy;ха&shy;ри&shy;ды, бел&shy;ки, тио&shy;гли&shy;ко&shy;зид
-                            глю&shy;ко&shy;б&shy;рас&shy;си&shy;дин; бо&shy;га&shy;ты
-                            ми&shy;не&shy;раль&shy;ны&shy;ми со&shy;ля&shy;ми.
-                        </p>
-                        <p>
-                            Ле&shy;чеб&shy;ные свой&shy;ства ка&shy;пу&shy;сты бы&shy;ли из&shy;вест&shy;ны
-                            ещё древним рим&shy;ля&shy;нам. В на&shy;уч&shy;ную ме&shy;ди&shy;ци&shy;ну
-                            ка&shy;пу&shy;ста ого&shy;род&shy;ная бы&shy;ла вве&shy;де&shy;на по&shy;сле
-                            об&shy;на&shy;ру&shy;же&shy;ния про&shy;ти&shy;во&shy;яз&shy;вен&shy;но&shy;го
-                            фак&shy;то&shy;ра, на&shy;зван&shy;но&shy;го ви&shy;та&shy;ми&shy;ном U.
-                        </p>
                     </div>
-                    <div class="image-card">
-                        <a href="#cauliflower"><img src="img/3.jpg"></a>
-                        <div class="full-img" id="cauliflower">
+                    <div class="wrap">
+                        <div class="image-card">
+                            <label for="display-img3" class="label-img">
+                                <img src="img/3.jpg" class="small-img">
+                            </label>
+                            <p>
+                                Бла&shy;го&shy;да&shy;ря тон&shy;кой кле&shy;точ&shy;ной струк&shy;ту&shy;ре
+                                ка&shy;пу&shy;ста цвет&shy;ная усва&shy;и&shy;ва&shy;ет&shy;ся
+                                ор&shy;га&shy;низ&shy;мом луч&shy;ше дру&shy;гих ви&shy;дов
+                                ка&shy;пу&shy;сты. В ней име&shy;ет&shy;ся мень&shy;ше гру&shy;бой
+                                клет&shy;чат&shy;ки, чем в бе&shy;ло&shy;ко&shy;чан&shy;ной,
+                                по&shy;это&shy;му она лег&shy;ко пе&shy;ре&shy;ва&shy;ри&shy;ва&shy;ет&shy;ся
+                                и мень&shy;ше раз&shy;дра&shy;жа&shy;ет сли&shy;зи&shy;стую
+                                обо&shy;лоч&shy;ку же&shy;луд&shy;ка. Осо&shy;бен&shy;но она
+                                по&shy;лез&shy;на при же&shy;лу&shy;доч&shy;но-ки&shy;шеч&shy;ных
+                                за&shy;боле&shy;ва&shy;ни&shy;ях и в дет&shy;ском пи&shy;та&shy;нии. При
+                                по&shy;ни&shy;жен&shy;ной сек&shy;ре&shy;тор&shy;ной функ&shy;ции
+                                же&shy;луд&shy;ка ре&shy;ко&shy;мен&shy;ду&shy;ют&shy;ся к
+                                упо&shy;треб&shy;ле&shy;нию блю&shy;да из от&shy;ва&shy;рен&shy;ной
+                                цвет&shy;ной ка&shy;пу&shy;сты. При яз&shy;вен&shy;ной бо&shy;лез&shy;ни
+                                же&shy;луд&shy;ка или две&shy;на&shy;дца&shy;ти&shy;перст&shy;ной киш&shy;ки
+                                раз&shy;ре&shy;ша&shy;ет&shy;ся ка&shy;пу&shy;ста цвет&shy;ная и
+                                за&shy;пре&shy;ща&shy;ет&shy;ся бе&shy;ло&shy;ко&shy;чан&shy;ная.
+                            </p>
+                        </div>
+                        <input type="radio" name="display-img" id="display-img3" class="radio">
+                        <input type="radio" name="display-img" id="close-img3" class="radio close">
+                        <div class="full-img">
                             <img src="img/3.jpg">
-                            <a href="#close">X</a>
+                            <label for="close-img3" class="label-close">X</label>
                         </div>
                         <div class="blackout"></div>
-                        <p>
-                            Бла&shy;го&shy;да&shy;ря тон&shy;кой кле&shy;точ&shy;ной струк&shy;ту&shy;ре
-                            ка&shy;пу&shy;ста цвет&shy;ная усва&shy;и&shy;ва&shy;ет&shy;ся
-                            ор&shy;га&shy;низ&shy;мом луч&shy;ше дру&shy;гих ви&shy;дов ка&shy;пу&shy;сты.
-                            В ней име&shy;ет&shy;ся мень&shy;ше гру&shy;бой клет&shy;чат&shy;ки, чем в
-                            бе&shy;ло&shy;ко&shy;чан&shy;ной, по&shy;это&shy;му она лег&shy;ко
-                            пе&shy;ре&shy;ва&shy;ри&shy;ва&shy;ет&shy;ся и мень&shy;ше
-                            раз&shy;дра&shy;жа&shy;ет сли&shy;зи&shy;стую обо&shy;лоч&shy;ку
-                            же&shy;луд&shy;ка. Осо&shy;бен&shy;но она по&shy;лез&shy;на при
-                            же&shy;лу&shy;доч&shy;но-ки&shy;шеч&shy;ных за&shy;боле&shy;ва&shy;ни&shy;ях
-                            и в дет&shy;ском пи&shy;та&shy;нии. При по&shy;ни&shy;жен&shy;ной
-                            сек&shy;ре&shy;тор&shy;ной функ&shy;ции же&shy;луд&shy;ка
-                            ре&shy;ко&shy;мен&shy;ду&shy;ют&shy;ся к упо&shy;треб&shy;ле&shy;нию
-                            блю&shy;да из от&shy;ва&shy;рен&shy;ной цвет&shy;ной ка&shy;пу&shy;сты. При
-                            яз&shy;вен&shy;ной бо&shy;лез&shy;ни же&shy;луд&shy;ка или
-                            две&shy;на&shy;дца&shy;ти&shy;перст&shy;ной киш&shy;ки
-                            раз&shy;ре&shy;ша&shy;ет&shy;ся ка&shy;пу&shy;ста цвет&shy;ная и
-                            за&shy;пре&shy;ща&shy;ет&shy;ся бе&shy;ло&shy;ко&shy;чан&shy;ная.
-                        </p>
                     </div>
-                    <div class="image-card">
-                        <a href="#sprouts"><img src="img/4.jpg"></a>
-                        <div class="full-img" id="sprouts">
+                    <div class="wrap">
+                        <div class="image-card">
+                            <label for="display-img4" class="label-img">
+                                <img src="img/4.jpg" class="small-img">
+                            </label>
+                            <p>
+                                Брюс&shy;сель&shy;ская ка&shy;пу&shy;ста
+                                ре&shy;ко&shy;мен&shy;ду&shy;ет&shy;ся как ди&shy;е&shy;ти&shy;че&shy;ский
+                                про&shy;дукт для стра&shy;да&shy;ю&shy;щих
+                                сер&shy;деч&shy;но-со&shy;су&shy;ди&shy;сты&shy;ми
+                                за&shy;боле&shy;ва&shy;ни&shy;я&shy;ми. Есть све&shy;де&shy;ния, что
+                                упо&shy;треб&shy;ле&shy;ние брюс&shy;сель&shy;ской ка&shy;пу&shy;сты
+                                сти&shy;му&shy;ли&shy;ру&shy;ет за&shy;жив&shy;ле&shy;ние ран. Сок
+                                спо&shy;соб&shy;ству&shy;ет вос&shy;ста&shy;нов&shy;ле&shy;нию функ&shy;ции
+                                под&shy;же&shy;лу&shy;доч&shy;ной же&shy;ле&shy;зы, очень по&shy;лез&shy;ная
+                                при са&shy;хар&shy;ном диа&shy;бе&shy;те.
+                            </p>
+                        </div>
+                        <input type="radio" name="display-img" id="display-img4" class="radio">
+                        <input type="radio" name="display-img" id="close-img4" class="radio close">
+                        <div class="full-img">
                             <img src="img/4.jpg">
-                            <a href="#close">X</a>
+                            <label for="close-img4" class="label-close">X</label>
                         </div>
                         <div class="blackout"></div>
-                        <p>
-                            Брюс&shy;сель&shy;ская ка&shy;пу&shy;ста ре&shy;ко&shy;мен&shy;ду&shy;ет&shy;ся
-                            как ди&shy;е&shy;ти&shy;че&shy;ский про&shy;дукт для стра&shy;да&shy;ю&shy;щих
-                            сер&shy;деч&shy;но-со&shy;су&shy;ди&shy;сты&shy;ми
-                            за&shy;боле&shy;ва&shy;ни&shy;я&shy;ми. Есть све&shy;де&shy;ния, что
-                            упо&shy;треб&shy;ле&shy;ние брюс&shy;сель&shy;ской ка&shy;пу&shy;сты
-                            сти&shy;му&shy;ли&shy;ру&shy;ет за&shy;жив&shy;ле&shy;ние ран. Сок
-                            спо&shy;соб&shy;ству&shy;ет вос&shy;ста&shy;нов&shy;ле&shy;нию функ&shy;ции
-                            под&shy;же&shy;лу&shy;доч&shy;ной же&shy;ле&shy;зы, очень по&shy;лез&shy;ная при
-                            са&shy;хар&shy;ном диа&shy;бе&shy;те.
-                        </p>
                     </div>
                 </article>
-                <article id="page2">
-                    <div class="image-card">
-                        <a href="#tomato"><img src="img/5.jpg"></a>
-                        <div class="full-img" id="tomato">
+                <!--<label for="display-page1" id="label1"></label>-->
+                <input type="radio" name="display-page" id="display-page2" class="radio">
+                <article class="page" id="page2">
+                    <div class="wrap">
+                        <div class="image-card">
+                            <label for="display-img5" class="label-img">
+                                <img src="img/5.jpg" class="small-img">
+                            </label>
+                            <p>
+                                Пло&shy;ды то&shy;ма&shy;та от&shy;ли&shy;ча&shy;ют&shy;ся
+                                вы&shy;со&shy;ки&shy;ми пи&shy;та&shy;тель&shy;ны&shy;ми,
+                                вку&shy;со&shy;вы&shy;ми и ди&shy;е&shy;ти&shy;че&shy;ски&shy;ми
+                                ка&shy;че&shy;ства&shy;ми. В пло&shy;дах то&shy;ма&shy;та вы&shy;со&shy;кое
+                                со&shy;дер&shy;жа&shy;ние ка&shy;ро&shy;ти&shy;но&shy;и&shy;дов,
+                                ви&shy;та&shy;ми&shy;нов (В1, В2, В3, В5), фо&shy;ли&shy;е&shy;вой и
+                                ас&shy;кор&shy;би&shy;но&shy;вой кис&shy;ло&shy;ты,
+                                ор&shy;га&shy;ни&shy;че&shy;ских (ли&shy;мон&shy;ная, яб&shy;лоч&shy;ная,
+                                ща&shy;веле&shy;вая, вин&shy;ная, ян&shy;тар&shy;ная, гли&shy;коле&shy;вая),
+                                вы&shy;со&shy;ко&shy;мо&shy;ле&shy;ку&shy;ляр&shy;ных жир&shy;ных и
+                                фе&shy;нол&shy;кар&shy;бо&shy;но&shy;вых кис&shy;лот. В пло&shy;дах
+                                най&shy;де&shy;ны ан&shy;то&shy;ци&shy;а&shy;ны, сте&shy;а&shy;ри&shy;ны,
+                                три&shy;тер&shy;пе&shy;но&shy;вые са&shy;по&shy;ни&shy;ны,
+                                абс&shy;ци&shy;зи&shy;ро&shy;вая кис&shy;ло&shy;та.
+                            </p>
+                        </div>
+                        <input type="radio" name="display-img" id="display-img5" class="radio">
+                        <input type="radio" name="display-img" id="close-img5" class="radio close">
+                        <div class="full-img">
                             <img src="img/5.jpg">
-                            <a href="#close">X</a>
+                            <label for="close-img5" class="label-close">X</label>
                         </div>
                         <div class="blackout"></div>
-                        <p>
-                            Пло&shy;ды то&shy;ма&shy;та от&shy;ли&shy;ча&shy;ют&shy;ся
-                            вы&shy;со&shy;ки&shy;ми пи&shy;та&shy;тель&shy;ны&shy;ми,
-                            вку&shy;со&shy;вы&shy;ми и ди&shy;е&shy;ти&shy;че&shy;ски&shy;ми
-                            ка&shy;че&shy;ства&shy;ми. В пло&shy;дах то&shy;ма&shy;та вы&shy;со&shy;кое
-                            со&shy;дер&shy;жа&shy;ние ка&shy;ро&shy;ти&shy;но&shy;и&shy;дов,
-                            ви&shy;та&shy;ми&shy;нов (В1, В2, В3, В5), фо&shy;ли&shy;е&shy;вой и
-                            ас&shy;кор&shy;би&shy;но&shy;вой кис&shy;ло&shy;ты,
-                            ор&shy;га&shy;ни&shy;че&shy;ских (ли&shy;мон&shy;ная, яб&shy;лоч&shy;ная,
-                            ща&shy;веле&shy;вая, вин&shy;ная, ян&shy;тар&shy;ная, гли&shy;коле&shy;вая),
-                            вы&shy;со&shy;ко&shy;мо&shy;ле&shy;ку&shy;ляр&shy;ных жир&shy;ных и
-                            фе&shy;нол&shy;кар&shy;бо&shy;но&shy;вых кис&shy;лот. В пло&shy;дах
-                            най&shy;де&shy;ны ан&shy;то&shy;ци&shy;а&shy;ны, сте&shy;а&shy;ри&shy;ны,
-                            три&shy;тер&shy;пе&shy;но&shy;вые са&shy;по&shy;ни&shy;ны,
-                            абс&shy;ци&shy;зи&shy;ро&shy;вая кис&shy;ло&shy;та.
-                        </p>
                     </div>
-                    <div class="image-card">
-                        <a href="#cucumber"><img src="img/6.jpg"></a>
-                        <div class="full-img" id="cucumber">
+                    <div class="wrap">
+                        <div class="image-card">
+                            <label for="display-img6" class="label-img">
+                                <img src="img/6.jpg" class="small-img">
+                            </label>
+                            <p>
+                                Огур&shy;цы бо&shy;га&shy;ты слож&shy;ны&shy;ми
+                                ор&shy;га&shy;ни&shy;че&shy;ски&shy;ми ве&shy;ще&shy;ства&shy;ми,
+                                ко&shy;то&shy;рые иг&shy;ра&shy;ют важ&shy;ную роль в об&shy;мене
+                                ве&shy;ществ. Эти ве&shy;ще&shy;ства воз&shy;буж&shy;да&shy;ют
+                                ап&shy;пе&shy;тит, спо&shy;соб&shy;ству&shy;ют усво&shy;е&shy;нию
+                                дру&shy;гих про&shy;дук&shy;тов пи&shy;та&shy;ния и улуч&shy;ша&shy;ют
+                                пи&shy;ще&shy;ва&shy;ре&shy;ние.
+                            </p>
+                            <p>
+                                Со&shy;дер&shy;жа&shy;щий&shy;ся в огур&shy;цах ка&shy;лий улуч&shy;ша&shy;ет
+                                ра&shy;бо&shy;ту серд&shy;ца и по&shy;чек. К то&shy;му же, в огур&shy;цах,
+                                как и в дру&shy;гих ово&shy;щах, мно&shy;го клет&shy;чат&shy;ки.
+                                Клет&shy;чат&shy;ка не усва&shy;и&shy;ва&shy;ет&shy;ся
+                                ор&shy;га&shy;низ&shy;мом че&shy;ло&shy;ве&shy;ка, но она
+                                ре&shy;гу&shy;ли&shy;ру&shy;ет ра&shy;бо&shy;ту ки&shy;шеч&shy;ни&shy;ка и
+                                вы&shy;во&shy;дит из ор&shy;га&shy;низ&shy;ма из&shy;лиш&shy;ки
+                                хо&shy;ле&shy;сте&shy;ри&shy;на.
+                            </p>
+                        </div>
+                        <input type="radio" name="display-img" id="display-img6" class="radio">
+                        <input type="radio" name="display-img" id="close-img6" class="radio close">
+                        <div class="full-img">
                             <img src="img/6.jpg">
-                            <a href="#close">X</a>
+                            <label for="close-img6" class="label-close">X</label>
                         </div>
                         <div class="blackout"></div>
-                        <p>
-                            Огур&shy;цы бо&shy;га&shy;ты слож&shy;ны&shy;ми
-                            ор&shy;га&shy;ни&shy;че&shy;ски&shy;ми ве&shy;ще&shy;ства&shy;ми,
-                            ко&shy;то&shy;рые иг&shy;ра&shy;ют важ&shy;ную роль в об&shy;мене ве&shy;ществ.
-                            Эти ве&shy;ще&shy;ства воз&shy;буж&shy;да&shy;ют ап&shy;пе&shy;тит,
-                            спо&shy;соб&shy;ству&shy;ют усво&shy;е&shy;нию дру&shy;гих про&shy;дук&shy;тов
-                            пи&shy;та&shy;ния и улуч&shy;ша&shy;ют пи&shy;ще&shy;ва&shy;ре&shy;ние.
-                        </p>
-                        <p>
-                            Со&shy;дер&shy;жа&shy;щий&shy;ся в огур&shy;цах ка&shy;лий улуч&shy;ша&shy;ет
-                            ра&shy;бо&shy;ту серд&shy;ца и по&shy;чек. К то&shy;му же, в огур&shy;цах, как и
-                            в дру&shy;гих ово&shy;щах, мно&shy;го клет&shy;чат&shy;ки. Клет&shy;чат&shy;ка
-                            не усва&shy;и&shy;ва&shy;ет&shy;ся ор&shy;га&shy;низ&shy;мом
-                            че&shy;ло&shy;ве&shy;ка, но она ре&shy;гу&shy;ли&shy;ру&shy;ет ра&shy;бо&shy;ту
-                            ки&shy;шеч&shy;ни&shy;ка и вы&shy;во&shy;дит из ор&shy;га&shy;низ&shy;ма
-                            из&shy;лиш&shy;ки хо&shy;ле&shy;сте&shy;ри&shy;на.
-                        </p>
                     </div>
-                    <div class="image-card">
-                        <a href="#squash"><img src="img/7.jpg"></a>
-                        <div class="full-img" id="squash">
+                    <div class="wrap">
+                        <div class="image-card">
+                            <label for="display-img7" class="label-img">
+                                <img src="img/7.jpg" class="small-img">
+                            </label>
+                            <p>
+                                Мо&shy;ло&shy;дые ка&shy;бач&shy;ки име&shy;ют наи&shy;луч&shy;шие
+                                вку&shy;со&shy;вые ка&shy;че&shy;ства и лег&shy;ко
+                                усва&shy;и&shy;ва&shy;ют&shy;ся. Ка&shy;бач&shy;ки мож&shy;но
+                                до&shy;бав&shy;лять в дет&shy;ское ме&shy;ню, в ра&shy;ци&shy;он
+                                пи&shy;та&shy;ния боль&shy;ных, иду&shy;щих на по&shy;прав&shy;ку, а
+                                так&shy;же лю&shy;дей, стра&shy;да&shy;ю&shy;щих от про&shy;блем с
+                                пи&shy;ще&shy;ва&shy;ре&shy;ни&shy;ем.
+                            </p>
+                            <p>
+                                Бла&shy;го&shy;да&shy;ря лёг&shy;кой усва&shy;и&shy;ва&shy;е&shy;мо&shy;сти и
+                                низ&shy;кой ка&shy;ло&shy;рий&shy;но&shy;сти ка&shy;ба&shy;чок
+                                яв&shy;ля&shy;ет&shy;ся од&shy;ним из са&shy;мых по&shy;пуляр&shy;ных
+                                ово&shy;щей в ди&shy;е&shy;тах для по&shy;ху&shy;де&shy;ния. Очень ча&shy;сто
+                                встре&shy;ча&shy;ет&shy;ся в блю&shy;дах
+                                сре&shy;ди&shy;зем&shy;но&shy;мор&shy;ской кух&shy;ни, са&shy;мое
+                                из&shy;вест&shy;ное из ко&shy;то&shy;рых — ра&shy;та&shy;туй.
+                                Фар&shy;ши&shy;ро&shy;ван&shy;ные цвет&shy;ки ка&shy;бач&shy;ка
+                                по&shy;пуляр&shy;ны у жи&shy;те&shy;лей Про&shy;ван&shy;са.
+                            </p>
+                        </div>
+                        <input type="radio" name="display-img" id="display-img7" class="radio">
+                        <input type="radio" name="display-img" id="close-img7" class="radio close">
+                        <div class="full-img">
                             <img src="img/7.jpg">
-                            <a href="#close">X</a>
+                            <label for="close-img7" class="label-close">X</label>
                         </div>
                         <div class="blackout"></div>
-                        <p>
-                            Мо&shy;ло&shy;дые ка&shy;бач&shy;ки име&shy;ют наи&shy;луч&shy;шие
-                            вку&shy;со&shy;вые ка&shy;че&shy;ства и лег&shy;ко
-                            усва&shy;и&shy;ва&shy;ют&shy;ся. Ка&shy;бач&shy;ки мож&shy;но
-                            до&shy;бав&shy;лять в дет&shy;ское ме&shy;ню, в ра&shy;ци&shy;он
-                            пи&shy;та&shy;ния боль&shy;ных, иду&shy;щих на по&shy;прав&shy;ку, а так&shy;же
-                            лю&shy;дей, стра&shy;да&shy;ю&shy;щих от про&shy;блем с
-                            пи&shy;ще&shy;ва&shy;ре&shy;ни&shy;ем.
-                        </p>
-                        <p>
-                            Бла&shy;го&shy;да&shy;ря лёг&shy;кой усва&shy;и&shy;ва&shy;е&shy;мо&shy;сти и
-                            низ&shy;кой ка&shy;ло&shy;рий&shy;но&shy;сти ка&shy;ба&shy;чок
-                            яв&shy;ля&shy;ет&shy;ся од&shy;ним из са&shy;мых по&shy;пуляр&shy;ных
-                            ово&shy;щей в ди&shy;е&shy;тах для по&shy;ху&shy;де&shy;ния. Очень ча&shy;сто
-                            встре&shy;ча&shy;ет&shy;ся в блю&shy;дах
-                            сре&shy;ди&shy;зем&shy;но&shy;мор&shy;ской кух&shy;ни, са&shy;мое
-                            из&shy;вест&shy;ное из ко&shy;то&shy;рых — ра&shy;та&shy;туй.
-                            Фар&shy;ши&shy;ро&shy;ван&shy;ные цвет&shy;ки ка&shy;бач&shy;ка
-                            по&shy;пуляр&shy;ны у жи&shy;те&shy;лей Про&shy;ван&shy;са.
-                        </p>
                     </div>
-                    <div class="image-card">
-                        <a href="#radish"><img src="img/8.jpg"></a>
-                        <div class="full-img" id="radish">
+                    <div class="wrap">
+                        <div class="image-card">
+                            <label for="display-img8" class="label-img">
+                                <img src="img/8.jpg" class="small-img">
+                            </label>
+                            <p>
+                                Ре&shy;дис со&shy;дер&shy;жит ти&shy;а&shy;мин, ри&shy;бо&shy;фла&shy;вин и
+                                ни&shy;ко&shy;ти&shy;но&shy;вую кис&shy;ло&shy;ту. Гор&shy;чич&shy;ные
+                                мас&shy;ла при&shy;да&shy;ют ре&shy;ди&shy;су свое&shy;об&shy;раз&shy;ный
+                                при&shy;вкус. Са&shy;ла&shy;ты из ре&shy;ди&shy;са об&shy;ла&shy;да&shy;ют
+                                уме&shy;рен&shy;ным жел&shy;че&shy;гон&shy;ным,
+                                про&shy;ти&shy;во&shy;отёч&shy;ны&shy;ми свой&shy;ства&shy;ми,
+                                воз&shy;буж&shy;да&shy;ют ап&shy;пе&shy;тит, спо&shy;соб&shy;ству&shy;ют
+                                луч&shy;шей пе&shy;ри&shy;сталь&shy;ти&shy;ке и опо&shy;рож&shy;не&shy;нию
+                                ки&shy;шеч&shy;ни&shy;ка. Сок, по&shy;лу&shy;чен&shy;ный из ре&shy;ди&shy;са,
+                                улуч&shy;ша&shy;ет пи&shy;ще&shy;ва&shy;ре&shy;ние и об&shy;мен ве&shy;ществ.
+                                Осо&shy;бен&shy;но по&shy;ле&shy;зен он тем, кто стра&shy;да&shy;ет
+                                по&shy;дагрой, ожи&shy;ре&shy;ни&shy;ем, са&shy;хар&shy;ным
+                                диа&shy;бе&shy;том.
+                            </p>
+                        </div>
+                        <input type="radio" name="display-img" id="display-img8" class="radio">
+                        <input type="radio" name="display-img" id="close-img8" class="radio close">
+                        <div class="full-img">
                             <img src="img/8.jpg">
-                            <a href="#close">X</a>
+                            <label for="close-img8" class="label-close">X</label>
                         </div>
                         <div class="blackout"></div>
-                        <p>
-                            Ре&shy;дис со&shy;дер&shy;жит ти&shy;а&shy;мин, ри&shy;бо&shy;фла&shy;вин и
-                            ни&shy;ко&shy;ти&shy;но&shy;вую кис&shy;ло&shy;ту. Гор&shy;чич&shy;ные
-                            мас&shy;ла при&shy;да&shy;ют ре&shy;ди&shy;су свое&shy;об&shy;раз&shy;ный
-                            при&shy;вкус. Са&shy;ла&shy;ты из ре&shy;ди&shy;са об&shy;ла&shy;да&shy;ют
-                            уме&shy;рен&shy;ным жел&shy;че&shy;гон&shy;ным,
-                            про&shy;ти&shy;во&shy;отёч&shy;ны&shy;ми свой&shy;ства&shy;ми,
-                            воз&shy;буж&shy;да&shy;ют ап&shy;пе&shy;тит, спо&shy;соб&shy;ству&shy;ют
-                            луч&shy;шей пе&shy;ри&shy;сталь&shy;ти&shy;ке и опо&shy;рож&shy;не&shy;нию
-                            ки&shy;шеч&shy;ни&shy;ка. Сок, по&shy;лу&shy;чен&shy;ный из ре&shy;ди&shy;са,
-                            улуч&shy;ша&shy;ет пи&shy;ще&shy;ва&shy;ре&shy;ние и об&shy;мен ве&shy;ществ.
-                            Осо&shy;бен&shy;но по&shy;ле&shy;зен он тем, кто стра&shy;да&shy;ет
-                            по&shy;дагрой, ожи&shy;ре&shy;ни&shy;ем, са&shy;хар&shy;ным диа&shy;бе&shy;том.
-                        </p>
                     </div>
                 </article>
-                <article id="page3">
-                    <div class="image-card">
-                        <a href="#eggplant"><img src="img/9.jpg"></a>
-                        <div class="full-img" id="eggplant">
+                <!--<label for="display-page2" id="label2"></label>-->
+                <input type="radio" name="display-page" id="display-page3" class="radio">
+                <article class="page" id="page3">
+                    <div class="wrap">
+                        <div class="image-card">
+                            <label for="display-img9" class="label-img">
+                                <img src="img/9.jpg" class="small-img">
+                            </label>
+                            <p>
+                                Ба&shy;кла&shy;жа&shy;ны ак&shy;тив&shy;но ис&shy;поль&shy;зу&shy;ют&shy;ся в
+                                ку&shy;ли&shy;на&shy;рии мно&shy;гих стран ми&shy;ра. Их ва&shy;рят,
+                                жа&shy;рят, за&shy;пе&shy;ка&shy;ют, ту&shy;шат, го&shy;то&shy;вят на
+                                гри&shy;ле, ма&shy;ри&shy;ну&shy;ют, ис&shy;поль&shy;зу&shy;ют для
+                                при&shy;го&shy;тов&shy;ле&shy;ния ба&shy;кла&shy;жан&shy;ных
+                                са&shy;ла&shy;тов и ик&shy;ры, а так&shy;же едят сы&shy;ры&shy;ми.
+                            </p>
+                            <p>
+                                Ба&shy;кла&shy;жа&shy;ны так&shy;же яв&shy;ля&shy;ют&shy;ся цен&shy;ным
+                                ви&shy;дом ягод&shy;но&shy;го сы&shy;рья для кон&shy;серв&shy;ной
+                                про&shy;мыш&shy;лен&shy;но&shy;сти (ба&shy;кла&shy;жан&shy;ная ик&shy;ра и
+                                др.).
+                            </p>
+                            <p>
+                                Пе&shy;ре&shy;зрев&shy;шие ба&shy;кла&shy;жа&shy;ны не
+                                ре&shy;ко&shy;мен&shy;ду&shy;ет&shy;ся упо&shy;треб&shy;лять в пи&shy;щу, так
+                                как в них со&shy;дер&shy;жит&shy;ся мно&shy;го со&shy;ла&shy;ни&shy;на. В
+                                пи&shy;щу ис&shy;поль&shy;зу&shy;ют&shy;ся мо&shy;ло&shy;дые пло&shy;ды в
+                                фа&shy;зе тех&shy;ни&shy;че&shy;ской спе&shy;ло&shy;сти.
+                            </p>
+                        </div>
+                        <input type="radio" name="display-img" id="display-img9" class="radio">
+                        <input type="radio" name="display-img" id="close-img9" class="radio close">
+                        <div class="full-img">
                             <img src="img/9.jpg">
-                            <a href="#close">X</a>
+                            <label for="close-img9" class="label-close">X</label>
                         </div>
                         <div class="blackout"></div>
-                        <p>
-                            Ба&shy;кла&shy;жа&shy;ны ак&shy;тив&shy;но ис&shy;поль&shy;зу&shy;ют&shy;ся в
-                            ку&shy;ли&shy;на&shy;рии мно&shy;гих стран ми&shy;ра. Их ва&shy;рят, жа&shy;рят,
-                            за&shy;пе&shy;ка&shy;ют, ту&shy;шат, го&shy;то&shy;вят на гри&shy;ле,
-                            ма&shy;ри&shy;ну&shy;ют, ис&shy;поль&shy;зу&shy;ют для
-                            при&shy;го&shy;тов&shy;ле&shy;ния ба&shy;кла&shy;жан&shy;ных са&shy;ла&shy;тов и
-                            ик&shy;ры, а так&shy;же едят сы&shy;ры&shy;ми.
-                        </p>
-                        <p>
-                            Ба&shy;кла&shy;жа&shy;ны так&shy;же яв&shy;ля&shy;ют&shy;ся цен&shy;ным
-                            ви&shy;дом ягод&shy;но&shy;го сы&shy;рья для кон&shy;серв&shy;ной
-                            про&shy;мыш&shy;лен&shy;но&shy;сти (ба&shy;кла&shy;жан&shy;ная ик&shy;ра и др.).
-                        </p>
-                        <p>
-                            Пе&shy;ре&shy;зрев&shy;шие ба&shy;кла&shy;жа&shy;ны не
-                            ре&shy;ко&shy;мен&shy;ду&shy;ет&shy;ся упо&shy;треб&shy;лять в пи&shy;щу, так
-                            как в них со&shy;дер&shy;жит&shy;ся мно&shy;го со&shy;ла&shy;ни&shy;на. В
-                            пи&shy;щу ис&shy;поль&shy;зу&shy;ют&shy;ся мо&shy;ло&shy;дые пло&shy;ды в
-                            фа&shy;зе тех&shy;ни&shy;че&shy;ской спе&shy;ло&shy;сти.
-                        </p>
                     </div>
-                    <div class="image-card">
-                        <a href="#hot-pepper"><img src="img/10.jpg"></a>
-                        <div class="full-img" id="hot-pepper">
+                    <div class="wrap">
+                        <div class="image-card">
+                            <label for="display-img10" class="label-img">
+                                <img src="img/10.jpg" class="small-img">
+                            </label>
+                            <p>
+                                Крас&shy;ный пе&shy;рец со&shy;дер&shy;жит боль&shy;шое
+                                ко&shy;ли&shy;че&shy;ство ви&shy;та&shy;ми&shy;нов С и А. Зе&shy;лё&shy;ный
+                                пе&shy;рец (неспе&shy;лый крас&shy;ный пе&shy;рец) со&shy;дер&shy;жит
+                                зна&shy;чи&shy;тель&shy;но мень&shy;ше этих ви&shy;та&shy;ми&shy;нов.
+                                Кро&shy;ме то&shy;го, пе&shy;рец яв&shy;ля&shy;ет&shy;ся хо&shy;ро&shy;шим
+                                ис&shy;точ&shy;ни&shy;ком ви&shy;та&shy;ми&shy;нов груп&shy;пы B и в
+                                част&shy;но&shy;сти ви&shy;та&shy;ми&shy;на B6. Крас&shy;ный пе&shy;рец
+                                бо&shy;гат так&shy;же ка&shy;ли&shy;ем, маг&shy;ни&shy;ем и
+                                же&shy;ле&shy;зом. Кро&shy;ме кап&shy;са&shy;и&shy;ци&shy;на, в пло&shy;дах
+                                най&shy;де&shy;ны 1,5 % эфир&shy;но&shy;го мас&shy;ла, жир&shy;ное мас&shy;ло
+                            </p>
+                        </div>
+                        <input type="radio" name="display-img" id="display-img10" class="radio">
+                        <input type="radio" name="display-img" id="close-img10" class="radio close">
+                        <div class="full-img">
                             <img src="img/10.jpg">
-                            <a href="#close">X</a>
+                            <label for="close-img10" class="label-close">X</label>
                         </div>
                         <div class="blackout"></div>
-                        <p>
-                            Крас&shy;ный пе&shy;рец со&shy;дер&shy;жит боль&shy;шое
-                            ко&shy;ли&shy;че&shy;ство ви&shy;та&shy;ми&shy;нов С и А. Зе&shy;лё&shy;ный
-                            пе&shy;рец (неспе&shy;лый крас&shy;ный пе&shy;рец) со&shy;дер&shy;жит
-                            зна&shy;чи&shy;тель&shy;но мень&shy;ше этих ви&shy;та&shy;ми&shy;нов.
-                            Кро&shy;ме то&shy;го, пе&shy;рец яв&shy;ля&shy;ет&shy;ся хо&shy;ро&shy;шим
-                            ис&shy;точ&shy;ни&shy;ком ви&shy;та&shy;ми&shy;нов груп&shy;пы B и в
-                            част&shy;но&shy;сти ви&shy;та&shy;ми&shy;на B6. Крас&shy;ный пе&shy;рец
-                            бо&shy;гат так&shy;же ка&shy;ли&shy;ем, маг&shy;ни&shy;ем и же&shy;ле&shy;зом.
-                            Кро&shy;ме кап&shy;са&shy;и&shy;ци&shy;на, в пло&shy;дах най&shy;де&shy;ны 1,5 %
-                            эфир&shy;но&shy;го мас&shy;ла, жир&shy;ное мас&shy;ло
-                        </p>
                     </div>
-                    <div class="image-card">
-                        <a href="#pumpkin"><img src="img/11.jpg"></a>
-                        <div class="full-img" id="pumpkin">
+                    <div class="wrap">
+                        <div class="image-card">
+                            <label for="display-img11" class="label-img">
+                                <img src="img/11.jpg" class="small-img">
+                            </label>
+                            <p>
+                                В от&shy;ли&shy;чие от де&shy;ко&shy;ра&shy;тив&shy;ных, съе&shy;доб&shy;ные
+                                сор&shy;та тык&shy;вы упо&shy;треб&shy;ля&shy;ют&shy;ся в пи&shy;щу.
+                                По&shy;сле
+                                теп&shy;ло&shy;вой об&shy;ра&shy;бот&shy;ки ва&shy;рё&shy;ная или
+                                пе&shy;чё&shy;ная тык&shy;ва очень хо&shy;ро&shy;шо
+                                усва&shy;и&shy;ва&shy;ет&shy;ся ор&shy;га&shy;низ&shy;мом и ши&shy;ро&shy;ко
+                                при&shy;ме&shy;ня&shy;ет&shy;ся да&shy;же для дет&shy;ско&shy;го и
+                                ди&shy;е&shy;ти&shy;че&shy;ско&shy;го пи&shy;та&shy;ния. Так&shy;же
+                                хо&shy;ро&shy;шо ис&shy;поль&shy;зу&shy;ет&shy;ся для са&shy;ла&shy;тов и
+                                гар&shy;ни&shy;ров.
+                            </p>
+                            <p>
+                                Нераз&shy;де&shy;лан&shy;ные тык&shy;вы дол&shy;го
+                                со&shy;хра&shy;ня&shy;ют&shy;ся, по&shy;это&shy;му с дав&shy;них вре&shy;мён
+                                ис&shy;поль&shy;зу&shy;ют&shy;ся в хо&shy;зяй&shy;ствах. Из&shy;вест&shy;но
+                                мно&shy;же&shy;ство ста&shy;рин&shy;ных блюд рус&shy;ской кух&shy;ни,
+                                вклю&shy;ча&shy;ю&shy;щих тык&shy;ву. Шарль Пер&shy;ро в XVII ве&shy;ке в
+                                сво&shy;ей сказ&shy;ке «Зо&shy;луш&shy;ка» при&shy;ду&shy;мал сде&shy;лать
+                                ка&shy;ре&shy;ту из тык&shy;вы как из про&shy;дук&shy;та, ко&shy;то&shy;рый
+                                все&shy;гда есть на кухне да&shy;же у са&shy;мых бед&shy;ных.
+                            </p>
+                        </div>
+                        <input type="radio" name="display-img" id="display-img11" class="radio">
+                        <input type="radio" name="display-img" id="close-img11" class="radio close">
+                        <div class="full-img">
                             <img src="img/11.jpg">
-                            <a href="#close">X</a>
+                            <label for="close-img11" class="label-close">X</label>
                         </div>
                         <div class="blackout"></div>
-                        <p>
-                            В от&shy;ли&shy;чие от де&shy;ко&shy;ра&shy;тив&shy;ных, съе&shy;доб&shy;ные
-                            сор&shy;та тык&shy;вы упо&shy;треб&shy;ля&shy;ют&shy;ся в пи&shy;щу. По&shy;сле
-                            теп&shy;ло&shy;вой об&shy;ра&shy;бот&shy;ки ва&shy;рё&shy;ная или
-                            пе&shy;чё&shy;ная тык&shy;ва очень хо&shy;ро&shy;шо
-                            усва&shy;и&shy;ва&shy;ет&shy;ся ор&shy;га&shy;низ&shy;мом и ши&shy;ро&shy;ко
-                            при&shy;ме&shy;ня&shy;ет&shy;ся да&shy;же для дет&shy;ско&shy;го и
-                            ди&shy;е&shy;ти&shy;че&shy;ско&shy;го пи&shy;та&shy;ния. Так&shy;же
-                            хо&shy;ро&shy;шо ис&shy;поль&shy;зу&shy;ет&shy;ся для са&shy;ла&shy;тов и
-                            гар&shy;ни&shy;ров.
-                        </p>
-                        <p>
-                            Нераз&shy;де&shy;лан&shy;ные тык&shy;вы дол&shy;го
-                            со&shy;хра&shy;ня&shy;ют&shy;ся, по&shy;это&shy;му с дав&shy;них вре&shy;мён
-                            ис&shy;поль&shy;зу&shy;ют&shy;ся в хо&shy;зяй&shy;ствах. Из&shy;вест&shy;но
-                            мно&shy;же&shy;ство ста&shy;рин&shy;ных блюд рус&shy;ской кух&shy;ни,
-                            вклю&shy;ча&shy;ю&shy;щих тык&shy;ву. Шарль Пер&shy;ро в XVII ве&shy;ке в
-                            сво&shy;ей сказ&shy;ке «Зо&shy;луш&shy;ка» при&shy;ду&shy;мал сде&shy;лать
-                            ка&shy;ре&shy;ту из тык&shy;вы как из про&shy;дук&shy;та, ко&shy;то&shy;рый
-                            все&shy;гда есть на кухне да&shy;же у са&shy;мых бед&shy;ных.
-                        </p>
                     </div>
-                    <div class="image-card">
-                        <a href="#potato"><img src="img/12.jpg"></a>
-                        <div class="full-img" id="potato">
+                    <div class="wrap">
+                        <div class="image-card">
+                            <label for="display-img12" class="label-img">
+                                <img src="img/12.jpg" class="small-img">
+                            </label>
+                            <p>
+                                Кар&shy;то&shy;фель ва&shy;рят как очи&shy;щен&shy;ным, так и
+                                неочи&shy;щен&shy;ным («в мун&shy;ди&shy;ре»), что поз&shy;во&shy;ля&shy;ет
+                                со&shy;хра&shy;нить мак&shy;си&shy;мум по&shy;лез&shy;ных ве&shy;ществ. Его
+                                так&shy;же го&shy;то&shy;вят на уг&shy;лях или на па&shy;ру, ту&shy;шат,
+                                жа&shy;рят во фри&shy;тю&shy;ре (см. кар&shy;то&shy;фель фри) и без него (см.
+                                жа&shy;ре&shy;ный кар&shy;то&shy;фель). Кар&shy;то&shy;фель
+                                ис&shy;поль&shy;зу&shy;ет&shy;ся как в про&shy;стых, так и в
+                                изыс&shy;кан&shy;ных блю&shy;дах — для при&shy;го&shy;тов&shy;ле&shy;ния
+                                кар&shy;то&shy;фель&shy;но&shy;го са&shy;ла&shy;та,
+                                кар&shy;то&shy;фель&shy;но&shy;го пю&shy;ре, су&shy;пов, за&shy;ку&shy;сок
+                                вро&shy;де чип&shy;сов, ди&shy;же&shy;сти&shy;вов и да&shy;же
+                                де&shy;сер&shy;тов.
+                            </p>
+                        </div>
+                        <input type="radio" name="display-img" id="display-img12" class="radio">
+                        <input type="radio" name="display-img" id="close-img12" class="radio close">
+                        <div class="full-img">
                             <img src="img/12.jpg">
-                            <a href="#close">X</a>
+                            <label for="close-img12" class="label-close">X</label>
                         </div>
                         <div class="blackout"></div>
-                        <p>
-                            Кар&shy;то&shy;фель ва&shy;рят как очи&shy;щен&shy;ным, так и
-                            неочи&shy;щен&shy;ным («в мун&shy;ди&shy;ре»), что поз&shy;во&shy;ля&shy;ет
-                            со&shy;хра&shy;нить мак&shy;си&shy;мум по&shy;лез&shy;ных ве&shy;ществ. Его
-                            так&shy;же го&shy;то&shy;вят на уг&shy;лях или на па&shy;ру, ту&shy;шат,
-                            жа&shy;рят во фри&shy;тю&shy;ре (см. кар&shy;то&shy;фель фри) и без него (см.
-                            жа&shy;ре&shy;ный кар&shy;то&shy;фель). Кар&shy;то&shy;фель
-                            ис&shy;поль&shy;зу&shy;ет&shy;ся как в про&shy;стых, так и в
-                            изыс&shy;кан&shy;ных блю&shy;дах — для при&shy;го&shy;тов&shy;ле&shy;ния
-                            кар&shy;то&shy;фель&shy;но&shy;го са&shy;ла&shy;та,
-                            кар&shy;то&shy;фель&shy;но&shy;го пю&shy;ре, су&shy;пов, за&shy;ку&shy;сок
-                            вро&shy;де чип&shy;сов, ди&shy;же&shy;сти&shy;вов и да&shy;же де&shy;сер&shy;тов.
-                        </p>
                     </div>
                 </article>
-                <div class="control">
-                    <label for="display-page1" id="label1"></label>
-                    <label for="display-page2" id="label2"></label>
-                    <label for="display-page3" id="label3"></label>
-                </div>
+                <label for="display-page1" id="label1" class="radio-label"></label>
+                <label for="display-page2" id="label2" class="radio-label"></label>
+                <label for="display-page3" id="label3" class="radio-label"></label>
             </section>
         </main>
     </body>
