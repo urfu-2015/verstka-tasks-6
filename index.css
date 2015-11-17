@@ -3,6 +3,13 @@ body
     text-align: center;
 }
 
+input,
+label
+{
+    position: relative;
+    top: 500px;
+}
+
 .item
 {
     width: 24%;
@@ -27,87 +34,87 @@ body
     width: 100%;
 }
 
-article .item .first-slide,
-article .item .second-slide,
-article .item .third-slide
+section .item div:nth-of-type(2),
+section .item div:nth-of-type(3),
+section .item div:nth-of-type(4)
 {
     display: none;
 }
 
-#slide1:checked ~ article .item:hover .first-slide,
-#slide2:checked ~ article .item:hover .second-slide,
-#slide3:checked ~ article .item:hover .third-slide
+#slide1:checked ~ section .item:hover div:nth-of-type(2),
+#slide2:checked ~ section .item:hover div:nth-of-type(3),
+#slide3:checked ~ section .item:hover div:nth-of-type(4)
 {
     display: block;
 }
 
-#slide1:checked ~ article .first
+#slide1:checked ~ section .first
 {
     background: url('Images/aubergine.jpg') no-repeat;
     background-size: contain;
 }
 
-#slide1:checked ~ article .second
+#slide1:checked ~ section .second
 {
     background: url('Images/beet.jpg') no-repeat;
     background-size: contain;
 }
 
-#slide1:checked ~ article .third
+#slide1:checked ~ section .third
 {
     background: url('Images/cabbage.jpg') no-repeat;
     background-size: contain;
 }
 
-#slide1:checked ~ article .forth
+#slide1:checked ~ section .forth
 {
     background: url('Images/carrot.jpg') no-repeat;
     background-size: contain;
 }
 
-#slide2:checked ~ article .first
+#slide2:checked ~ section .first
 {
     background: url('Images/cucumber.jpg') no-repeat;
     background-size: contain;
 }
 
-#slide2:checked ~ article .second
+#slide2:checked ~ section .second
 {
     background: url('Images/dill.jpg') no-repeat;
     background-size: contain;
 }
 
-#slide2:checked ~ article .third
+#slide2:checked ~ section .third
 {
     background: url('Images/garlic.jpg') no-repeat;
     background-size: contain;
 }
 
-#slide2:checked ~ article .forth
+#slide2:checked ~ section .forth
 {
     background: url('Images/marrow.jpg') no-repeat;
     background-size: contain;
 }
 
-#slide3:checked ~ article .first
+#slide3:checked ~ section .first
 {
     background: url('Images/onion.jpg') no-repeat;
     background-size: contain;
 }
 
-#slide3:checked ~ article .second
+#slide3:checked ~ section .second
 {
     background: url('Images/pepper.jpg') no-repeat;
     background-size: contain;
 }
 
-#slide3:checked ~ article .third
+#slide3:checked ~ section .third
 {
     background: url('Images/pumpkin.jpg') no-repeat;
     background-size: contain;
 }
 
-#slide3:checked ~ article .forth
+#slide3:checked ~ section .forth
 {
     background: url('Images/tomato.jpg') no-repeat;
     background-size: contain;
