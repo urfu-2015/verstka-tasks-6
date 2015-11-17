@@ -1,1 +1,203 @@
+header > h1
+{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font: 900 7em 'Marck Script' cursive;
+    color: #200;
+}
 
+body
+{
+    margin: 0 auto;
+    background-image: url(img/main.jpg);
+}
+
+.gallery
+{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.gallery input,
+.slides > section.slide-1,
+.slides > section.slide-2,
+.slides > section.slide-3
+{
+    display: none;
+}
+
+section.slides
+{
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+    height: 300px;
+    white-space: nowrap;
+}
+
+section.slides > section
+{
+    display: inline-block;
+    white-space: normal;
+    width: 100%;
+    min-width: 500px;
+}
+
+section.slides .item
+{
+    float: left;
+    width: 25%;
+    position: relative;
+}
+
+.box
+{
+    padding: 10px;
+    margin: 0;
+}
+
+.box:hover
+{
+    min-width: 360px;
+    margin: 0;
+    z-index: 5;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .8);
+    background: rgba(243, 230, 211, .9);
+    position: relative;
+}
+
+.box:hover img
+{
+    margin: 5px;
+    max-width: 350px;
+    max-height: 350px;
+}
+
+.box:hover .features
+{
+    display: block;
+}
+
+.features
+{
+    color: #200;
+    font-size: 18px;
+    text-align: left;
+    display: none;
+}
+
+.box img
+{
+    max-width: 230px;
+    max-height: 230px;
+}
+
+.overlay,
+.popup
+{
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.popup
+{
+    z-index: 200;
+    text-align: center;
+    padding: 50px;
+    background-color: rgba(0, 0, 0, .7);
+}
+.overlay
+{
+    z-index: 1;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.overlay:target,
+.overlay:target + .popup
+{
+    visibility: visible;
+    opacity: 1;
+}
+
+.overlay:target + .popup img
+{
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.close
+{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 0;
+}
+
+.close:before
+{
+    content: url(img/close.png);
+}
+
+input:nth-of-type(1):checked ~ section.slides section.slide-1
+{
+    display: inline-block;
+}
+
+input:nth-of-type(2):checked ~ section.slides section.slide-2
+{
+    display: inline-block;
+}
+
+input:nth-of-type(3):checked ~ section.slides section.slide-3
+{
+    display: inline-block;
+}
+
+input:nth-of-type(1):checked ~ .navigation label:nth-of-type(1):after,
+input:nth-of-type(2):checked ~ .navigation label:nth-of-type(2):after,
+input:nth-of-type(3):checked ~ .navigation label:nth-of-type(3):after
+{
+    opacity: 1;
+    background: #021;
+}
+
+.navigation
+{
+    margin: auto;
+    text-align: center;
+}
+
+.navigation label
+{
+    display: inline-block;
+    border-radius: 50%;
+    margin: 0 5px;
+    padding: 5px;
+    background: #3a3a3a;
+}
+
+.navigation label:hover:after
+{
+    opacity: 1;
+    background: #021;
+}
+
+.navigation label:after
+{
+    content: '';
+    position: absolute;
+    margin-left: -8px;
+    margin-top: -8px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    padding: 8px;
+    opacity: 0;
+}

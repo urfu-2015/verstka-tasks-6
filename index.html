@@ -3,9 +3,209 @@
     <head>
         <meta charset="utf-8">
         <title>Бабуленькин урожай</title>
+        <link href="https://fonts.googleapis.com/css?family=Marck+Script&amp;subset=cyrillic"
+            rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <!-- Здесь прикладывать основное усилие -->
+        <header>
+            <h1>Бабуленькин урожай</h1>
+        </header>
+        <section class="gallery">
+            <input type="radio" name="slides" id="slides_1" checked="checked">
+            <input type="radio" name="slides" id="slides_2">
+            <input type="radio" name="slides" id="slides_3">
+            <section class="slides">
+                <section class="slide-1">
+                    <article class="item">
+                        <div class="box">
+                            <a href="#img_1"><img src="img/1.jpg" alt="Картошка"></a>
+                            <p class="features">
+                                Привычный корнеплод картофель не только круглый год служит базой для
+                                разнообразных блюд, но может в случае необходимости заменить целую аптечку
+                            </p>
+                        </div>
+                        <a href="#x" class="overlay" id="img_1"></a>
+                        <div class="popup">
+                            <img class="big-image" src="img/1.jpg" alt="картошка" />
+                            <a class="close" href="#close"></a>
+                        </div>
+                    </article>
+                    <article class="item">
+                        <div class="box">
+                            <a href="#img_2"><img src="img/2.jpg" alt="Капуста"></a>
+                            <p class="features">
+                                Миниатюрные кочанчики брюссельской капусты не только помогут
+                                Вам украсить праздничное блюдо, но и позволят удовлетворить
+                                аппетиты даже самых привередливых гурманов<br>
+                                Краснокочанная капуста – продукт, богатый биологически активными
+                                веществами, препятствующими возникновению и росту раковых клеток<br>
+                                Благодаря нежному вкусу и диетическим свойствам савойскую капусту
+                                часто используют для приготовления гастрономических блюд
+                            </p>
+                        </div>
+                        <a href="#x" class="overlay" id="img_2"></a>
+                        <div class="popup">
+                            <img class="big-image" src="img/2.jpg" alt="Капуста" />
+                            <a class="close" title="Закрыть" href="#close"></a>
+                        </div>
+                    </article>
+                    <article class="item">
+                        <div class="box">
+                            <a href="#img_3"><img src="img/3.jpg" alt="Чеснок"></a>
+                            <p class="features">
+                                Чеснок можно назвать вкуснейшей приправой и даже "народным лекарем".
+                                Кроме того, что он является лучшим оружием против вампиров. 
+                            </p>
+                        </div>
+                        <a href="#x" class="overlay" id="img_3"></a>
+                        <div class="popup">
+                            <img class="big-image" src="img/3.jpg" alt="Чеснок" />
+                            <a class="close" title="Закрыть" href="#close"></a>
+                        </div>
+                    </article>
+                    <article class="item">
+                        <div class="box">
+                            <a href="#img_4"><img src="img/4.jpg" alt="Морковь"></a>
+                            <p class="features">
+                                Морковь любимый овощ кроликов, не оставит равнодушным и Вас.
+                                Ведь морковь не только обладает приятным вкусом, но также
+                                незаменима в здоровом рационе
+                            </p>
+                        </div>
+                        <a href="#x" class="overlay" id="img_4"></a>
+                        <div class="popup">
+                            <img class="big-image" src="img/4.jpg" alt="Морковь" />
+                            <a class="close" title="Закрыть" href="#close"></a>
+                        </div>
+                    </article>
+                </section>
+                <section class="slide-2">
+                    <article class="item">
+                        <div class="box">
+                            <a href="#img_5"><img src="img/5.jpg" alt="Редис"></a>
+                            <p class="features">
+                                Редис, или как его называют в разговорной речи, редиска, один из первых
+                                свежих овощей, появляющихся на наших столах после долгого зимнего перерыва
+                            </p>
+                        </div>
+                        <a href="#x" class="overlay" id="img_5"></a>
+                        <div class="popup">
+                            <img class="big-image" src="img/5.jpg" alt="Редис" />
+                            <a class="close" title="Закрыть" href="#close"></a>
+                        </div>
+                    </article>
+                    <article class="item">
+                        <div class="box">
+                            <a href="#img_6"><img src="img/6.jpg"></a>
+                            <p class="features">
+                                Стручковая фасоль - низкокалорийный и легкоусвояемый продукт, являющийся
+                                прекрасным источником энергии для человеческого организма
+                            </p>
+                        </div>
+                        <a href="#x" class="overlay" id="img_6"></a>
+                        <div class="popup">
+                            <img class="big-image" src="img/6.jpg" alt="Фасоль" />
+                            <a class="close" title="Закрыть" href="#close"></a>
+                        </div>
+                    </article>
+                    <article class="item">
+                        <div class="box">
+                            <a href="#img_7"><img src="img/7.jpg" alt="Лук"></a>
+                            <p class="features">
+                                В период осенних простуд и весеннего авитаминоза лучшим помощником
+                                в борьбе с недомоганием станет слезоточивый овощ лук
+                            </p>
+                        </div>
+                        <a href="#x" class="overlay" id="img_7"></a>
+                        <div class="popup">
+                            <img class="big-image" src="img/7.jpg" alt="Лук" />
+                            <a class="close" title="Закрыть" href="#close"></a>
+                        </div>
+                    </article>
+                    <article class="item">
+                        <div class="box">
+                            <a href="#img_8"><img src="img/8.jpg" alt="Горох"></a>
+                            <p class="features">
+                                Кто из нас не любит свежий зеленый горошек? Вопрос риторический,
+                                ведь его нежный и сладкий вкус мало кого может оставить равнодушным
+                            </p>
+                        </div>
+                        <a href="#x" class="overlay" id="img_8"></a>
+                        <div class="popup">
+                            <img class="big-image" src="img/8.jpg" alt="Горох" />
+                            <a class="close" title="Закрыть" href="#close"></a>
+                        </div>
+                    </article>
+                </section>
+                <section class="slide-3">
+                    <article class="item">
+                        <div class="box">
+                            <a href="#img_9"><img src="img/9.jpg" alt="тыква"></a>
+                            <p class="features">
+                                Блюда из тыквы радуют свои разнообразием и оригинальностью. Но кроме
+                                этого этот осенний овощ очень полезен, так что не пропустите урожай!
+                            </p>
+                        </div>
+                        <a href="#x" class="overlay" id="img_9"></a>
+                        <div class="popup">
+                            <img class="big-image" src="img/9.jpg" alt="тыква" />
+                            <a class="close" href="#close"></a>
+                        </div>
+                    </article>
+                    <article class="item">
+                        <div class="box">
+                            <a href="#img_10"><img src="img/10.jpg" alt="томаты"></a>
+                            <p class="features">
+                                Кроме чрезвычайной привлекательной «внешности» и вкусовых качеств томаты
+                                еще могут похвастать целым букетом полезных и целебных свойств
+                            </p>
+                        </div>
+                        <a href="#x" class="overlay" id="img_10"></a>
+                        <div class="popup">
+                            <img class="big-image" src="img/10.jpg" alt="томаты" />
+                            <a class="close" title="Закрыть" href="#close"></a>
+                        </div>
+                    </article>
+                    <article class="item">
+                        <div class="box">
+                            <a href="#img_11"><img src="img/11.jpg" alt="кабачок"></a>
+                            <p class="features">
+                                Кабачок - тот самый овощ из которого можно приготовить практически все -
+                                от оладьев до рагу. А вместе с всей этой вкуснятиной подарить
+                                организму море пользы
+                            </p>
+                        </div>
+                        <a href="#x" class="overlay" id="img_11"></a>
+                        <div class="popup">
+                            <img class="big-image" src="img/11.jpg" alt="кабачок" />
+                            <a class="close" title="Закрыть" href="#close"></a>
+                        </div>
+                    </article>
+                    <article class="item">
+                        <div class="box">
+                            <a href="#img_12"><img src="img/12.jpg" alt="спаржа"></a>
+                            <p class="features">
+                                Благодаря отменным вкусовым качествам еще несколько столетий назад спаржа
+                                считалась изысканным деликатесом, который подавался на столы
+                                императоров и королей
+                            </p>
+                        </div>
+                        <a href="#x" class="overlay" id="img_12"></a>
+                        <div class="popup">
+                            <img class="big-image" src="img/12.jpg" alt="спаржа" />
+                            <a class="close" title="Закрыть" href="#close"></a>
+                        </div>
+                    </article>
+                </section>
+            </section>
+            <div class="navigation">
+                <div>
+                    <label for="slides_1"></label>
+                    <label for="slides_2"></label>
+                    <label for="slides_3"></label>
+                </div>
+            </div>
+        </section>
     </body>
 </html>
