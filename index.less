@@ -13,6 +13,7 @@ body, html, .container {
 }
 
 .box {
+    white-space: nowrap;
     display: table-cell;
     vertical-align: middle;
     text-align: center;
@@ -65,6 +66,7 @@ body, html, .container {
 
 .sliders-group, .image-group {
     display: inline-block;
+    white-space: nowrap;
     vertical-align: middle;
 }
 .image-group {
@@ -72,7 +74,7 @@ body, html, .container {
 }
 
 .fake-image {
-
+    white-space: initial;
     display: inline-block;
     vertical-align: middle;
     position: relative;
@@ -151,6 +153,7 @@ div.lightbox .close {
                 position: fixed;
                 top: 0;
                 right: 0;
+                z-index: 1;
             }
         }
     }
