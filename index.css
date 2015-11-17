@@ -56,7 +56,6 @@ img
 {
     position: absolute;
     display: block;
-    left: auto;
     right: 0;
     width: 38px;
     height: 32px;
@@ -67,14 +66,12 @@ img
     display: none;
     margin: 0;
     padding: 0;
-    height: auto;
 }
 
 .preview:hover .description,
 .description:hover
 {
     display: block;
-    height: auto;
     background-color: #5f9ea0;
     border: 1px solid #000;
 }
@@ -106,7 +103,6 @@ img
 .selector:checked + .thumb label img
 {
     width: 540px;
-    height: auto;
     position: absolute;
     top: 0;
     left: 0;
