@@ -19,6 +19,11 @@ body
     overflow-x: hidden;
 }
 
+body
+{
+    overflow-y: scroll;
+}
+
 .card
 {
     position: relative;
@@ -217,7 +222,6 @@ input[name=startpic]
 .longroll
 {
     position: relative;
-    transition: all .7s ease-out;
 }
 
 #startpic-stan:checked ~ .centered-content .hide-if-stan,
