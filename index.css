@@ -1,8 +1,3 @@
-main
-{
-    margin-left: 95px;
-}
-
 h1
 {
     font-family: Dancing Script, cursive;
@@ -28,11 +23,6 @@ h1
     display: none;
 }
 
-.img
-{
-    vertical-align: bottom;
-}
-
 img
 {
     position: relative;
@@ -43,42 +33,52 @@ article
 {
     overflow: visible;
     position: relative;
-    padding: 8px;
     padding-top: 0;
-    width: 230px;
+    width: 20%;
     left: 0;
     display: none;
     vertical-align: top;
 }
 
+.shift
+{
+    margin-left: 8%;
+}
+
+.first,
+.second2
+{
+    margin-left: 5%;
+}
+
 .all
 {
     position: relative;
-    width: 100%;
-    padding: 10px;
+    width: 95%;
+    padding: 3%;
     background: #fff;
 }
 
 .all:hover
 {
-    width: 270px;
+    width: 100%;
     box-shadow: 0 0 10px #000;
 }
 
 .all:hover .img,
 .all:hover .text
 {
-    width: 270px;
+    width: 100%;
     display: block;
 }
 
 #first:checked ~ main .one,
-#first:checked ~ label .right,
+#first:checked ~ main .second1,
 #second:checked ~ main .two,
-#second:checked ~ label .left,
-#second:checked ~ label .right,
+#second:checked ~ main .first,
+#second:checked ~ main .third,
 #third:checked ~ main .three,
-#third:checked ~ label .left
+#third:checked ~ main .second2
 {
     display: inline-block;
 }
@@ -167,50 +167,15 @@ a:focus ~ a .close
     width: 50px;
 }
 
-#right,
-#right + label,
-#left,
-#left + label
+label
 {
-    position: absolute;
-    margin-top: 70px;
-    display: block;
-}
-
-#left,
-#left + label
-{
-    margin-left:60px;
-}
-
-#right,
-#right + label
-{
-    margin-left: 1120px;
-}
-
-.left,
-.right
-{
-    width: 30px;
-}
-
-#left:checked + label ~ main .one,
-#right:checked + label ~ main .three
-{
-    display: inline-block;
-}
-
-#left:checked + label ~ main .three,
-#right:checked + label ~ main .one
-{
+    position: relative;
+    margin-top: 5%;
+    width: 3%;
     display: none;
 }
 
-#left,
-#right,
-#left:checked + label,
-#right:checked + label
+label img
 {
     display: none;
 }
