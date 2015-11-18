@@ -16,7 +16,9 @@ article
 }
 
 .images,
-img.cross
+img.cross,
+.descr,
+.big
 {
     display: none;
 }
@@ -66,24 +68,12 @@ input[type='radio'].second:checked ~ .images.second
     position: relative;
 }
 
-.descr
-{
-    display: none;
-}
-
 .descr p
 {
     display: block;
     padding-top: 20px;
     margin: auto;
 }
-
-.big
-{
-    display: none;
-}
-
-/*.pic:hover*/
 
 .frame:hover
 {
