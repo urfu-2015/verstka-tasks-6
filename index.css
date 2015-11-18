@@ -1,1 +1,144 @@
+article
+{
+    height: 300px;
+    width: 25%;
+    float: left;
+    overflow: visible;
+}
 
+.pic
+{
+    position: relative;
+    height: 300px;
+    width: 300px;
+    margin: auto;
+    z-index: 1;
+}
+
+.images,
+img.cross,
+.descr,
+.big
+{
+    display: none;
+}
+
+input[type='radio']
+{
+    position: relative;
+    top: 450px;
+    left: 50%;
+}
+
+input[type='radio'].first:checked ~ .images.first
+{
+    display: block;
+}
+
+input[type='radio'].second:checked ~ .images.second
+{
+    display: block;
+}
+
+.frame
+{
+    position: relative;
+    height: 300px;
+    width: 300px;
+    z-index: 1;
+    background-color: #fff;
+    display: inline-block;
+}
+
+.pic img
+{
+    position: relative;
+    top: 50%;
+    left: calc(50% - 150px);
+    -webkit-transform: translateY(-50%);
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.images
+{
+    width: 80%;
+    height: 300px;
+    margin: 100px auto auto;
+    position: relative;
+}
+
+.descr p
+{
+    display: block;
+    padding-top: 20px;
+    margin: auto;
+}
+
+.frame:hover
+{
+    right: 100px;
+    bottom: 50px;
+    height: 700px;
+    width: 440px;
+    padding: 20px;
+    box-shadow: 0 0 5px;
+    z-index: 2;
+}
+
+.frame:hover .pic
+{
+    width: 400px;
+    height: 400px;
+    z-index: 2;
+}
+
+.frame:hover .pic img
+{
+    max-height: 400px;
+    max-width: 400px;
+    left: calc(50% - 200px);
+}
+
+.frame:hover .descr
+{
+    display: block;
+    width: 400px;
+    height: 200px;
+    margin: auto;
+    font-size: 22px;
+}
+
+.frame:hover .pic:focus ~ .big
+{
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(127,127,127,.5);
+    z-index: 4;
+    text-align: center;
+}
+
+.frame:hover .pic:focus ~ .big img
+{
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    max-width: 80vw;
+    max-height: 80vh;
+    background-color: white;
+}
+
+.frame:hover .pic:focus ~ img.cross
+{
+    display: block;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    z-index: 4;
+}
