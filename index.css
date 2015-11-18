@@ -1,16 +1,9 @@
 
 div.gallery
 {
-    height: 480px;
+    height: 475px;
     width: 940px;
-    margin: 200px auto auto auto;
-}
-
-div.navigation
-{
-    margin-left: auto;
-    margin-right: auto;
-    width: 100px;
+    margin: 200px auto 0 auto;
 }
 
 figure
@@ -28,10 +21,11 @@ figure:hover ~ article
 
 section
 {
-    height: 450px;
+    height: 465px;
     width: 200px;
     float: left;
     padding: 1px;
+    margin: 0;
 }
 
 section img
@@ -62,8 +56,8 @@ div.fs-background
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 730px;
+    bottom: -35px;
+    width: 100vw;
 }
 
 input[name='fs-img']
@@ -92,9 +86,14 @@ img.fs-close
 
 img.nav-arrow
 {
-    margin: 45px 5px auto 5px;
+    margin: 45px 5px 0 5px;
     height: 50px;
     float: left;
+}
+
+img.nav-arrow.right
+{
+    transform: rotate(180deg);
 }
 
 #first:not(:checked) ~ .first
@@ -117,47 +116,7 @@ img.nav-arrow
     display: none;
 }
 
-#fs-background
-{
-    display: none;
-}
-
-#img1:checked ~ .fs-background
-{
-    display: block;
-}
-
-#img2:checked ~ .fs-background
-{
-    display: block;
-}
-
-#img3:checked ~ .fs-background
-{
-    display: block;
-}
-
-#img4:checked ~ .fs-background
-{
-    display: block;
-}
-
-#img5:checked ~ .fs-background
-{
-    display: block;
-}
-
-#img6:checked ~ .fs-background
-{
-    display: block;
-}
-
-#img7:checked ~ .fs-background
-{
-    display: block;
-}
-
-#img8:checked ~ .fs-background
+#fs-close:not(:checked) ~ .fs-background
 {
     display: block;
 }
