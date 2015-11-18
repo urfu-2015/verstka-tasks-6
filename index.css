@@ -1,1 +1,142 @@
+html
+{
+    height: 100%;
+}
 
+h1,
+.gallery
+{
+    text-align: center;
+}
+
+.small-img
+{
+    max-width: 100%;
+    margin: auto;
+}
+
+.page
+{
+    text-align: center;
+    min-height: 550px;
+    display: none;
+}
+
+.wrap,
+.image-card
+{
+    display: inline-block;
+    margin: 3px 3px 0;
+    vertical-align: top;
+    width: 250px;
+    height: auto;
+    text-align: left;
+    padding: 10px 10px 0;
+    border: transparent;
+}
+
+.description,
+.radio
+{
+    display: none;
+}
+
+.image-card:hover
+{
+    position: absolute;
+    background: #fff;
+    box-shadow: 1px 2px 15px #cecba8;
+    border: 1px dotted #cdcdcd;
+    width: 350px;
+}
+
+.image-card:hover .description,
+input[name='display-page']:checked + .page
+{
+    display: block;
+}
+
+#display-page1:checked ~ #label1,
+#display-page2:checked ~ #label2,
+#display-page3:checked ~ #label3
+{
+    background-position: bottom right;
+}
+
+#display-page1:checked ~ #label1:hover,
+#display-page2:checked ~ #label2:hover,
+#display-page3:checked ~ #label3:hover
+{
+    background-position: top right;
+}
+
+.radio-label
+{
+    background: url(img/radio.png) bottom left;
+    width: 23px;
+    height: 23px;
+    display: inline-block;
+}
+
+.radio-label:hover
+{
+    background-position: top left;
+}
+
+.label-close
+{
+    position: fixed;
+    right: 5%;
+    top: 0;
+    color: #fff;
+    font: 800 60px sans-serif;
+}
+
+.full-img
+{
+    position: fixed;
+    bottom: 5%;
+    top: 5%;
+    left: 5%;
+    right: 5%;
+    max-height: 70%;
+    width: auto;
+    display: none;
+    z-index: 100;
+}
+
+input[name='display-img']:checked ~ .full-img
+{
+    display: inline-block;
+    text-align: center;
+}
+
+input[name='display-img']:checked ~ .full-img img
+{
+    max-width: 90%;
+    max-height: 100%;
+    height: auto;
+}
+
+input[name='display-img']:checked ~ .blackout
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    background: #000;
+    opacity: .6;
+}
+
+input[name='display-img']:checked ~ .full-img .label-img
+{
+    display: block;
+}
+
+input[class='radio close']:checked ~ .full-img,
+input[class='radio close']:checked ~ .blackout
+{
+    display: none;
+}
