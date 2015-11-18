@@ -63,6 +63,7 @@ img
 .bigPic
 {
     display: none;
+    cursor: auto;
 }
 
 div.slide div.veg img.cucumber
@@ -131,6 +132,7 @@ label.right:hover
 {
     pointer-events: all;
     cursor: default;
+    height: 100%;
 }
 
 .close
@@ -184,7 +186,7 @@ div.veg:hover + div
 
 div.veg:hover + div
 {
-    margin-right: 4px;
+    margin-right: .3%;
 }
 
 div.veg:hover > img
