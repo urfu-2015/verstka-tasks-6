@@ -19,12 +19,6 @@ figure:hover ~ article
     display: block;
 }
 
-figure:hover
-{
-    box-shadow: 1px 1px 15px 5px #888;
-    z-index: 3;
-}
-
 section
 {
     height: 465px;
@@ -32,7 +26,6 @@ section
     float: left;
     padding: 1px;
     margin: 0;
-    border: 1px solid black;
 }
 
 section img
