@@ -5,20 +5,33 @@ body
 
 input[name='switch']
 {
+    display: none;
+}
+
+div.switch
+{
+    width: 70px;
     position: absolute;
-    bottom: 0;
-    left: 50%;
-    z-index: 1;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
 }
 
-input[name='switch'] + input[name='switch']
+label.switch
 {
-    margin-left: 21px;
+    display: inline-block;
+    border-radius: 5px;
+    background-color: #0b97c4;
+    color: #fff;
+    font: 14px Arial, sans-serif;
+    width: 20px;
+    text-align: center;
 }
 
-input[name='switch'] + input[name='switch'] + input[name='switch']
+label.switch:active
 {
-    margin-left: 37px;
+    background-color: #075d8b;
+    color: #000;
 }
 
 .wrappers
@@ -56,9 +69,9 @@ input[name='switch'] + input[name='switch'] + input[name='switch']
 img
 {
     position: relative;
-    vertical-align: top;
     width: 300px;
     padding: 0 9px;
+    cursor: pointer;
 }
 
 .description
@@ -79,28 +92,40 @@ img
     margin: 5px 0 0;
 }
 
-label:hover ~ .description
+label.photo:hover ~ .description
 {
     visibility: visible;
 }
 
-label:hover > img
+label.photo:hover > img
 {
     width: 340px;
+}
+
+label.photo
+{
+    display: block;
+}
+
+input.photo:hover + label
+{
+    width: 358px;
     border-top: 1px solid #999;
     border-right: 1px solid #999;
     border-left: 1px solid #999;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    cursor: pointer;
 }
 
+input.photo:checked + label
+{
+    border-color: transparent;
+}
 input.photo:checked + label img
 {
     z-index: 3;
     width: 500px;
     border: none;
-    text-align: center;
     cursor: auto;
     margin-top: 50px;
 }
@@ -110,27 +135,12 @@ input.photo
     display: none;
 }
 
-/*костыли костыльные*/
-.wrappers .vegetable-card:first-of-type input.photo:checked + label img
+.wrappers .vegetable-card input.photo:checked + label img
 {
-    margin-left: 125%;
+    position: fixed;
+    top: 70px;
+    left: 35%;
 }
-
-.wrappers .vegetable-card:nth-of-type(2) input.photo:checked + label img
-{
-    margin-left: 30%;
-}
-
-.wrappers .vegetable-card:nth-of-type(3) input.photo:checked + label img
-{
-    margin-left: -80%;
-}
-
-.wrappers .vegetable-card:last-of-type input.photo:checked + label img
-{
-    margin-left: -275%;
-}
-
 input.photo:checked ~ .description
 {
     visibility: hidden;

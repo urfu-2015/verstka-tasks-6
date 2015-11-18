@@ -7,13 +7,13 @@
     </head>
     <body>
         <!-- Здесь прикладывать основное усилие -->
-        <input name="switch" type="radio" value="1" checked>
-        <input name="switch" type="radio" value="2">
-        <input name="switch" type="radio" value="3">
-        <div class="wrappers one">
+        <input id="switch-1" name="switch" type="radio" value="1" checked>
+        <input id="switch-2" name="switch" type="radio" value="2">
+        <input id="switch-3" name="switch" type="radio" value="3">
+        <article class="wrappers one">
             <section class="vegetable-card">
                 <input class="photo" id="photo-1" name="photo" type="radio">
-                <label for="photo-1"><img src="img/beet.jpg" alt="Свёкла"></label>
+                <label class="photo" for="photo-1"><img src="img/beet.jpg" alt="Свёкла"></label>
                 <div class="description">
                     <p>
                         Этот овощ не только красив, ярок и необычен, но и универсален: польза свёклы давно
@@ -29,13 +29,13 @@
                     </p>
                 </div>
                 <div class="darkness"></div>
-                <label class="cross" for="cross-1">
-                    <input class="cross" id="cross-1" name="photo" type="radio">
+                <label class="cross">
+                    <input class="cross" name="photo" type="radio">
                 </label>
             </section>
             <section class="vegetable-card">
                 <input class="photo" id="photo-2" name="photo" type="radio">
-                <label for="photo-2"><img src="img/cabbage.jpg" alt="Капустка"></label>
+                <label class="photo" for="photo-2"><img src="img/cabbage.jpg" alt="Капустка"></label>
                 <div class="description">
                     <p>
                         В капусте содержится во много раз больше растительных белков, чем в таких овощах,
@@ -55,13 +55,13 @@
                     </p>
                 </div>
                 <div class="darkness"></div>
-                <label class="cross" for="cross-2">
-                    <input class="cross" id="cross-2" name="photo" type="radio">
+                <label class="cross">
+                    <input class="cross" name="photo" type="radio">
                 </label>
             </section>
             <section class="vegetable-card">
                 <input class="photo" id="photo-3" name="photo" type="radio">
-                <label for="photo-3"><img src="img/carrot.gif" alt="Морковка"></label>
+                <label class="photo" for="photo-3"><img src="img/carrot.gif" alt="Морковка"></label>
                 <div class="description">
                     <p>
                         Знаменитые полезные свойства моркови заключаются в высоком содержании каротина
@@ -76,13 +76,13 @@
                     </p>
                 </div>
                 <div class="darkness"></div>
-                <label class="cross" for="cross-3">
-                    <input class="cross" id="cross-3" name="photo" type="radio">
+                <label class="cross">
+                    <input class="cross" name="photo" type="radio">
                 </label>
             </section>
             <section class="vegetable-card">
                 <input class="photo" id="photo-4" name="photo" type="radio">
-                <label for="photo-4"><img src="img/eggplant.png" alt="Бакалжан"></label>
+                <label class="photo" for="photo-4"><img src="img/eggplant.png" alt="Бакалжан"></label>
                 <div class="description">
                     <p>
                         Несомненная польза баклажанов заключается в их способности выводить вредный
@@ -96,15 +96,15 @@
                     </p>
                 </div>
                 <div class="darkness"></div>
-                <label class="cross" for="cross-4">
-                    <input class="cross" id="cross-4" name="photo" type="radio">
+                <label class="cross">
+                    <input class="cross" name="photo" type="radio">
                 </label>
             </section>
-        </div>
-        <div class="wrappers two">
+        </article>
+        <article class="wrappers two">
             <section class="vegetable-card">
                 <input class="photo" id="photo-5" name="photo" type="radio">
-                <label for="photo-5"><img src="img/marrow.png" alt="Кабачок"></label>
+                <label class="photo" for="photo-5"><img src="img/marrow.png" alt="Кабачок"></label>
                 <div class="description">
                     <p>
                         В кабачке заключен настоящий кладезь различных крайне важных и полезных
@@ -123,13 +123,13 @@
                     </p>
                 </div>
                 <div class="darkness"></div>
-                <label class="cross" for="cross-5">
-                    <input class="cross" id="cross-5" name="photo" type="radio">
+                <label class="cross">
+                    <input class="cross" name="photo" type="radio">
                 </label>
             </section>
             <section class="vegetable-card">
                 <input class="photo" id="photo-6" name="photo" type="radio">
-                <label for="photo-6"><img src="img/onion.jpg" alt="Лучок"></label>
+                <label class="photo" for="photo-6"><img src="img/onion.jpg" alt="Лучок"></label>
                 <div class="description">
                     <p>
                         Несмотря на то, что в луке практически нет белков и жиров, в нём присутствует
@@ -153,13 +153,13 @@
                     </p>
                 </div>
                 <div class="darkness"></div>
-                <label class="cross" for="cross-6">
-                    <input class="cross" id="cross-6" name="photo" type="radio">
+                <label class="cross">
+                    <input class="cross" name="photo" type="radio">
                 </label>
             </section>
             <section class="vegetable-card">
                 <input class="photo" id="photo-7" name="photo" type="radio">
-                <label for="photo-7"><img src="img/pea.png" alt="Горошек"></label>
+                <label class="photo" for="photo-7"><img src="img/pea.png" alt="Горошек"></label>
                 <div class="description">
                     <p>
                         Польза гороха в наличии многообразия витаминов. Есть витамины из группы В, есть
@@ -175,13 +175,13 @@
                     </p>
                 </div>
                 <div class="darkness"></div>
-                <label class="cross" for="cross-7">
-                    <input class="cross" id="cross-7" name="photo" type="radio">
+                <label class="cross">
+                    <input class="cross" name="photo" type="radio">
                 </label>
             </section>
             <section class="vegetable-card">
                 <input class="photo" id="photo-8" name="photo" type="radio">
-                <label for="photo-8"><img src="img/pepper.jpg" alt="Перчики"></label>
+                <label class="photo" for="photo-8"><img src="img/pepper.jpg" alt="Перчики"></label>
                 <div class="description">
                     <p>
                         Состав болгарского перца уникален, это настоящая «сокровищница» с нужными для
@@ -200,15 +200,15 @@
                     </p>
                 </div>
                 <div class="darkness"></div>
-                <label class="cross" for="cross-8">
-                    <input class="cross" id="cross-8" name="photo" type="radio">
+                <label class="cross">
+                    <input class="cross" name="photo" type="radio">
                 </label>
             </section>
-        </div>
-        <div class="wrappers three">
+        </article>
+        <article class="wrappers three">
             <section class="vegetable-card">
                 <input class="photo" id="photo-9" name="photo" type="radio">
-                <label for="photo-9"><img src="img/potato.jpg" alt="Картошечка"></label>
+                <label class="photo" for="photo-9"><img src="img/potato.jpg" alt="Картошечка"></label>
                 <div class="description">
                     <p>
                         В картофеле около 20-25% всего веса клубня составляет углевод (если точнее
@@ -231,13 +231,13 @@
                     </p>
                 </div>
                 <div class="darkness"></div>
-                <label class="cross" for="cross-9">
-                    <input class="cross" id="cross-9" name="photo" type="radio">
+                <label class="cross">
+                    <input class="cross" name="photo" type="radio">
                 </label>
             </section>
             <section class="vegetable-card">
                 <input class="photo" id="photo-10" name="photo" type="radio">
-                <label for="photo-10"><img src="img/radish.jpg" alt="Редиска"></label>
+                <label class="photo" for="photo-10"><img src="img/radish.jpg" alt="Редиска"></label>
                 <div class="description">
                     <p>
                         Такой простой и, казалось бы, ничем не примечательный овощ, как редис, в
@@ -256,13 +256,13 @@
                     </p>
                 </div>
                 <div class="darkness"></div>
-                <label class="cross" for="cross-10">
-                    <input class="cross" id="cross-10" name="photo" type="radio">
+                <label class="cross">
+                    <input class="cross" name="photo" type="radio">
                 </label>
             </section>
             <section class="vegetable-card">
                 <input class="photo" id="photo-11" name="photo" type="radio">
-                <label for="photo-11"><img src="img/tomato.jpg" alt="Помидорчики"></label>
+                <label class="photo" for="photo-11"><img src="img/tomato.jpg" alt="Помидорчики"></label>
                 <div class="description">
                     <p>
                         В помидорах много клетчатки, пектина, ликопина, каротина (отсюда разнообразие
@@ -278,13 +278,13 @@
                     </p>
                 </div>
                 <div class="darkness"></div>
-                <label class="cross" for="cross-11">
-                    <input class="cross" id="cross-11" name="photo" type="radio">
+                <label class="cross">
+                    <input class="cross" name="photo" type="radio">
                 </label>
             </section>
             <section class="vegetable-card">
                 <input class="photo" id="photo-12" name="photo" type="radio">
-                <label for="photo-12"><img src="img/кукумбер.jpg" alt="Огурчики"></label>
+                <label class="photo" for="photo-12"><img src="img/кукумбер.jpg" alt="Огурчики"></label>
                 <div class="description">
                     <p>
                         Ценность воды в огурце просто огромна, она является адсорбентом, обладая
@@ -301,10 +301,15 @@
                     </p>
                 </div>
                 <div class="darkness"></div>
-                <label class="cross" for="cross-12">
-                    <input class="cross" id="cross-12" name="photo" type="radio">
+                <label class="cross">
+                    <input class="cross" name="photo" type="radio">
                 </label>
             </section>
+        </article>
+        <div class="switch">
+            <label class="switch" for="switch-1">1</label>
+            <label class="switch" for="switch-2">2</label>
+            <label class="switch" for="switch-3">3</label>
         </div>
     </body>
 </html>
