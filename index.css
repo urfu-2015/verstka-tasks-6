@@ -3,7 +3,8 @@ html
     height: 100%;
 }
 
-h1
+h1,
+.gallery
 {
     text-align: center;
 }
@@ -12,11 +13,6 @@ h1
 {
     max-width: 100%;
     margin: auto;
-}
-
-.gallery
-{
-    text-align: center;
 }
 
 .page
@@ -36,10 +32,11 @@ h1
     height: auto;
     text-align: left;
     padding: 10px 10px 0;
-    border: 1px solid rgba(0, 0, 0, 0);
+    border: transparent;
 }
 
-.image-card > p
+.description,
+.radio
 {
     display: none;
 }
@@ -53,11 +50,7 @@ h1
     width: 350px;
 }
 
-.image-card:hover > p
-{
-    display: block;
-}
-
+.image-card:hover .description,
 input[name='display-page']:checked + .page
 {
     display: block;
@@ -75,11 +68,6 @@ input[name='display-page']:checked + .page
 #display-page3:checked ~ #label3:hover
 {
     background-position: top right;
-}
-
-.radio
-{
-    display: none;
 }
 
 .radio-label
@@ -111,7 +99,7 @@ input[name='display-page']:checked + .page
     top: 5%;
     left: 5%;
     right: 5%;
-    height: 70%;
+    max-height: 70%;
     width: auto;
     display: none;
     z-index: 100;
@@ -125,7 +113,8 @@ input[name='display-img']:checked ~ .full-img
 
 input[name='display-img']:checked ~ .full-img img
 {
-    max-width: 70%;
+    max-width: 90%;
+    max-height: 100%;
     height: auto;
 }
 
