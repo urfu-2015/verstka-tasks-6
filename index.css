@@ -1,1 +1,266 @@
+html,
+body
+{
+    width: 100%;
+    height: 100%;
+    font-family: 'Play', sans-serif;
+    line-height: 1.3em;
+    margin: 0;
+    padding: 0;
+}
 
+main
+{
+    height: 400px;
+    width: 100%;
+    margin-left: 5px;
+    display: inline;
+}
+
+input
+{
+    display: none;
+}
+
+img
+{
+    width: 100%;
+    vertical-align: bottom;
+    z-index: 1;
+    position: relative;
+    cursor: pointer;
+}
+
+.slide
+{
+    margin-left: 0;
+}
+
+.firstSlide
+{
+    margin-left: 10%;
+}
+
+.slider
+{
+    position: absolute;
+    top: 550px;
+    left: 50%;
+    vertical-align: bottom;
+}
+
+.description
+{
+    display: none;
+    vertical-align: top;
+    width: 90%;
+    background-color: #fff;
+    margin-top: 10px;
+    text-align: left;
+    padding: 2%;
+}
+
+.bigPic
+{
+    display: none;
+    cursor: auto;
+}
+
+div.slide div.veg img.cucumber
+{
+    padding-top: 50px;
+}
+
+.peas
+{
+    width: 60%;
+}
+
+label
+{
+    cursor: pointer;
+}
+
+.label
+{
+    width: 9%;
+    height: 300px;
+}
+
+label.pointer
+{
+    margin-top: 100px;
+    margin-right: 0;
+    vertical-align: bottom;
+    height: 115px;
+    width: 128px;
+    background: url('http://bit.ly/1O5TFvo') no-repeat;
+    background-size: 256px 256px;
+    float: right;
+}
+
+label.left
+{
+    background-position: 0 0;
+}
+
+label.left:hover
+{
+    background-position: -128px 0;
+}
+
+label.right
+{
+    background-position: 0 -128px;
+}
+
+label.right:hover
+{
+    background-position: -128px -128px;
+}
+
+.back,
+.close
+{
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+.back
+{
+    pointer-events: all;
+    cursor: default;
+    height: 100%;
+}
+
+.close
+{
+    background: url('http://bit.ly/1SLkxCs') no-repeat;
+    background-size: 30px;
+    position: fixed;
+    background-position: 0 0;
+    width: 30px;
+    height: 30px;
+    top: 20px;
+}
+
+.close:hover
+{
+    background-position: 0 -30px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+div.veg + div
+{
+    width: 0;
+}
+
+.slide .veg img:first-child
+{
+    padding-top: 10px;
+}
+
+.slider label
+{
+    vertical-align: bottom;
+    text-align: center;
+    border-radius: 5px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: #ccc none repeat scroll 0% 0%;
+}
+
+div div.veg,
+div.veg:hover + div
+{
+    width: 18%;
+    background-color: #fff;
+    vertical-align: top;
+    text-align: center;
+}
+
+div.veg:hover + div
+{
+    margin-right: .3%;
+}
+
+div.veg:hover > img
+{
+    width: 240px;
+}
+
+.firstSlide div,
+.secondSlide div,
+.thirdSlide div
+{
+    display: none;
+}
+
+input[value='firstImg']:checked + div img.bigPic
+{
+    display: inline;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    max-width: 400px;
+    max-height: 500px;
+    margin: auto;
+    z-index: 10;
+}
+
+input[value='firstImg']:checked + div .back
+{
+    position: fixed;
+    visibility: visible;
+    z-index: 8;
+    opacity: .7;
+    display: inline;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    margin: auto;
+}
+
+input[value='firstImg']:checked + div label.close
+{
+    position: fixed;
+    visibility: visible;
+    z-index: 9;
+}
+
+div.veg:hover > .description
+{
+    display: inline-block;
+}
+
+div.veg:hover
+{
+    width: 330px;
+    box-shadow: 2px 2px 5px 5px #ccc;
+    position: fixed;
+    z-index: 2;
+}
+
+input[value='first']:checked ~ .slider label.first,
+input[value='second']:checked ~ .slider label.second,
+input[value='third']:checked ~ .slider label.third
+{
+    background: #000 none repeat scroll 0% 0%;
+}
+
+input[value='first']:checked ~ main .firstSlide div:not(.description),
+input[value='second']:checked ~ main .secondSlide div:not(.description),
+input[value='third']:checked ~ main .thirdSlide div:not(.description)
+{
+    display: inline-block;
+}
