@@ -1,43 +1,54 @@
 body
 {
     text-align: center;
+    overflow-x: hidden;
+    overflow-y: visible;
 }
 
 input
 {
-    font-size: 0;
     display: none;
+}
+
+img
+{
+    width: 100%;
+}
+
+*
+{
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    box-sizing: border-box;
 }
 
 .menu
 {
     font-size: 0;
+    width: 1024px;
+    padding: 0 100px;
+    position: relative;
+    white-space: nowrap;
     display: inline-block;
 }
 
-.menu > .menu-container
+.menu-item
 {
-    white-space: nowrap;
-}
-
-.menu > .menu-container > .menu-item
-{
+    opacity: 0;
     width: 200px;
     padding: 8px;
-    display: none;
     position: relative;
+    display: inline-block;
     vertical-align: middle;
-    box-sizing: border-box;
 }
 
-.menu > .menu-container > .menu-item > img
-{
-    width: 100%;
-}
-
-.menu > .menu-container > .menu-item > .menu-info
+.menu-info
 {
     top: 0;
+    left: 50%;
     width: 300px;
     padding: 8px;
     height: auto;
@@ -45,34 +56,35 @@ input
     text-align: left;
     position: absolute;
     border-radius: 8px;
-    left: calc(50% - 150px);
+    margin-left: -150px;
     background-color: white;
     box-shadow: 0 0 10px black;
-    box-sizing: border-box;
 }
 
-.menu > .menu-container > .menu-button
+.menu-button
 {
+    left: 0;
+    top: 50%;
+    z-index: 999;
+    width: 100px;
     padding: 8px;
-    height: 100%;
+    height: 100px;
     display: none;
     color: #a0a0a0;
     cursor: pointer;
     font-size: 72px;
-    text-align: left;
-    vertical-align: middle;
-    background-color: #c0c0c0;
+    margin-top: -50px;
+    line-height: 100px;
+    position: absolute;
     text-shadow: 0 0 4px black;
-    box-shadow: 0 0 10px black;
-    box-sizing: border-box;
 }
 
-.menu > .menu-container > .menu-item > .menu-info > img
+.right
 {
-    width: 100%;
+    left: calc(100% - 100px);
 }
 
-.menu > .menu-container > .menu-item > .menu-info > p
+.menu-info > p
 {
     width: 100%;
     height: auto;
@@ -80,14 +92,13 @@ input
     white-space: normal;
 }
 
-.menu > .menu-container > .menu-item > img:hover + .menu-info,
-.menu > .menu-container > .menu-item > .menu-info:hover
+.menu-item > .menu-info:hover
 {
     z-index: 1000;
     display: inline-block;
 }
 
-.menu > .menu-container > .menu-item > .menu-big-image
+.menu-big-image
 {
     top: 0;
     left: 0;
@@ -100,13 +111,16 @@ input
     background-color: rgba(0, 0, 0, .8);
 }
 
-.menu > .menu-container > .menu-item > .menu-big-image > div
+.menu-big-image > div
 {
     width: 100%;
     height: 100%;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
 }
 
-.menu > .menu-container > .menu-item > .menu-big-image > div > img
+.menu-big-image > div > img
 {
     width: auto;
     height: auto;
@@ -114,19 +128,12 @@ input
     max-height: 100%;
 }
 
-.menu > .menu-container > .menu-item > input[type=radio]:checked ~ .menu-big-image
+.menu-item > input:checked ~ .menu-big-image
 {
     display: table;
 }
 
-.menu > .menu-container > .menu-item > input[type=radio]:checked ~ .menu-big-image > div
-{
-    text-align: center;
-    display: table-cell;
-    vertical-align: middle;
-}
-
-.menu > .menu-container > .menu-item > .menu-big-image > .menu-big-image-close
+.menu-big-image-close
 {
     top: 3%;
     right: 3%;
@@ -139,53 +146,78 @@ input
     text-shadow: 0 0 32px black;
 }
 
-.menu > .menu-container > .menu-item > input[type=radio]:checked ~ .menu-big-image > .menu-big-image-close
+.menu-item > input:checked ~ .menu-big-image > .menu-big-image-close
 {
     display: block;
 }
 
-.menu > input[type=radio][id=slide1]:checked ~ .menu-container > :nth-child(1),
-.menu > input[type=radio][id=slide1]:checked ~ .menu-container > :nth-child(2),
-.menu > input[type=radio][id=slide1]:checked ~ .menu-container > :nth-child(3),
-.menu > input[type=radio][id=slide1]:checked ~ .menu-container > :nth-child(5),
-.menu > input[type=radio][id=slide1]:checked ~ .menu-container > :nth-child(6)
+#slide1:checked ~ .menu > :nth-child(1),
+#slide1:checked ~ .menu > :nth-child(2),
+#slide1:checked ~ .menu > :nth-child(3),
+#slide1:checked ~ .menu > :nth-child(4),
+#slide1:checked ~ .menu > :nth-child(6),
+#slide1:checked ~ .menu > :nth-child(7),
+#slide2:checked ~ .menu > :nth-child(5),
+#slide2:checked ~ .menu > :nth-child(6),
+#slide2:checked ~ .menu > :nth-child(8),
+#slide2:checked ~ .menu > :nth-child(9),
+#slide2:checked ~ .menu > :nth-child(11),
+#slide2:checked ~ .menu > :nth-child(12),
+#slide3:checked ~ .menu > :nth-child(10),
+#slide3:checked ~ .menu > :nth-child(11),
+#slide3:checked ~ .menu > :nth-child(13),
+#slide3:checked ~ .menu > :nth-child(14),
+#slide3:checked ~ .menu > :nth-child(16),
+#slide3:checked ~ .menu > :nth-child(17),
+#slide4:checked ~ .menu > :nth-child(15),
+#slide4:checked ~ .menu > :nth-child(16),
+#slide4:checked ~ .menu > :nth-child(18),
+#slide4:checked ~ .menu > :nth-child(19),
+#slide4:checked ~ .menu > :nth-child(20)
 {
+    opacity: 1;
     display: inline-block;
 }
 
-.menu > input[type=radio][id=slide2]:checked ~ .menu-container > :nth-child(4),
-.menu > input[type=radio][id=slide2]:checked ~ .menu-container > :nth-child(5),
-.menu > input[type=radio][id=slide2]:checked ~ .menu-container > :nth-child(7),
-.menu > input[type=radio][id=slide2]:checked ~ .menu-container > :nth-child(8),
-.menu > input[type=radio][id=slide2]:checked ~ .menu-container > :nth-child(10),
-.menu > input[type=radio][id=slide2]:checked ~ .menu-container > :nth-child(11)
+#slide1:checked ~ .menu > :nth-child(1) > img:hover + .menu-info,
+#slide1:checked ~ .menu > :nth-child(2) > img:hover + .menu-info,
+#slide1:checked ~ .menu > :nth-child(3) > img:hover + .menu-info,
+#slide1:checked ~ .menu > :nth-child(4) > img:hover + .menu-info,
+#slide1:checked ~ .menu > :nth-child(6) > img:hover + .menu-info,
+#slide1:checked ~ .menu > :nth-child(7) > img:hover + .menu-info,
+#slide2:checked ~ .menu > :nth-child(5) > img:hover + .menu-info,
+#slide2:checked ~ .menu > :nth-child(6) > img:hover + .menu-info,
+#slide2:checked ~ .menu > :nth-child(8) > img:hover + .menu-info,
+#slide2:checked ~ .menu > :nth-child(9) > img:hover + .menu-info,
+#slide2:checked ~ .menu > :nth-child(11) > img:hover + .menu-info,
+#slide2:checked ~ .menu > :nth-child(12) > img:hover + .menu-info,
+#slide3:checked ~ .menu > :nth-child(10) > img:hover + .menu-info,
+#slide3:checked ~ .menu > :nth-child(11) > img:hover + .menu-info,
+#slide3:checked ~ .menu > :nth-child(13) > img:hover + .menu-info,
+#slide3:checked ~ .menu > :nth-child(14) > img:hover + .menu-info,
+#slide3:checked ~ .menu > :nth-child(16) > img:hover + .menu-info,
+#slide3:checked ~ .menu > :nth-child(17) > img:hover + .menu-info,
+#slide4:checked ~ .menu > :nth-child(15) > img:hover + .menu-info,
+#slide4:checked ~ .menu > :nth-child(16) > img:hover + .menu-info,
+#slide4:checked ~ .menu > :nth-child(18) > img:hover + .menu-info,
+#slide4:checked ~ .menu > :nth-child(19) > img:hover + .menu-info,
+#slide4:checked ~ .menu > :nth-child(20) > img:hover + .menu-info
 {
+    z-index: 1000;
     display: inline-block;
 }
 
-.menu > input[type=radio][id=slide3]:checked ~ .menu-container > :nth-child(9),
-.menu > input[type=radio][id=slide3]:checked ~ .menu-container > :nth-child(10),
-.menu > input[type=radio][id=slide3]:checked ~ .menu-container > :nth-child(12),
-.menu > input[type=radio][id=slide3]:checked ~ .menu-container > :nth-child(13),
-.menu > input[type=radio][id=slide3]:checked ~ .menu-container > :nth-child(15),
-.menu > input[type=radio][id=slide3]:checked ~ .menu-container > :nth-child(16)
+#slide2:checked ~ .menu > :nth-child(2)
 {
-    display: inline-block;
+    margin-left: -600px;
 }
 
-.menu > input[type=radio][id=slide4]:checked ~ .menu-container > :nth-child(14),
-.menu > input[type=radio][id=slide4]:checked ~ .menu-container > :nth-child(15),
-.menu > input[type=radio][id=slide4]:checked ~ .menu-container > :nth-child(17),
-.menu > input[type=radio][id=slide4]:checked ~ .menu-container > :nth-child(18),
-.menu > input[type=radio][id=slide4]:checked ~ .menu-container > :nth-child(20),
-.menu > input[type=radio][id=slide4]:checked ~ .menu-container > :nth-child(21)
+#slide3:checked ~ .menu > :nth-child(2)
 {
-    display: inline-block;
+    margin-left: -1200px;
 }
 
-.menu > input[type=radio][id=slide5]:checked ~ .menu-container > :nth-child(19),
-.menu > input[type=radio][id=slide5]:checked ~ .menu-container > :nth-child(20),
-.menu > input[type=radio][id=slide5]:checked ~ .menu-container > :nth-child(22)
+#slide4:checked ~ .menu > :nth-child(2)
 {
-    display: inline-block;
+    margin-left: -1800px;
 }
