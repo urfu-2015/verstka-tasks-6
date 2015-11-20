@@ -6,260 +6,213 @@
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <input id="close-modal" name="full-img" type="radio" checked>
-        <input id="img1" name="full-img" type="radio">
-        <input id="img2" name="full-img" type="radio">
-        <input id="img3" name="full-img" type="radio">
-        <input id="img4" name="full-img" type="radio">
-        <input id="img5" name="full-img" type="radio">
-        <input id="img6" name="full-img" type="radio">
-        <input id="img7" name="full-img" type="radio">
-        <input id="img8" name="full-img" type="radio">
-        <input id="img9" name="full-img" type="radio">
-        <input id="img10" name="full-img" type="radio">
-        <input id="img11" name="full-img" type="radio">
-        <input id="img12" name="full-img" type="radio">
-        <input id="img13" name="full-img" type="radio">
-        <div class="slider">
-            <input id="btn1" name="slder" type="radio" checked>
-            <input id="btn2" name="slder" type="radio">
-            <input id="btn3" name="slder" type="radio">
-            <input id="btn4" name="slder" type="radio">
-            <!--<div class="slider__controls">
-                <label for="btn1"></label>
-                <label for="btn2"></label>
-                <label for="btn3"></label>
-                <label for="btn4"></label>
-            </div>-->
-            <div class="slider__controls-arrow slider__controls-arrow--left">
-                <label for="btn1"></label>
-                <label for="btn2"></label>
-                <label for="btn3"></label>
+        <div class="wrapper">
+            <span class="vertical-center"></span>
+            <div class="slider">
+                <input id="btn1" name="slider" type="radio" checked>
+                <input id="btn2" name="slider" type="radio">
+                <input id="btn3" name="slider" type="radio">
+                <input id="btn4" name="slider" type="radio">
+                <div class="slider__controls-arrow slider__controls-arrow--left">
+                    <label for="btn1"></label>
+                    <label for="btn2"></label>
+                    <label for="btn3"></label>
+                </div>
+                <div class="slider__controls-arrow slider__controls-arrow--right">
+                    <label for="btn2"></label>
+                    <label for="btn3"></label>
+                    <label for="btn4"></label>
+                </div>
+                <div class="slider__inner">
+                    <section class="slides">
+                        <input id="beet" name="full-img" type="radio">
+                        <article class="slides__item">
+                            <label for="beet">
+                                <img src="img/beet.jpg" class="slides__item-img" alt="Свекла">
+                            </label>
+                            <p class="slides__item-info">
+                                Свекла это двулетнее травянистое растение. В народе также называется буряк,
+                                столовая свекла и овощная. В течение первого года формируется розетка листьев
+                                и корнеплод. Форма его зависит от конкретного сорта. Она изменяется от
+                                удлиненно-конической до округло-плоской. Розетка имеет небольшое количество
+                                листьев. Листья достаточно маленькие, могут быть продолговатой или ланцетной
+                                формы. На втором году формируются цветы и плоды. Плод – тройчатые клубочки.
+                            </p>
+                        </article>
+                        <input id="cabbage" name="full-img" type="radio">
+                        <article class="slides__item">
+                            <label for="cabbage">
+                                <img src="img/cabbage.jpg" class="slides__item-img" alt="Капуста">
+                            </label>
+                            <p class="slides__item-info">
+                                Белокочанная капуста – одна из самых старых овощных культур. Её выращивали в
+                                Древнем Египте, использовали в походах воины Александра Македонского.
+                                Древнегреческий математик и философ Пифагор высоко оценивал полезные свойства
+                                и вкус белокочанной капусты, сам занимался её разведением. В те времена
+                                насчитывалось от 3 до 10 сортов, в середине 19 века –около 30-ти, а в
+                                настоящий момент в мире насчитываются уже сотни сортов белокочанной капусты.
+                                Она выращивается во всех странах с умеренным климатом, поскольку обладает
+                                холодостойкостью, высокой урожайностью, хорошей транспортабельностью и
+                                лежкостью.
+                            </p>
+                        </article>
+                        <input id="carrot" name="full-img" type="radio">
+                        <article class="slides__item">
+
+                            <label for="carrot">
+                                <img src="img/carrot.jpg" class="slides__item-img" alt="Морковь">
+                            </label>
+                            <p class="slides__item-info">
+                                Морковь является одним из самых любимых и популярных корнеплодов. Упоминания
+                                о ней содержатся ещё в литературных источниках Древней Греции и Вавилонии.
+                                Считается, что культурная морковь произошла от моркови дикой, которая
+                                произрастает в Азии и Европе. В Россию она пришла практически одновременно с
+                                Европой - в XIV веке. Культурная морковь может быть двух видов: кормовой и
+                                столовой. В нашей стране её возделывают повсеместно. По площади посевов она
+                                может уступать лишь томату, капусте, луку и огурцу.
+                            </p>
+                        </article>
+                        <input id="corn" name="full-img" type="radio">
+                        <article class="slides__item">
+                            <label for="corn">
+                                <img src="img/corn.jpg" class="slides__item-img" alt="Кукуруза">
+                            </label>
+                            <p class="slides__item-info">
+                                Кукуруза – однолетнее травянистое растение. В Европу она была завезена из
+                                Мексики. На территории России возделывается с семнадцатого века. Является
+                                древнейшим культурным растением. Не способна к одичанию и самосеву. Внешнее
+                                описание кукурузы – растение достигает высоты 3 метра. В редких случаях
+                                высота может доходить до шести метров. Кукуруза имеет хорошо развитую
+                                корневую систему.
+                            </p>
+                        </article>
+                        <input id="cucumber" name="full-img" type="radio">
+                        <article class="slides__item">
+                            <label for="cucumber">
+                                <img src="img/cucumber.jpg" class="slides__item-img" alt="Огурец">
+                            </label>
+                            <p class="slides__item-info">
+                                Огурец – это однолетнее травянистое растение. Его сорта делятся на
+                                короткоплетистые, среднеплетистые и длинноплетистые. Стебель растения
+                                ползучий и разветвленный. Корень сильно разветвленный, стержневой.
+                                Численность и длина побегов зависят от сорта растения и условий его
+                                выращивания.<br>Огурцы могут быть грунтовыми и салатными. Растение пригодно
+                                для выращивания в открытом грунте. Однако оно лучше себя чувствует в теплицах
+                                и парниках. Является теплолюбивым и влаголюбивым.
+                            </p>
+                        </article>
+                        <input id="eggplant" name="full-img" type="radio">
+                        <article class="slides__item">
+                            <label for="eggplant">
+                                <img src="img/eggplant.jpg" class="slides__item-img" alt="Баклажан">
+                            </label>
+                            <p class="slides__item-info">
+                                Баклажан – это травянистое двулетнее теплолюбивое растение. Его стебель
+                                плотный, прямостоячий, деревянистый. Может быть фиолетовым или зеленым.
+                                Листья очередные, лопастные или выемчатые, с жилкованием. Цветки обоеполые,
+                                собранные в кисти. Плодами являются ягоды разной формы. Их окраска колеблется
+                                от светло-лимонной до темно-фиолетовой.
+                            </p>
+                        </article>
+                        <input id="leek" name="full-img" type="radio">
+                        <article class="slides__item">
+                            <label for="leek">
+                                <img src="img/leek.jpg" class="slides__item-img" alt="Лук-порей">
+                            </label>
+                            <p class="slides__item-info">
+                                Лук-порей относится к семейству лилейные. Родина его – побережье Средиземного
+                                моря. Эта культура была известна еще древним грекам и римлянам, она также
+                                выращивалась и на Северном побережье Африки (Египет, Карфаген, Алжир,
+                                Марокко). В России возделывают этот вид лука повсеместно, но в небольшом
+                                объеме, в основном лишь в пригородных зонах.
+                            </p>
+                        </article>
+                        <input id="onion" name="full-img" type="radio">
+                        <article class="slides__item">
+                            <label for="onion">
+                                <img src="img/onion.jpg" class="slides__item-img" alt="Лук">
+                            </label>
+                            <p class="slides__item-info">
+                                Лук считается старейшим культурным растением. Его разведением занимались
+                                народы в странах Индии, Восточной Азии, Персии и Средиземноморья. Ещё
+                                египтяне, римляне и греки использовали порей в пищу. Римляне считали его едой
+                                для богачей. Кочевники, которые открыли это растение, изначально употребляли
+                                в пищу лишь зелёные перья. И только спустя некоторое время стали кушать и
+                                луковицы.
+                            </p>
+                        </article>
+                        <input id="parsley" name="full-img" type="radio">
+                        <article class="slides__item">
+                            <label for="parsley">
+                                <img src="img/parsley.jpg" class="slides__item-img" alt="Петрушка">
+                            </label>
+                            <p class="slides__item-info">
+                                Огородная петрушка – это двулетнее травянистое растение. В высоту оно может
+                                достигать до 80 см. В течение первого года образуется розетка
+                                перисто-рассеченных листьев. Во второй год формируется цветочный стебель.
+                                Цветет растение с июля по сентябрь мелкими желтыми цветами. Чаще всего
+                                огородники выращивают курчавую и листовую петрушку. Растение петрушка
+                                известно во многих климатических зонах.
+                            </p>
+                        </article>
+                        <input id="pea" name="full-img" type="radio">
+                        <article class="slides__item">
+                            <label for="pea">
+                                <img src="img/pea.jpg" class="slides__item-img" alt="Горох">
+                            </label>
+                            <p class="slides__item-info">
+                                Овощной горох – травянистое однолетнее растение. Стебель у него штамбовый или
+                                полегающий с цепляющимися усиками, имеет высоту от 20 до 200 см. Листья
+                                сложные, парноперистые. Корневая система стержневая, хорошо разветвленная, на
+                                ней развиваются клубеньковые бактерии, усваивающие атмосферный азот.
+                            </p>
+                        </article>
+                        <input id="pepper" name="full-img" type="radio">
+                        <article class="slides__item">
+                            <label for="pepper">
+                                <img src="img/pepper.jpg" class="slides__item-img" alt="Перец">
+                            </label>
+                            <p class="slides__item-info">
+                                Болгарский перец считается старейшим овощем. У него длинная и интересная
+                                история, которая насчитывает более 9 тысяч лет. Многие века сладкий овощ
+                                выращивался в самых солнечных и теплых уголках земли. Изначально он
+                                использовался как лекарственное средство. С его помощью лечили астму,
+                                малокровие и головокружение. И лишь спустя какое-то время люди его стали
+                                использовать в пищу.
+                            </p>
+                        </article>
+                        <input id="potato" name="full-img" type="radio">
+                        <article class="slides__item">
+                            <label for="potato">
+                                <img src="img/potato.jpg" class="slides__item-img" alt="Картошка">
+                            </label>
+                            <p class="slides__item-info">
+                                Многолетнее травянистое клубненосное растение, возделываемое как однолетняя
+                                культура. Представляет собой куст высотой до 1м, с 4-6, иногда 6-8 стеблями,
+                                количество которых зависит от сорта и величины посадочного клубня. Стебли
+                                голые, ребристые, погруженная в почву часть их выпускает длинные боковые
+                                отростки, называемые столонами.
+                            </p>
+                        </article>
+                        <input id="pumpkin" name="full-img" type="radio">
+                        <article class="slides__item">
+                            <label for="pumpkin">
+                                <img src="img/pumpkin.jpg" class="slides__item-img" alt="Тыква">
+                            </label>
+                            <p class="slides__item-info">
+                                Тыква – это однолетнее растение с мощной корневой системой. Форма плодов
+                                растения и их окраска зависят от сорта. Цвет может быть белым, серым,
+                                оранжевым. Мякоть плода рыхлая. Цветение наступает в первой половине лета,
+                                плоды созревают с конца лета и до сентября. Выращивают более 200 сортов, на
+                                территории России, Мексики, США и других стран.
+                            </p>
+                        </article>
+                        <input id="close-modal" name="full-img" type="radio" checked>
+                        <div class="modal-overlay"></div>
+                        <label for="close-modal" class="modal-close"></label>
+                    </section>
+                </div>
             </div>
-            <div class="slider__controls-arrow slider__controls-arrow--right">
-                <label for="btn2"></label>
-                <label for="btn3"></label>
-                <label for="btn4"></label>
-            </div>
-            <ul class="slides">
-                <li class="slides__item">
-                    <img src="img/beet.jpg" class="slides__item-img" width="250" height="200" alt="Свекла">
-                    <div class="slides__item-info">
-                        <label for="img1">
-                            <img src="img/beet.jpg" alt="Свекла">
-                        </label>
-                        <p class="slides__item-descr">
-                            Свекла это двулетнее травянистое растение. В народе также называется буряк,
-                            столовая свекла и овощная. В течение первого года формируется розетка листьев
-                            и корнеплод. Форма его зависит от конкретного сорта. Она изменяется от
-                            удлиненно-конической до округло-плоской. Розетка имеет небольшое количество
-                            листьев. Листья достаточно маленькие, могут быть продолговатой или ланцетной
-                            формы. На втором году формируются цветы и плоды. Плод – тройчатые клубочки.
-                        </p>
-                    </div>
-                </li>
-                <li class="slides__item">
-                    <img src="img/cabbage.jpg" class="slides__item-img" width="250" height="200"
-                        alt="Капуста">
-                    <div class="slides__item-info">
-                        <label for="img2">
-                            <img src="img/cabbage.jpg" alt="Капуста">
-                        </label>
-                        <p class="slides__item-descr">
-                            Белокочанная капуста – одна из самых старых овощных культур. Её выращивали в
-                            Древнем Египте, использовали в походах воины Александра Македонского.
-                            Древнегреческий математик и философ Пифагор высоко оценивал полезные свойства и
-                            вкус белокочанной капусты, сам занимался её разведением. В те времена
-                            насчитывалось от 3 до 10 сортов, в середине 19 века –около 30-ти, а в настоящий
-                            момент в мире насчитываются уже сотни сортов белокочанной капусты. Она
-                            выращивается во всех странах с умеренным климатом, поскольку обладает
-                            холодостойкостью, высокой урожайностью, хорошей транспортабельностью и
-                            лежкостью.
-                        </p>
-                    </div>
-                </li>
-                <li class="slides__item">
-                    <img src="img/carrot.jpg" class="slides__item-img" width="250" height="200"
-                        alt="Морковь">
-                    <div class="slides__item-info">
-                        <label for="img3">
-                            <img src="img/carrot.jpg" alt="Морковь">
-                        </label>
-                        <p class="slides__item-descr">
-                            Морковь является одним из самых любимых и популярных корнеплодов. Упоминания
-                            о ней содержатся ещё в литературных источниках Древней Греции и Вавилонии.
-                            Считается, что культурная морковь произошла от моркови дикой, которая
-                            произрастает в Азии и Европе. В Россию она пришла практически одновременно с
-                            Европой - в XIV веке. Культурная морковь может быть двух видов: кормовой и
-                            столовой. В нашей стране её возделывают повсеместно. По площади посевов она может
-                            уступать лишь томату, капусте, луку и огурцу.
-                    </div>
-                </li>
-                <li class="slides__item">
-                    <img src="img/corn.jpg" class="slides__item-img" width="250" height="200" alt="Кукуруза">
-                    <div class="slides__item-info">
-                        <label for="img4">
-                            <img src="img/corn.jpg" alt="Кукуруза">
-                        </label>
-                        <p class="slides__item-descr">
-                            Кукуруза – однолетнее травянистое растение. В Европу она была завезена из
-                            Мексики. На территории России возделывается с семнадцатого века. Является
-                            древнейшим культурным растением. Не способна к одичанию и самосеву. Внешнее
-                            описание кукурузы – растение достигает высоты 3 метра. В редких случаях высота
-                            может доходить до шести метров. Кукуруза имеет хорошо развитую корневую систему.
-                    </div>
-                </li>
-                <li class="slides__item">
-                    <img src="img/cucumber.jpg" class="slides__item-img" width="250" height="200"
-                        alt="Огурец">
-                    <div class="slides__item-info">
-                        <label for="img5">
-                            <img src="img/cucumber.jpg" alt="Огурец">
-                        </label>
-                        <p class="slides__item-descr">
-                            Огурец – это однолетнее травянистое растение. Его сорта делятся на
-                            короткоплетистые, среднеплетистые и длинноплетистые. Стебель растения ползучий и
-                            разветвленный. Корень сильно разветвленный, стержневой. Численность и длина
-                            побегов зависят от сорта растения и условий его выращивания.<br>Огурцы могут быть
-                            грунтовыми и салатными. Растение пригодно для выращивания в открытом грунте.
-                            Однако оно лучше себя чувствует в теплицах и парниках. Является теплолюбивым и
-                            влаголюбивым.
-                    </div>
-                </li>
-                <li class="slides__item">
-                    <img src="img/eggplant.jpg" class="slides__item-img" width="250" height="200"
-                        alt="Баклажан">
-                    <div class="slides__item-info">
-                        <label for="img6">
-                            <img src="img/eggplant.jpg" alt="Баклажан">
-                        </label>
-                        <p class="slides__item-descr">
-                            Баклажан – это травянистое двулетнее теплолюбивое растение. Его стебель плотный,
-                            прямостоячий, деревянистый. Может быть фиолетовым или зеленым. Листья очередные,
-                            лопастные или выемчатые, с жилкованием. Цветки обоеполые, собранные в кисти.
-                            Плодами являются ягоды разной формы. Их окраска колеблется от светло-лимонной до
-                            темно-фиолетовой.
-                    </div>
-                </li>
-                <li class="slides__item">
-                    <img src="img/leek.jpg" class="slides__item-img" width="250" height="200"
-                        alt="Лук-порей">
-                    <div class="slides__item-info">
-                        <label for="img7">
-                            <img src="img/leek.jpg" alt="Лук-порей">
-                        </label>
-                        <p class="slides__item-descr">
-                            Лук-порей относится к семейству лилейные. Родина его – побережье Средиземного
-                            моря. Эта культура была известна еще древним грекам и римлянам, она также
-                            выращивалась и на Северном побережье Африки (Египет, Карфаген, Алжир, Марокко).
-                            В России возделывают этот вид лука повсеместно, но в небольшом объеме, в основном
-                            лишь в пригородных зонах.
-                    </div>
-                </li>
-                <li class="slides__item">
-                    <img src="img/onion.jpg" class="slides__item-img" width="250" height="200" alt="Лук">
-                    <div class="slides__item-info">
-                        <label for="img8">
-                            <img src="img/onion.jpg" alt="Лук">
-                        </label>
-                        <p class="slides__item-descr">
-                            Лук считается старейшим культурным растением. Его разведением занимались народы в
-                            странах Индии, Восточной Азии, Персии и Средиземноморья. Ещё египтяне, римляне и
-                            греки использовали порей в пищу. Римляне считали его едой для богачей. Кочевники,
-                            которые открыли это растение, изначально употребляли в пищу лишь зелёные перья. И
-                            только спустя некоторое время стали кушать и луковицы.
-                    </div>
-                </li>
-                <li class="slides__item">
-                    <img src="img/parsley.jpg" class="slides__item-img" width="250" height="200"
-                        alt="Петрушка">
-                    <div class="slides__item-info">
-                        <label for="img9">
-                            <img src="img/parsley.jpg" alt="Петрушка">
-                        </label>
-                        <p class="slides__item-descr">
-                            Огородная петрушка – это двулетнее травянистое растение. В высоту оно может
-                            достигать до 80 см. В течение первого года образуется розетка перисто-рассеченных
-                            листьев. Во второй год формируется цветочный стебель. Цветет растение с июля по
-                            сентябрь мелкими желтыми цветами. Чаще всего огородники выращивают курчавую и
-                            листовую петрушку. Растение петрушка известно во многих климатических зонах.
-                    </div>
-                </li>
-                <li class="slides__item">
-                    <img src="img/pea.jpg" class="slides__item-img" width="250" height="200" alt="Горох">
-                    <div class="slides__item-info">
-                        <label for="img10">
-                            <img src="img/pea.jpg" alt="Горох">
-                        </label>
-                        <p class="slides__item-descr">
-                            Овощной горох – травянистое однолетнее растение. Стебель у него штамбовый или
-                            полегающий с цепляющимися усиками, имеет высоту от 20 до 200 см. Листья сложные,
-                            парноперистые. Корневая система стержневая, хорошо разветвленная, на ней
-                            развиваются клубеньковые бактерии, усваивающие атмосферный азот.
-                    </div>
-                </li>
-                <li class="slides__item">
-                    <img src="img/pepper.jpg" class="slides__item-img" width="250" height="200" alt="Перец">
-                    <div class="slides__item-info">
-                        <label for="img11">
-                            <img src="img/pepper.jpg" alt="Перец">
-                        </label>
-                        <p class="slides__item-descr">
-                            Болгарский перец считается старейшим овощем. У него длинная и интересная история,
-                            которая насчитывает более 9 тысяч лет. Многие века сладкий овощ выращивался в
-                            самых солнечных и теплых уголках земли. Изначально он использовался как
-                            лекарственное средство. С его помощью лечили астму, малокровие и головокружение.
-                            И лишь спустя какое-то время люди его стали использовать в пищу.
-                    </div>
-                </li>
-                <li class="slides__item">
-                    <img src="img/potato.jpg" class="slides__item-img" width="250" height="200"
-                        alt="Картошка">
-                    <div class="slides__item-info">
-                        <label for="img12">
-                            <img src="img/potato.jpg" alt="Картошка">
-                        </label>
-                        <p class="slides__item-descr">
-                            Многолетнее травянистое клубненосное растение, возделываемое как однолетняя
-                            культура. Представляет собой куст высотой до 1м, с 4-6, иногда 6-8 стеблями,
-                            количество которых зависит от сорта и величины посадочного клубня. Стебли голые,
-                            ребристые, погруженная в почву часть их выпускает длинные боковые отростки,
-                            называемые столонами.
-                    </div>
-                </li>
-                <li class="slides__item">
-                    <img src="img/pumpkin.jpg" class="slides__item-img" width="250" height="200" alt="Тыква">
-                    <div class="slides__item-info">
-                        <label for="img13">
-                            <img src="img/pumpkin.jpg" alt="Тыква">
-                        </label>
-                        <p class="slides__item-descr">
-                            Тыква – это однолетнее растение с мощной корневой системой. Форма плодов растения
-                            и их окраска зависят от сорта. Цвет может быть белым, серым, оранжевым. Мякоть
-                            плода рыхлая. Цветение наступает в первой половине лета, плоды созревают с конца
-                            лета и до сентября. Выращивают более 200 сортов, на территории России, Мексики,
-                            США и других стран.
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <div class="modal">
-            <img src="img/beet.jpg" alt="Свекла">
-            <img src="img/cabbage.jpg" alt="Капуста">
-            <img src="img/carrot.jpg" alt="Морковь">
-            <img src="img/corn.jpg" alt="Кукуруза">
-            <img src="img/cucumber.jpg" alt="Огурец">
-            <img src="img/eggplant.jpg" alt="Баклажан">
-            <img src="img/leek.jpg" alt="Лук-порей">
-            <img src="img/onion.jpg" alt="Лук">
-            <img src="img/parsley.jpg" alt="Петрушка">
-            <img src="img/pea.jpg" alt="Горох">
-            <img src="img/pepper.jpg" alt="Перец">
-            <img src="img/potato.jpg" alt="Картошка">
-            <img src="img/pumpkin.jpg" alt="Тыква">
-        </div>
-        <div class="modal-overlay">
-            <label for="close-modal" class="modal-close"></label>
         </div>
     </body>
 </html>
