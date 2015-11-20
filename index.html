@@ -4,8 +4,359 @@
         <meta charset="utf-8">
         <title>Бабуленькин урожай</title>
         <link rel="stylesheet" href="index.css">
+        <link 
+        href="https://fonts.googleapis.com/css?family=Ruslan+Display&subset=latin,cyrillic"
+        rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Dosis" 
+        rel="stylesheet" type="text/css">
+        <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css">
     </head>
     <body>
-        <!-- Здесь прикладывать основное усилие -->
+        <header>
+            <h1>Любимой бабушки урожай</h1>
+        </header>
+        <article class="slider">
+            <input checked="" type="radio" name="slider" id="slide1">
+            <input type="radio" name="slider" id="slide2" selected="true">
+            <input type="radio" name="slider" id="slide3">
+            <div class="controls">
+                <label for="slide1">
+                    <p class="back fa fa-chevron-circle-left fa-5x"></p>
+                </label>
+                <label for="slide2">
+                    <p class="back fa fa-chevron-circle-left fa-5x"></p>
+                </label>
+                <label for="slide3">
+                    <p class="back fa fa-chevron-circle-left fa-5x"></p>
+                </label>
+            </div>
+            <div class="slides">
+                <div class="overflow">
+                    <div class="inner">
+                        <article class="block">
+                            <div class="image">
+                                <a href="#blueberry" class="openModal">
+                                    <img 
+                                    src="http://cs627628.vk.me/v627628611/1fb12/KkXadqhrevQ.jpg" 
+                                    alt="Черника">
+                                </a>
+                                <div class="modal" id="blueberry">
+                                    <img 
+                                    src="http://cs627628.vk.me/v627628611/1fb12/KkXadqhrevQ.jpg"  
+                                    alt="Черника">
+                                    <a href="#close" title="Закрыть"></a>
+                                </div>
+                                <div class="description">
+                                    Яго&shy;ды чер&shy;ни&shy;ки — это уди&shy;ви&shy;тель&shy;ное 
+                                    со&shy;че&shy;та&shy;ние вкус&shy;но&shy;го и по&shy;лез&shy;но&shy;го, 
+                                    что в на&shy;шей жиз&shy;ни, со&shy;гла&shy;си&shy;тесь, 
+                                    слу&shy;ча&shy;ет&shy;ся не так ча&shy;сто. В лю&shy;бом 
+                                    со&shy;сто&shy;я&shy;нии, будь то све&shy;жие или су&shy;ше&shy;ные 
+                                    яго&shy;ды — они со&shy;дер&shy;жат огром&shy;ное 
+                                    ко&shy;ли&shy;че&shy;ство ви&shy;та&shy;ми&shy;нов и мно&shy;же&shy;ство 
+                                    дру&shy;гих мик&shy;ро&shy;эле&shy;мен&shy;тов, так 
+                                    не&shy;об&shy;хо&shy;ди&shy;мых че&shy;ло&shy;ве&shy;ку в 
+                                    со&shy;вре&shy;мен&shy;ном тем&shy;пе жиз&shy;ни. 
+                                </div>
+                            </div>
+                            <div class="image">
+                                <a href="#raspberry" class="openModal">
+                                    <img 
+                                    src="http://cs627628.vk.me/v627628611/1fb39/99QgCr719aQ.jpg" 
+                                    alt="Малина">
+                                </a>
+                                <div class="modal" id="raspberry">
+                                    <img 
+                                    src="http://cs627628.vk.me/v627628611/1fb39/99QgCr719aQ.jpg" 
+                                    alt="Малина">
+                                    <a href="#close" title="Закрыть"></a>
+                                </div>
+                                <div class="description">
+                                    Ма&shy;ли&shy;ну до&shy;бав&shy;ля&shy;ют в чай, по&shy;лу&shy;чая 
+                                    пре&shy;крас&shy;ное сред&shy;ство, ко&shy;то&shy;рое 
+                                    ре&shy;ко&shy;мен&shy;ду&shy;ет&shy;ся пить во вре&shy;мя 
+                                    про&shy;сту&shy;ды. Но сто&shy;ит знать, что ес&shy;ли Вы 
+                                    за&shy;ва&shy;ри&shy;ва&shy;е&shy;те ма&shy;ли&shy;ну, то де&shy;лать 
+                                    это нуж&shy;но не доль&shy;ше трех ми&shy;нут и 
+                                    обя&shy;за&shy;тель&shy;но кру&shy;тым ки&shy;пят&shy;ком, так как в 
+                                    теп&shy;лой во&shy;де яго&shy;да по&shy;те&shy;ря&shy;ет 
+                                    боль&shy;ше по&shy;лез&shy;ных свойств.
+                                </div>
+                            </div>
+                            <div class="image">
+                                <a href="#currant" class="openModal">
+                                    <img 
+                                    src="http://cs627628.vk.me/v627628611/1fb19/WQoO5L7sORs.jpg" 
+                                    alt="Смородина">
+                                </a>
+                                <div class="modal" id="currant">
+                                    <img 
+                                    src="http://cs627628.vk.me/v627628611/1fb19/WQoO5L7sORs.jpg" 
+                                    alt="Смородина">
+                                    <a href="#close" title="Закрыть"></a>
+                                </div>
+                                <div class="description">
+                                    Не&shy;смот&shy;ря на то что крас&shy;ная смо&shy;ро&shy;ди&shy;на 
+                                    кис&shy;лее чер&shy;ной, в ее со&shy;ста&shy;ве 
+                                    срав&shy;ни&shy;тель&shy;но мень&shy;ше ви&shy;та&shy;ми&shy;на С. 
+                                    Од&shy;на&shy;ко по его со&shy;дер&shy;жа&shy;нию она ни&shy;чуть не 
+                                    усту&shy;па&shy;ет па&shy;на&shy;цее са&shy;до&shy;вой ап&shy;теч&shy;ки 
+                                    – ма&shy;ли&shy;не. По&shy;ми&shy;мо ас&shy;кор&shy;би&shy;но&shy;вой 
+                                    кис&shy;ло&shy;ты крас&shy;ная смо&shy;ро&shy;ди&shy;на 
+                                    со&shy;дер&shy;жит ре&shy;ти&shy;нол (ви&shy;та&shy;мин А) и 
+                                    фла&shy;во&shy;но&shy;и&shy;ды (ви&shy;та&shy;мин Р), же&shy;ле&shy;зо и 
+                                    ка&shy;лий, при&shy;чем в су&shy;ще&shy;ствен&shy;но 
+                                    боль&shy;шем объ&shy;е&shy;ме, чем чер&shy;ная.
+                                </div>
+                            </div>
+                            <div class="image">
+                                <a href="#strawberry" class="openModal">
+                                    <img 
+                                    src="http://cs627628.vk.me/v627628611/1fb40/k-oZA35Qy8o.jpg" 
+                                    alt="Клубника">
+                                </a>
+                                <div class="modal" id="strawberry">
+                                    <img 
+                                    src="http://cs627628.vk.me/v627628611/1fb40/k-oZA35Qy8o.jpg" 
+                                    alt="Клубника">
+                                    <a href="#close" title="Закрыть"></a>
+                                </div>
+                                <div class="description">
+                                    При ави&shy;та&shy;ми&shy;но&shy;зах – клуб&shy;ни&shy;ка про&shy;сто 
+                                    не&shy;за&shy;ме&shy;ни&shy;ма. Еще клуб&shy;ни&shy;ка 
+                                    спо&shy;соб&shy;на «по&shy;бе&shy;дить» воз&shy;бу&shy;ди&shy;те&shy;лей 
+                                    раз&shy;лич&shy;ных ки&shy;шеч&shy;ных ин&shy;фек&shy;ций, а так&shy;же 
+                                    пнев&shy;мо&shy;кокк, ста&shy;фи&shy;ло&shy;кокк и ви&shy;рус 
+                                    грип&shy;па. В свя&shy;зи с тем, что клуб&shy;ни&shy;ка 
+                                    ока&shy;зы&shy;ва&shy;ет по&shy;ло&shy;жи&shy;тель&shy;ный эф&shy;фект 
+                                    на об&shy;мен&shy;ные про&shy;цес&shy;сы йо&shy;да, ее 
+                                    при&shy;ни&shy;ма&shy;ют при ле&shy;че&shy;нии ба&shy;зе&shy;до&shy;вой 
+                                    бо&shy;лез&shy;ни. По&shy;мо&shy;га&shy;ет она и при ожи&shy;ре&shy;нии, 
+                                    уси&shy;ли&shy;вая об&shy;мен&shy;ные про&shy;цес&shy;сы.
+                                </div>
+                            </div>
+                        </article>
+                        <article class="block">
+                            <div class="image">
+                                <a href="#apples" class="openModal">
+                                    <img 
+                                    src="http://cs627628.vk.me/v627628611/1fb0b/O4WuSA2Ffpk.jpg" 
+                                    alt="Яблоки">
+                                </a>
+                                <div class="modal" id="apples">
+                                    <img 
+                                    src="http://cs627628.vk.me/v627628611/1fb0b/O4WuSA2Ffpk.jpg" 
+                                    alt="Яблоки">
+                                    <a href="#close" title="Закрыть"></a>
+                                </div>
+                                <div class="description">
+                                    Яб&shy;ло&shy;ко – это дей&shy;стви&shy;тель&shy;но уни&shy;каль&shy;ный 
+                                    про&shy;дукт, от ко&shy;то&shy;ро&shy;го мо&shy;жет быть не толь&shy;ко 
+                                    поль&shy;за, но и вред для че&shy;ло&shy;ве&shy;че&shy;ско&shy;го 
+                                    ор&shy;га&shy;низ&shy;ма. Сре&shy;ди фрук&shy;тов яб&shy;ло&shy;ко 
+                                    яв&shy;ля&shy;ет&shy;ся очень рас&shy;про&shy;стра&shy;нен&shy;ным 
+                                    про&shy;дук&shy;том, так как он прак&shy;ти&shy;че&shy;ски це&shy;лый 
+                                    год при&shy;сут&shy;ству&shy;ет в на&shy;шем ра&shy;ци&shy;о&shy;не 
+                                    пи&shy;та&shy;ния.
+                                </div>
+                            </div>
+                            <div class="image">
+                                <a href="#peach" class="openModal">
+                                    <img 
+                                    src="http://cs627628.vk.me/v627628611/1fc37/X5uPHSJ04P4.jpg" 
+                                    alt="Персики">
+                                </a>
+                                <div class="modal" id="peach">
+                                    <img 
+                                    src="http://cs627628.vk.me/v627628611/1fc37/X5uPHSJ04P4.jpg" 
+                                    alt="Персики">
+                                    <a href="#close" title="Закрыть"></a>
+                                </div>
+                                <div class="description">
+                                    По&shy;лез&shy;ные свой&shy;ства пер&shy;си&shy;ков 
+                                    за&shy;клю&shy;ча&shy;ет&shy;ся в том, что те лю&shy;ди, 
+                                    ко&shy;то&shy;рые их едят, не стра&shy;да&shy;ют 
+                                    сер&shy;деч&shy;но-со&shy;су&shy;ди&shy;сты&shy;ми 
+                                    за&shy;бо&shy;ле&shy;ва&shy;ни&shy;я&shy;ми, сла&shy;бо&shy;уми&shy;ем, 
+                                    за&shy;быв&shy;чи&shy;во&shy;стью, по&shy;то&shy;му что в пло&shy;дах 
+                                    пер&shy;си&shy;ка со&shy;дер&shy;жит&shy;ся очень мно&shy;го ка&shy;лия 
+                                    и фос&shy;фо&shy;ра. Вред пер&shy;си&shy;ков, как из&shy;вест&shy;но, 
+                                    эти эле&shy;мен&shy;ты улуч&shy;ша&shy;ют ра&shy;бо&shy;ту не 
+                                    толь&shy;ко го&shy;лов&shy;но&shy;го моз&shy;га, но и в це&shy;лом 
+                                    укреп&shy;ля&shy;ют стен&shy;ки со&shy;су&shy;дов.
+                                </div>
+                            </div>
+                            <div class="image">
+                                <a href="#pears" class="openModal">
+                                    <img 
+                                    src="http://cs627628.vk.me/v627628611/1fb32/XpuslcjHlDs.jpg" 
+                                    alt="Груша">
+                                </a>
+                                <div class="modal" id="pears">
+                                    <img src="http://cs627628.vk.me/v627628611/1fb32/XpuslcjHlDs.jpg" 
+                                    alt="Груша">
+                                    <a href="#close" title="Закрыть"></a>
+                                </div>
+                                <div class="description">
+                                    Бо&shy;лее все&shy;го, гру&shy;ша по&shy;пу&shy;ляр&shy;на, как 
+                                    де&shy;серт или ла&shy;ком&shy;ство. В этих пло&shy;дах есть 
+                                    боль&shy;шое ко&shy;ли&shy;че&shy;ство са&shy;ха&shy;ра и 
+                                    клет&shy;чат&shy;ки. Ин&shy;те&shy;рес&shy;но то, что са&shy;ха&shy;ра в 
+                                    гру&shy;шах мень&shy;ше, чем в яб&shy;ло&shy;ках, хо&shy;тя, ча&shy;ще 
+                                    все&shy;го, гру&shy;ша на вкус, ка&shy;жет&shy;ся сла&shy;ще.
+                                </div>
+                            </div>
+                            <div class="image">
+                                <a href="#grapes" class="openModal">
+                                    <img 
+                                    src="http://cs627628.vk.me/v627628611/1fc30/UY6JB3_wkqQ.jpg" 
+                                    alt="Виноград">
+                                </a>
+                                <div class="modal" id="grapes">
+                                    <img 
+                                    src="http://cs627628.vk.me/v627628611/1fc30/UY6JB3_wkqQ.jpg" 
+                                    alt="Виноград">
+                                    <a href="#close" title="Закрыть"></a>
+                                </div>
+                                <div class="description">
+                                    Ви&shy;но&shy;град яв&shy;ля&shy;ет&shy;ся бо&shy;га&shy;тым 
+                                    ис&shy;точ&shy;ни&shy;ком ви&shy;та&shy;ми&shy;нов А, С, В6 и 
+                                    фо&shy;ла&shy;тов (про&shy;из&shy;вод&shy;ных фо&shy;ли&shy;е&shy;вой 
+                                    кис&shy;ло&shy;ты), а так&shy;же важ&shy;ных ми&shy;не&shy;ра&shy;лов - 
+                                    ка&shy;лия, каль&shy;ция, же&shy;ле&shy;за, фос&shy;фо&shy;ра, 
+                                    маг&shy;ния и се&shy;ле&shy;на. Ви&shy;но&shy;град со&shy;дер&shy;жит 
+                                    фла&shy;во&shy;но&shy;и&shy;ды, ко&shy;то&shy;рые 
+                                    яв&shy;ля&shy;ют&shy;ся мощ&shy;ны&shy;ми 
+                                    ан&shy;ти&shy;ок&shy;си&shy;дан&shy;та&shy;ми, 
+                                    умень&shy;ша&shy;ю&shy;щи&shy;ми ущерб, 
+                                    на&shy;не&shy;сен&shy;ный сво&shy;бод&shy;ны&shy;ми 
+                                    ра&shy;ди&shy;ка&shy;ла&shy;ми и 
+                                    за&shy;мед&shy;ля&shy;ю&shy;щи&shy;ми про&shy;цесс ста&shy;ре&shy;ния.
+                                </div>
+                            </div>
+                        </article>
+                        <article class="block">
+                            <div class="image">
+                                <a href="#carrot" class="openModal">
+                                    <img 
+                                    src="http://cs622326.vk.me/v622326611/56d0d/qtL6qLnpoqY.jpg" 
+                                    alt="Морковь">
+                                </a>
+                                <div class="modal" id="carrot">
+                                    <img 
+                                    src="http://cs622326.vk.me/v622326611/56d0d/qtL6qLnpoqY.jpg" 
+                                    alt="Морковь">
+                                    <a href="#close" title="Закрыть"></a>
+                                </div>
+                                <div class="description">
+                                    По&shy;лез&shy;ные и ле&shy;чеб&shy;ные свой&shy;ства мор&shy;ко&shy;ви 
+                                    объ&shy;яс&shy;ня&shy;ют&shy;ся ее бо&shy;га&shy;тым со&shy;ста&shy;вом. 
+                                    Мор&shy;ковь со&shy;дер&shy;жит ви&shy;та&shy;ми&shy;ны груп&shy;пы В, 
+                                    РР, С, Е, К, в ней при&shy;сут&shy;ству&shy;ет ка&shy;ро&shy;тин — 
+                                    ве&shy;ще&shy;ство, ко&shy;то&shy;рое в ор&shy;га&shy;низ&shy;ме 
+                                    че&shy;ло&shy;ве&shy;ка пре&shy;вра&shy;ща&shy;ет&shy;ся в 
+                                    ви&shy;та&shy;мин А. Мор&shy;ковь со&shy;дер&shy;жит 1,3 % бел&shy;ков, 
+                                    7 % уг&shy;ле&shy;во&shy;дов. 
+                                </div>
+                            </div>
+                            <div class="image">
+                                <a href="#lemon" class="openModal">
+                                    <img 
+                                    src="http://cs622326.vk.me/v622326611/56d1e/mFafortoxQo.jpg" 
+                                    alt="Лимон">
+                                </a>
+                                <div class="modal" id="lemon">
+                                    <img 
+                                    src="http://cs622326.vk.me/v622326611/56d1e/mFafortoxQo.jpg" 
+                                    alt="Лимон">
+                                    <a href="#close" title="Закрыть"></a>
+                                </div>
+                                <div class="description">
+                                    Сол&shy;неч&shy;ная жел&shy;тиз&shy;на и 
+                                    про&shy;дол&shy;го&shy;ва&shy;тая фор&shy;ма это&shy;го фрук&shy;та 
+                                    не&shy;из&shy;мен&shy;но при&shy;вле&shy;ка&shy;ет вни&shy;ма&shy;ние, 
+                                    вос&shy;по&shy;ми&shy;на&shy;ния о нем за&shy;став&shy;ля&shy;ют 
+                                    боль&shy;шин&shy;ство лю&shy;дей по&shy;мор&shy;щить&shy;ся и 
+                                    по&shy;чув&shy;ство&shy;вать вы&shy;де&shy;ле&shy;ние слю&shy;ны. С 
+                                    при&shy;хо&shy;дом хо&shy;ло&shy;дов и раз&shy;гу&shy;лом 
+                                    ре&shy;спи&shy;ра&shy;тор&shy;ных за&shy;бо&shy;ле&shy;ва&shy;ний 
+                                    спрос на этот фрукт уве&shy;ли&shy;чи&shy;ва&shy;ет&shy;ся в ра&shy;зы. 
+                                    До&shy;га&shy;да&shy;лись? Ге&shy;рой на&shy;ше&shy;го 
+                                    рас&shy;ска&shy;за – ли&shy;мон, один из са&shy;мых из&shy;вест&shy;ных 
+                                    и по&shy;лез&shy;ных цит&shy;ру&shy;сов, об&shy;ла&shy;да&shy;ю&shy;щий 
+                                    це&shy;лым спек&shy;тром по&shy;лез&shy;ных свойств.
+                                </div>
+                            </div>
+                            <div class="image">
+                                <a href="#sliva" class="openModal">
+                                    <img 
+                                    src="http://nfc-nn.ru/pages/catalog/pic/200251_big.jpg" 
+                                    alt="Слива">
+                                </a>
+                                <div class="modal" id="sliva">
+                                    <img 
+                                    src="http://nfc-nn.ru/pages/catalog/pic/200251_big.jpg" 
+                                    alt="Слива">
+                                    <a href="#close" title="Закрыть"></a>
+                                </div>
+                                <div class="description">
+                                    Све&shy;жие, так&shy;же как и су&shy;ше&shy;ные сли&shy;вы, а 
+                                    осо&shy;бен&shy;но чер&shy;но&shy;слив, со&shy;ки со сли&shy;во&shy;вой 
+                                    мя&shy;ко&shy;тью и ком&shy;по&shy;ты име&shy;ют мяг&shy;кое 
+                                    сла&shy;би&shy;тель&shy;ное дей&shy;ствие на ор&shy;га&shy;низм и 
+                                    ре&shy;ко&shy;мен&shy;до&shy;ва&shy;ны при ато&shy;нии 
+                                    ки&shy;шеч&shy;ни&shy;ка и за&shy;по&shy;рах. Так&shy;же сли&shy;ва 
+                                    (чер&shy;но&shy;слив в том чис&shy;ле) по&shy;мо&shy;га&shy;ет 
+                                    вы&shy;во&shy;дить из ор&shy;га&shy;низ&shy;ма «пло&shy;хой» 
+                                    хо&shy;ле&shy;сте&shy;рин. Ре&shy;ко&shy;мен&shy;ду&shy;ет&shy;ся 
+                                    сли&shy;ва при ги&shy;пер&shy;то&shy;ни&shy;че&shy;ской 
+                                    бо&shy;лез&shy;ни и бо&shy;лез&shy;нях по&shy;чек. 
+                                </div>
+                            </div>
+                            <div class="image">
+                                <a href="#cherry" class="openModal">
+                                    <img 
+                                    src="http://s8te.sfera.fm/content/77f2ae31a918b904b646e32f36afa96d.jpg" 
+                                    alt="Вишня">
+                                </a>
+                                <div class="modal" id="cherry">
+                                    <img 
+                                    src="http://s8te.sfera.fm/content/77f2ae31a918b904b646e32f36afa96d.jpg" 
+                                    alt="Вишня">
+                                    <a href="#close" title="Закрыть"></a>
+                                </div>
+                                <div class="description">
+                                    Поль&shy;за виш&shy;ни в пи&shy;та&shy;нии че&shy;ло&shy;ве&shy;ка очень 
+                                    ве&shy;ли&shy;ка, так как эта за&shy;ме&shy;ча&shy;тель&shy;ная 
+                                    яго&shy;да име&shy;ет в сво&shy;ем ар&shy;се&shy;на&shy;ле боль&shy;шое 
+                                    ко&shy;ли&shy;че&shy;ство ле&shy;чеб&shy;ных свойств. Тот, кто хоть раз 
+                                    ел виш&shy;ню, на&shy;вер&shy;ня&shy;ка зна&shy;ет, как она 
+                                    уто&shy;ля&shy;ет жаж&shy;ду и улуч&shy;ша&shy;ет ап&shy;пе&shy;тит. В 
+                                    этих слег&shy;ка кис&shy;лень&shy;ких ягод&shy;ках 
+                                    со&shy;дер&shy;жит&shy;ся мно&shy;го ку&shy;ма&shy;ри&shy;нов – 
+                                    ве&shy;ществ, по&shy;ни&shy;жа&shy;ю&shy;щих по&shy;рог 
+                                    свер&shy;ты&shy;ва&shy;е&shy;мо&shy;сти кро&shy;ви и 
+                                    пре&shy;ду&shy;пре&shy;жда&shy;ю&shy;щих об&shy;ра&shy;зо&shy;ва&shy;ние 
+                                    хо&shy;ле&shy;сте&shy;ри&shy;но&shy;вых бля&shy;шек на стен&shy;ках 
+                                    со&shy;су&shy;дов. Поль&shy;за виш&shy;ни 
+                                    за&shy;клю&shy;ча&shy;ет&shy;ся еще и в том, что она укреп&shy;ля&shy;ет 
+                                    всю кро&shy;ве&shy;нос&shy;ную си&shy;сте&shy;му 
+                                    ор&shy;га&shy;низ&shy;ма. Ес&shy;ли у вас есть ка&shy;кие-то 
+                                    про&shy;бле&shy;мы с со&shy;су&shy;да&shy;ми или 
+                                    ка&shy;пил&shy;ля&shy;ра&shy;ми, вам обя&shy;за&shy;тель&shy;но 
+                                    на&shy;до упо&shy;треб&shy;лять эту яго&shy;ду в пи&shy;щу.
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <div class="active">
+                <label for="slide1"></label>
+                <label for="slide2"></label>
+                <label for="slide3"></label>
+            </div>
+        </article>
     </body>
 </html>

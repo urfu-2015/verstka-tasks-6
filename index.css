@@ -1,1 +1,203 @@
-
+body
+{
+    background: url(http://bashooka.com/wp-content/uploads/2012/08/wood-texture-1.jpg);
+    padding: 0 100px;
+    overflow-x: hidden;
+}
+h1
+{
+    color: #116062;
+    text-align: center;
+    font: 60px 'Ruslan Display', cursive;
+    margin-top: 0;
+}
+.block
+{
+    text-align: center;
+    max-width: 100%;
+}
+.image
+{
+    width: 20%;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 10px;
+    max-height: 500px;
+    overflow: hidden;
+}
+.description
+{
+    display: none;
+    text-align: justify;
+    text-indent: 2%;
+    padding: 1%;
+    max-width: 90%;
+    margin: auto;
+}
+.image a img
+{
+    max-width: 90%;
+    border-radius: 7px;
+    display: block;
+    margin: auto;
+}
+.image:hover
+{
+    opacity: 1;
+    z-index: 3;
+    box-shadow: 0 0 4px 4px #c0c0c0;
+    border-radius: 5px;
+    background-color: #a3c6c0;
+}
+.image:hover a img
+{
+    max-width: 100%;
+    margin: 2% auto;
+}
+.image:hover .description
+{
+    display: block;
+}
+.slider 
+{
+    text-align: center;
+    margin: auto;
+}
+input 
+{
+    display: none;
+}
+.overflow 
+{
+    width: 100%;
+    overflow: hidden;
+}
+.slides .inner 
+{
+    width: 300%;
+    min-height: 600px;
+}
+.slides article 
+{
+    width: 33.3%;
+    float: left;
+}
+.controls
+{
+    width: 100%;
+    height: 50px;
+}
+.controls label 
+{
+    display: none;
+    width: 50px;
+    height: 50px;
+    color: #116062;
+    opacity: .8;
+}
+.active
+{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.active label
+{
+    border-radius: 5px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: #000;
+}
+.active label:hover 
+{
+    background: #fff;
+}
+.controls label:hover 
+{
+    opacity: 1;
+}
+#slide1:checked ~ .slides .inner 
+{
+    margin-left:0;
+}
+#slide2:checked ~ .slides .inner 
+{
+    margin-left:-100%;
+}
+#slide3:checked ~ .slides .inner 
+{
+    margin-left:-200%;
+}
+#slide1:checked ~ .controls label:nth-child(2),
+#slide2:checked ~ .controls label:nth-child(3),
+#slide3:checked ~ .controls label:nth-child(1)
+{
+    -webkit-transform: scale(-1, 1);
+    float: right;
+    margin: 160px -70px 0 0;
+    display: block;
+}
+#slide1:checked ~ .controls label:nth-child(3),
+#slide2:checked ~ .controls label:nth-child(1),
+#slide3:checked ~ .controls label:nth-child(2)
+{
+    float: left;
+    margin: 160px 0 0 -70px;
+    display: block;
+}
+#slide1:checked ~ .active label:nth-child(1),
+#slide2:checked ~ .active label:nth-child(2),
+#slide3:checked ~ .active label:nth-child(3)
+{
+    background: #116062;
+}
+.modal
+{
+    position: fixed;
+    /*position: absolute;*/
+    text-align: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0, .7);
+    z-index: 10;
+    -webkit-transition: opacity 500ms ease-in;
+    opacity: 0;
+    pointer-events: none;
+}
+.modal:target
+{
+    opacity: 1;
+    pointer-events: auto;
+}
+.modal > img
+{
+    margin-top: 150px;
+    z-index: 15;
+}
+.modal a[href='close']
+{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.modal a[href='#close']:after 
+{
+    content: 'X';
+    display: block;
+    position: absolute;
+    right: 100px;
+    top: 60px;
+    width: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    font: 50px 'Dosis', sans-serif;
+}
+.modal a[href='#close']:hover:after 
+{
+    -webkit-transform: scale(1.1,1.1);
+}
