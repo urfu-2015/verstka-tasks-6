@@ -1,11 +1,230 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="ru">
     <head>
         <meta charset="utf-8">
         <title>Бабуленькин урожай</title>
         <link rel="stylesheet" href="index.css">
+        <link href="https://fonts.googleapis.com/css?family=Cuprum&subset=latin,cyrillic"
+        rel="stylesheet" type="text/css">
     </head>
     <body>
-        <!-- Здесь прикладывать основное усилие -->
+        <section class="wrapper">
+            <h1 class="title">Лавочка "У Бабули"</h1>
+            <input type="radio" name="point" id="slide_1" checked>
+            <input type="radio" name="point" id="slide_2">
+            <input type="radio" name="point" id="slide_3">
+            <div class="slider">
+                <article class="slides block_1">
+                    <section class="vegetable">
+                        <a href="#openModal_1">
+                            <img class="slide" src="./img/tomato.png" alt="img">
+                        </a>
+                        <p class="desc">
+                            Томат... Кто не любит томаты ?
+                            <br>
+                            Ведь из него можно сделать всё что угодно... От кетчупа - до салата...
+                            <br>
+                            <br>
+                            А если помнить, что он бабушкин... Ммм...
+                        </p>
+                    </section>
+                    <section class="vegetable">
+                        <a href="#openModal_2">
+                            <img class="slide" src="./img/cucumber.png" alt="img">
+                        </a>
+                        <p class="desc">
+                            Бабушкин огурец - это, пожалуй, самое лучшее, что есть в её ежегодном урожае !
+                            <br>
+                            Он настолько сочен, что это не сравнимо ни с чем.
+                            <br>
+                            <br>
+                            <strong>P.S.</strong> Также он обладает силой земли.
+                        </p>
+                    </section>
+                    <section class="vegetable">
+                        <a href="#openModal_3">
+                            <img class="slide" src="./img/pump.png" alt="img">
+                        </a>
+                        <p class="desc">
+                            Обычная тыква...
+                            <br>
+                            <br>
+                            Лично я, вижу их только на Хэллуин...
+                        </p>
+                    </section>
+                    <section class="vegetable">
+                        <a href="#openModal_4">
+                            <img class="slide" src="./img/bak.png" alt="img">
+                        </a>
+                        <p class="desc">
+                            Типичный баклажан или я устал креативить :D.
+                        </p>
+                    </section>
+                </article> 
+                <article class="slides block_2">
+                    <section class="vegetable">
+                        <a href="#openModal_5">
+                            <img class="slide" src="./img/per.png" alt="img">
+                        </a>
+                        <p class="desc">
+                            Бабушкин перец !
+                            <br>
+                            Красный перец... Для любителей поостроее =).
+                        </p>
+                    </section>
+                    <section class="vegetable">
+                        <a href="#openModal_6">
+                            <img class="slide" src="./img/chili.gif" alt="img">
+                        </a>
+                        <p class="desc">
+                            Хотите дышать как дракон ?
+                            <br>
+                            Тогда зажуйте бабушкин перец чили, и огонь вам обеспечен !
+                        </p>
+                    </section>
+                    <section class="vegetable">
+                        <a href="#openModal_7">
+                            <img class="slide" src="./img/banana.png" alt="img">
+                        </a>
+                        <p class="desc">
+                            Банан ?
+                            <br>
+                            Понятия не имею, как он здесь оказался...
+                        </p>
+                    </section>
+                    <section class="vegetable">
+                        <a href="#openModal_8">
+                            <img class="slide" src="./img/kab.png" alt="img">
+                        </a>
+                        <p class="desc">
+                            Жареные, со сметаной вообще нормас !
+                            <br>
+                            <br>
+                            <strong>P.S.</strong> А бабуля их только так и готовит =).
+                        </p>
+                    </section>
+                </article>
+                <article class="slides block_3">
+                    <section class="vegetable">
+                        <a href="#openModal_9">
+                            <img class="slide" src="./img/hur.png" alt="img">
+                        </a>
+                        <p class="desc">
+                            Бабушка мне говорила, что это овощ...
+                            <br>
+                            Тем более хурма очень вкусная :3.
+                        </p>
+                    </section>
+                    <section class="vegetable">
+                        <a href="#openModal_10">
+                            <img class="slide" src="./img/brok.png" alt="img">
+                        </a>
+                        <p class="desc">
+                            Брокколь со сметаной, что может быть лучше ?
+                            <br>
+                            Пожалуй, ничего...
+                        </p>
+                    </section>
+                    <section class="vegetable">
+                        <a href="#openModal_11">
+                            <img class="slide" src="./img/red.png" alt="img">
+                        </a>
+                        <p class="desc">
+                            Типикал редиска...
+                            <br>
+                            Сомневаюсь, что её кто-то любит...
+                        </p>
+                    </section>
+                    <section class="vegetable">
+                        <a href="#openModal_12">
+                            <img class="slide" src="./img/mork.png" alt="img">
+                        </a>
+                        <p class="desc">
+                            Морковка.
+                            <br>
+                            Говорят, что для зрения очень полезная, а мы программисты - с каждым
+                            днём видим всё хуже и хуже...
+                        </p>
+                    </section>
+                </article>
+            </div>
+            <div class="controls">
+                <label for="slide_1"></label>
+                <label for="slide_2"></label>
+                <label for="slide_3"></label>
+            </div>
+        </section>
+        <div id="openModal_1" class="modalDialog">
+            <div>
+                <a href="#close" title="Close" class="close">X</a>
+                <img class="big-slide" src="./img/tomato.png" alt="img">
+            </div>
+        </div>
+        <div id="openModal_2" class="modalDialog">
+            <div>
+                <a href="#close" title="Close" class="close">X</a>
+                <img class="big-slide" src="./img/cucumber.png" alt="img">
+            </div>
+        </div>
+        <div id="openModal_3" class="modalDialog">
+            <div>
+                <a href="#close" title="Close" class="close">X</a>
+                <img class="big-slide" src="./img/pump.png" alt="img">
+            </div>
+        </div>
+        <div id="openModal_4" class="modalDialog">
+            <div>
+                <a href="#close" title="Close" class="close">X</a>
+                <img class="big-slide" src="./img/bak.png" alt="img">
+            </div>
+        </div>
+        <div id="openModal_5" class="modalDialog">
+            <div>
+                <a href="#close" title="Close" class="close">X</a>
+                <img class="big-slide" src="./img/per.png" alt="img">
+            </div>
+        </div>
+        <div id="openModal_6" class="modalDialog">
+            <div>
+                <a href="#close" title="Close" class="close">X</a>
+                <img class="big-slide" src="./img/chili.gif" alt="img">
+            </div>
+        </div>
+        <div id="openModal_7" class="modalDialog">
+            <div>
+                <a href="#close" title="Close" class="close">X</a>
+                <img class="big-slide" src="./img/banana.png" alt="img">
+            </div>
+        </div>
+        <div id="openModal_8" class="modalDialog">
+            <div>
+                <a href="#close" title="Close" class="close">X</a>
+                <img class="big-slide" src="./img/kab.png" alt="img">
+            </div>
+        </div>
+        <div id="openModal_9" class="modalDialog">
+            <div>
+                <a href="#close" title="Close" class="close">X</a>
+                <img class="big-slide" src="./img/hur.png" alt="img">
+            </div>
+        </div>
+        <div id="openModal_10" class="modalDialog">
+            <div>
+                <a href="#close" title="Close" class="close">X</a>
+                <img class="big-slide" src="./img/brok.png" alt="img">
+            </div>
+        </div>
+        <div id="openModal_11" class="modalDialog">
+            <div>
+                <a href="#close" title="Close" class="close">X</a>
+                <img class="big-slide" src="./img/red.png" alt="img">
+            </div>
+        </div>
+        <div id="openModal_12" class="modalDialog">
+            <div>
+                <a href="#close" title="Close" class="close">X</a>
+                <img class="big-slide" src="./img/mork.png" alt="img">
+            </div>
+        </div>
     </body>
 </html>
