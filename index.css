@@ -1,1 +1,211 @@
 
+div.gallery
+{
+    height: 475px;
+    width: 940px;
+    margin: 200px auto 0 auto;
+}
+
+figure
+{
+    height: 130px;
+    width: 100%;
+    margin: 0;
+    position: relative;
+}
+
+figure:hover ~ article
+{
+    display: block;
+}
+
+section
+{
+    height: 465px;
+    width: 200px;
+    float: left;
+    padding: 1px;
+    margin: 0;
+}
+
+section img
+{
+    max-height: 100%;
+    max-width: 100%;
+    bottom: 0;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+
+article
+{
+    height: 200px;
+    display: none;
+    text-align: center;
+}
+
+div.fs-background
+{
+    display: none;
+    z-index: 2;
+    opacity: .8;
+    background-color: gray;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+input[name='fs-img']
+{
+    display: none;
+}
+
+input[name='nav']
+{
+    display: none;
+}
+
+img.fs
+{
+    display: none;
+}
+
+img.fs-close
+{
+    position: relative;
+    z-index: 3;
+    margin-left: 92vw;
+    margin-top: 1vw;
+    display: inline;
+}
+
+img.nav-arrow
+{
+    margin: 45px 5px 0 5px;
+    height: 50px;
+    float: left;
+}
+
+img.nav-arrow.right
+{
+    transform: rotate(180deg);
+}
+
+#first:not(:checked) ~ .first
+{
+    display: none;
+}
+
+#first:not(:checked) ~ input[for='first']
+{
+    display: none;
+}
+
+#second:not(:checked) ~ .second
+{
+    display: none;
+}
+
+#second:not(:checked) ~ input[for='second']
+{
+    display: none;
+}
+
+#fs-close:not(:checked) ~ .fs-background
+{
+    display: block;
+}
+
+#img1:checked ~ img.img1
+{
+    display: block;
+    z-index: 3;
+    max-height: 80vh;
+    min-width: 80vw;
+    top: 10vh;
+    left: 10vw;
+    position: absolute;
+}
+
+#img2:checked ~ img.img2
+{
+    display: block;
+    z-index: 3;
+    max-height: 80vh;
+    min-width: 80vw;
+    top: 10vh;
+    left: 10vw;
+    position: absolute;
+}
+
+#img3:checked ~ img.img3
+{
+    display: block;
+    z-index: 3;
+    max-height: 80vh;
+    min-width: 80vw;
+    top: 10vh;
+    left: 10vw;
+    position: absolute;
+}
+
+#img4:checked ~ img.img4
+{
+    display: block;
+    z-index: 3;
+    max-height: 80vh;
+    min-width: 80vw;
+    top: 10vh;
+    left: 10vw;
+    position: absolute;
+}
+
+#img5:checked ~ img.img5
+{
+    display: block;
+    z-index: 3;
+    max-height: 80vh;
+    min-width: 80vw;
+    top: 10vh;
+    left: 10vw;
+    position: absolute;
+}
+
+#img6:checked ~ img.img6
+{
+    display: block;
+    z-index: 3;
+    max-height: 80vh;
+    min-width: 80vw;
+    top: 10vh;
+    left: 10vw;
+    position: absolute;
+}
+
+#img7:checked ~ img.img7
+{
+    display: block;
+    z-index: 3;
+    max-height: 80vh;
+    min-width: 80vw;
+    top: 10vh;
+    left: 10vw;
+    position: absolute;
+}
+
+#img8:checked ~ img.img8
+{
+    display: block;
+    z-index: 3;
+    max-height: 80vh;
+    min-width: 80vw;
+    top: 10vh;
+    left: 10vw;
+    position: absolute;
+}
