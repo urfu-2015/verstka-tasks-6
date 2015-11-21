@@ -1,1 +1,96 @@
-
+body 
+{
+    background-color: #faebd7;
+}
+.closer
+{
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    display: none;
+}
+.text
+{
+    display: none;
+}
+.blackout
+{
+    position: fixed;
+    min-height: 100%;
+    min-width: 100%;
+    bottom: 0;
+    right: 0;
+    display: none;
+    background: #00008b;
+    opacity: .65;
+}
+.picture
+{
+    display: block;
+    float: left;
+    height: 300px;
+    margin-left: 10px;
+    max-width: 300px;
+}
+.picture:focus ~ .blackout
+{
+    display: block;
+}
+.picture:focus ~ .closer
+{
+    z-index: 2;
+    display: block;
+}
+.picture:focus ~ .radios
+{
+    display: none;
+}
+.picture:focus
+{
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left:0;
+    right:0;
+    margin: auto;
+    height: 600px;
+    max-width: 600px;
+}
+.radios
+{
+    float: left;
+}
+div
+{
+    float: left;
+    margin-left: 30px;
+    max-width: 350px;
+}
+.picture:hover ~ .text
+{
+    margin-top: 310px;
+    display: block;
+    width: 200px;
+    text-align: center;
+}
+.picture:focus ~ .text
+{
+    display: none;
+}
+input[type='radio'].slide1:checked ~ .img5,
+input[type='radio'].slide1:checked ~ .img6
+{
+    display: none;
+}
+input[type='radio'].slide2:checked ~ .img1,
+input[type='radio'].slide2:checked ~ .img6
+{
+    display: none;
+}
+input[type='radio'].slide3:checked ~ .img2,
+input[type='radio'].slide3:checked ~ .img1
+{
+    display: none;
+}
