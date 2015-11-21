@@ -3,14 +3,17 @@
 header
 {
     font-family: Marck Script;
-    font-size: 80px;
+    font-size: 60px;
     text-align: center;
 }
+
 body
 {
-    background: url('фон.jpg');
+    background: url('mainBackground.jpg');
+    overflow: scroll;
 }
-img[class='image']:focus 
+
+img.image:focus 
 {
     z-index: 1;
     position: fixed;
@@ -18,17 +21,22 @@ img[class='image']:focus
     left: 0;
     bottom: 0;
     right: 0;
-    height: 90%;
+    height: 550px;
+    width: 550px;
     margin: auto;
 }
-img[class='image']:focus ~ .description
+
+img.image:focus ~ .description
 {
     display: none;
 }
-img[class='image']:focus ~ .cover
+
+img.image:focus ~ .cover
 {
     display: block;
+    opacity: .5;
 }
+
 .cover
 {
     position: fixed;
@@ -40,39 +48,84 @@ img[class='image']:focus ~ .cover
     opacity: 0,5;
     display:none;
 }
-img
+
+img.image:focus ~ .close
+{
+    display: block;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.close
+{
+    position: fixed;
+    right: 20px;
+    height: 40px;
+    top: 0;
+    display: none;
+}
+
+.image
 {
     height: 250px;
+    width: 330px;
 }
+
 div div
 {
     float: left;
 }
+
 .description
 {
     display: none;
 }
+
 .image:hover .description
 {
+    left: 0;
     display: block;
-    width: 250px;
+    width: 330px;
     text-align: center;
-    font-family: Lobster;
-    font-size: 20px;
+    font-size: 14px;
+    z-index: 3;
 }
+
+.radio1
+{
+    position: fixed;
+    left: 48%;
+    top: 500px;
+}
+
+.radio2
+{
+    position: fixed;
+    left:50%;
+    top: 500px;
+}
+
+.radio3
+{
+    position: fixed;
+    left: 52%;
+    top: 500px;
+}
+
 input[type='radio'].radio1:checked ~ div  .sndLine,
 input[type='radio'].radio1:checked ~ div  .thdLine
 {
     display: none;
 }
+
 input[type='radio'].radio2:checked ~ div  .fstLine,
 input[type='radio'].radio2:checked ~ div  .thdLine
 {
     display: none;
 }
+
 input[type='radio'].radio3:checked ~ div  .fstLine,
 input[type='radio'].radio3:checked ~ div  .sndLine
 {
     display: none;
 }
-
