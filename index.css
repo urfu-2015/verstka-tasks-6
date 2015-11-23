@@ -37,10 +37,10 @@ input.navigation:checked + section
 .img-wrapper
 {
     position: relative;
-    display: inline-block;
+    float: left;
     width: 200px;
     margin: 35px;
-    max-height: 200px;
+    height: 200px;
 }
 
 input[type='radio'],
@@ -52,14 +52,24 @@ input[type='checkbox']
 .img-container label
 {
     position: relative;
-    display: block;
+    display: table-cell;
+    height: 200px;
+    vertical-align: middle;
+}
+
+.img-container
+{
     height: 100%;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .img-container img
 {
+    display: inline-block;
     max-width: 100%;
     max-height: 100%;
+    margin: auto;
     vertical-align: middle;
 }
 
@@ -81,6 +91,7 @@ input[type='checkbox']
 .img-wrapper:hover input:not(:checked) ~ .img-container .img-button
 {
     cursor: pointer;
+    height: auto;
 }
 
 .img-wrapper:hover input:not(:checked) ~ .img-container
@@ -92,6 +103,7 @@ input[type='checkbox']
     top: -80px;
     left: -35%;
     background-color: #fff;
+    height: auto;
 }
 
 .img-wrapper:hover input:not(:checked) ~ .img-container p.description
@@ -144,20 +156,13 @@ section input:checked ~ .img-container label.close
 label.left-arrow,
 label.right-arrow
 {
-    display: inline-block;
-    width: 50px;
-    height: 50px;
+    float: left;
+    height: 300px;
 }
 
-label.left-arrow
+label.right-arrow img,
+label.left-arrow img
 {
-    background: url('img/left-arrow.png');
-    background-size: cover;
+    max-width: 50px;
+    margin: 80px 0;
 }
-
-label.right-arrow
-{
-    background: url('img/right-arrow.png');
-    background-size: cover;
-}
-
