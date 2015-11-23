@@ -134,9 +134,9 @@ body
     cursor: pointer;
 }
 
-.container > #s1:checked ~ .slides-place > .slide1,
-.container > #s2:checked ~ .slides-place > .slide2,
-.container > #s3:checked ~ .slides-place > .slide3
+#s1:checked ~ .slides-place > .slide1,
+#s2:checked ~ .slides-place > .slide2,
+#s3:checked ~ .slides-place > .slide3
 {
     background: #0080ff;
     height: 16px;
@@ -146,25 +146,25 @@ body
 }
 /** ----- **/
 
-.container > #s1:checked ~ .cards > .card-1,
-.container > #s1:checked ~ .cards > .card-2,
-.container > #s1:checked ~ .cards > .card-3,
-.container > #s1:checked ~ .cards > .card-4
+#s1:checked ~ .cards > .card-1,
+#s1:checked ~ .cards > .card-2,
+#s1:checked ~ .cards > .card-3,
+#s1:checked ~ .cards > .card-4
 {
     display: inline-block;
 }
 
-.container > #s2:checked ~ .cards > .card-4,
-.container > #s2:checked ~ .cards > .card-5,
-.container > #s2:checked ~ .cards > .card-6,
-.container > #s2:checked ~ .cards > .card-7
+#s2:checked ~ .cards > .card-4,
+#s2:checked ~ .cards > .card-5,
+#s2:checked ~ .cards > .card-6,
+#s2:checked ~ .cards > .card-7
 {
     display: inline-block;
 }
 
-.container > #s3:checked ~ .cards > .card-7,
-.container > #s3:checked ~ .cards > .card-8,
-.container > #s3:checked ~ .cards > .card-9
+#s3:checked ~ .cards > .card-7,
+#s3:checked ~ .cards > .card-8,
+#s3:checked ~ .cards > .card-9
 {
     display: inline-block;
 }
