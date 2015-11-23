@@ -102,7 +102,6 @@ input#page3:checked ~ #page_third
 {
     position: fixed;
     display: none;
-    pointer-events: none;
     top: 0;
     right: 0;
     bottom: 0;
@@ -113,7 +112,6 @@ input#page3:checked ~ #page_third
 .biggest:target
 {
     display: block;
-    pointer-events: auto;
     text-decoration: none;
 }
 .biggest > img
