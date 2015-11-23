@@ -134,8 +134,16 @@ section input:checked ~ .img-container
     vertical-align: middle;
 }
 
+section input:checked ~ .img-container label
+{
+    position: relative;
+    display: block;
+    height: 100%;
+}
+
 section input:checked ~ .img-container img
 {
+    float: none;
     position: absolute;
     top: 0;
     left: 0;
