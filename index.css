@@ -12,6 +12,7 @@ body
 .cards
 {
     height: 350px;
+    min-width: 900px;
 }
 
 .card
