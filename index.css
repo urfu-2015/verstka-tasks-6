@@ -73,7 +73,6 @@ input#page3:checked ~ #page_third
     display: block;
     top: 0;
     width: 30%;
-    z-index: 1;
 }
 .card > .big
 {
