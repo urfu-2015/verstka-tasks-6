@@ -107,6 +107,7 @@ body
     display: none;
     margin: 5px;
     cursor: pointer;
+    width: 100px;
     font-size: 200px;
     vertical-align: middle;
 }
