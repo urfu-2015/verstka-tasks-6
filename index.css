@@ -50,15 +50,9 @@ section
     width: 90%;
     position: relative;
 }
-#page1:checked ~ section > #page_first
-{
-    display: block;
-}
-#page2:checked ~ section > #page_second
-{
-    display: block;
-}
-#page3:checked ~ section > #page_third
+#page1:checked ~ section #page_first,
+#page2:checked ~ section #page_second,
+#page3:checked ~ section #page_third
 {
     display: block;
 }
@@ -66,17 +60,17 @@ section
 {
     display: none;
 }
-#page1 ~ section > #check1,
-#page2 ~ section > #check2,
-#page3 ~ section > #check3
+#page1 ~ section #check1,
+#page2 ~ section #check2,
+#page3 ~ section #check3
 {
-    content: url('http://www.iconsearch.ru/uploads/icons/uidesignicons/16x16/radiobutton_no.png');
+    content: url("http://www.iconsearch.ru/uploads/icons/uidesignicons/16x16/radiobutton_no.png");
 }
-#page1:checked ~ section > #check1,
-#page2:checked ~ section > #check2,
-#page3:checked ~ section > #check3
+#page1:checked ~ section #check1,
+#page2:checked ~ section #check2,
+#page3:checked ~ section #check3
 {
-    content: url('http://www.iconsearch.ru/uploads/icons/uidesignicons/16x16/radiobutton_yes.png');
+    content: url("http://www.iconsearch.ru/uploads/icons/uidesignicons/16x16/radiobutton_yes.png");
 }
 .small:hover
 {
@@ -123,12 +117,19 @@ section
     display: block;
     text-decoration: none;
 }
-.biggest > img
+.centred
 {
-    width: 50%;
+    position: relative;
+    height: 100%;
+}
+.fixed_pos
+{
     position: absolute;
-    left: 25%;
-    top: 10%;
+    top: 20%;
+    bottom: 20%;
+    margin: 0 auto;
+    height: 60%;
+    width: 100%;
 }
 .close
 {
