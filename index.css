@@ -72,60 +72,52 @@ body
 }
 
 /** Полноэранный режим **/
-.container > .cards > .card > input:checked ~ .card-full-screen
+.card > input:checked ~ .card-full-screen
 {
     display: table;
 }
 
-.container > .cards > .card > input:checked ~ .card-full-screen > .card-image-placeholder
+.card > input:checked ~ .card-full-screen > .card-image-placeholder
 {
     display: table-cell;
     vertical-align: middle;
 }
 
-.container > .cards > .card > input:checked ~ .card-full-screen > .card-full-screen-close
+.card > input:checked ~ .card-full-screen > .card-full-screen-close
 {
     display: block;
 }
 
-.container > .cards > .card > .card-full-screen > .card-image-placeholder > img
+.card-full-screen > .card-image-placeholder > img
 {
     max-width: 50%;
     max-height: 50%;
 }
 
-.container > .cards > .card > img:hover + .card-full-info,
-.container > .cards > .card > .card-full-info:hover
+.card > img:hover + .card-full-info,
+.card-full-info:hover
 {
     z-index: 2;
     display: inline-block;
 }
 
-.container > .cards > .card > img:hover + .card-full-info img,
-.container > .cards > .card > .card-full-info:hover img
+.card > img:hover + .card-full-info img,
+.card > .card-full-info:hover img
 {
     display: inline-block;
     width: 100%;
 }
 
 /** Скрываем input **/
-.container > .cards > .card > input
-{
-    display: none;
-}
-
-.container > input
-{
-    display: none;
-}
-
-.container > .cards > #close-pseudo-butt
+.card > input,
+.container > input,
+#close-pseudo-buttON
 {
     display: none;
 }
 
 /** Свои checkbox **/
-.container > .slides-place > label
+.slides-place > label
 {
     background: #999;
     height: 16px;
