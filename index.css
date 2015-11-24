@@ -142,19 +142,11 @@ body
 #s1:checked ~ .cards > .card-1,
 #s1:checked ~ .cards > .card-2,
 #s1:checked ~ .cards > .card-3,
-#s1:checked ~ .cards > .card-4
-{
-    display: inline-block;
-}
-
+#s1:checked ~ .cards > .card-4,
 #s2:checked ~ .cards > .card-4,
 #s2:checked ~ .cards > .card-5,
 #s2:checked ~ .cards > .card-6,
-#s2:checked ~ .cards > .card-7
-{
-    display: inline-block;
-}
-
+#s2:checked ~ .cards > .card-7,
 #s3:checked ~ .cards > .card-7,
 #s3:checked ~ .cards > .card-8,
 #s3:checked ~ .cards > .card-9
