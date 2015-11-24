@@ -1,1 +1,144 @@
+*
+{
+    box-sizing: border-box;
+}
+section
+{
+    padding: 5%;
+    margin: 0 auto;
+    text-align: center;
+}
+.small
+{
+    width: 24%;
+    margin: auto;
+    border: 10px solid white;
+    display: inline-block;
+    position: absolute;
+}
+.card
+{
+    text-decoration: none;
+    color: black;
+    width: 24%;
+    display: none;
+}
+.first
+{
+    left: 0;
+}
+.second
+{
+    left: 24%;
+}
+.third
+{
+    left: 48%;
+}
+.fourth
+{
+    left: 72%;
+}
 
+.page
+{
+    height: 300px;
+    padding: 2%;
+    border: 10px solid white;
+    display: none;
+    margin: auto;
+    width: 90%;
+    position: relative;
+}
+#page1:checked ~ section #page_first,
+#page2:checked ~ section #page_second,
+#page3:checked ~ section #page_third
+{
+    display: block;
+}
+.mode
+{
+    display: none;
+}
+#page1 ~ section #check1,
+#page2 ~ section #check2,
+#page3 ~ section #check3
+{
+    content: url('http://www.iconsearch.ru/uploads/icons/uidesignicons/16x16/radiobutton_no.png');
+}
+#page1:checked ~ section #check1,
+#page2:checked ~ section #check2,
+#page3:checked ~ section #check3
+{
+    content: url('http://www.iconsearch.ru/uploads/icons/uidesignicons/16x16/radiobutton_yes.png');
+}
+.small:hover
+{
+    display: block;
+    top: 0;
+    width: 30%;
+}
+.card > .big
+{
+    width: 100%;
+}
+.small:hover + .card
+{
+    width: 30%;
+    display: block;
+    position: absolute;
+}
+
+.small:hover + .card,
+.card:hover
+{
+    z-index: 2;
+    top: -9px;
+    width: 30%;
+    display: block;
+    position: absolute;
+    border: 20px solid white;
+    box-shadow: 0 0 5px;
+}
+.biggest
+{
+    position: fixed;
+    display: none;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,.8);
+    z-index: 90;
+}
+.biggest:target
+{
+    display: block;
+    text-decoration: none;
+}
+.centred
+{
+    position: relative;
+    height: 100%;
+}
+.fixed_pos
+{
+    position: absolute;
+    top: 20%;
+    bottom: 20%;
+    margin: 0 auto;
+    height: 60%;
+    width: 100%;
+}
+.close
+{
+    background: white;
+    color: black;
+    text-align: center;
+    right: 10px;
+    top: 10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    position: absolute;
+}
