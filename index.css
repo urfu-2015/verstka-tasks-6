@@ -1,1 +1,155 @@
+body
+{
+    text-align: center;
+}
 
+.container
+{
+    display: table;
+    margin: 0 auto;
+}
+
+.cards
+{
+    height: 350px;
+    min-width: 900px;
+}
+
+.card
+{
+    display: none;
+    width: 200px;
+    height: 300px;
+    position: relative;
+}
+
+.card > img
+{
+    width: 100%;
+}
+
+.card-full-info
+{
+    display: none;
+    top: 0;
+    width: 220px;
+    padding: 10px;
+    text-align: left;
+    position: absolute;
+    margin-left: -120px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+}
+
+.card-image-placeholder
+{
+    width: 100%;
+}
+
+.card-full-screen
+{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 0;
+    display: none;
+    z-index: 3;
+    position: fixed;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.card-full-screen-close
+{
+    top: 0;
+    right: 0;
+    color: white;
+    display: none;
+    z-index: 4;
+    cursor: pointer;
+    font-size: 50px;
+    position: fixed;
+}
+
+/** Полноэранный режим **/
+.card > input:checked ~ .card-full-screen
+{
+    display: table;
+}
+
+.card > input:checked ~ .card-full-screen > .card-image-placeholder
+{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.card > input:checked ~ .card-full-screen > .card-full-screen-close
+{
+    display: block;
+}
+
+.card-full-screen > .card-image-placeholder > img
+{
+    max-width: 50%;
+    max-height: 50%;
+}
+
+.card > img:hover + .card-full-info,
+.card-full-info:hover
+{
+    z-index: 2;
+    display: inline-block;
+}
+
+.card > img:hover + .card-full-info img,
+.card > .card-full-info:hover img
+{
+    display: inline-block;
+    width: 100%;
+}
+
+/** Скрываем input **/
+.card > input,
+.container > input,
+#close-pseudo-buttON
+{
+    display: none;
+}
+
+/** Свои checkbox **/
+.slides-place > label
+{
+    background: #999;
+    height: 16px;
+    width: 16px;
+    display:inline-block;
+    margin: 5px;
+    cursor: pointer;
+}
+
+#s1:checked ~ .slides-place > .slide1,
+#s2:checked ~ .slides-place > .slide2,
+#s3:checked ~ .slides-place > .slide3
+{
+    background: #0080ff;
+    height: 16px;
+    width: 16px;
+    display:inline-block;
+    margin: 5px;
+}
+/** ----- **/
+
+#s1:checked ~ .cards > .card-1,
+#s1:checked ~ .cards > .card-2,
+#s1:checked ~ .cards > .card-3,
+#s1:checked ~ .cards > .card-4,
+#s2:checked ~ .cards > .card-4,
+#s2:checked ~ .cards > .card-5,
+#s2:checked ~ .cards > .card-6,
+#s2:checked ~ .cards > .card-7,
+#s3:checked ~ .cards > .card-7,
+#s3:checked ~ .cards > .card-8,
+#s3:checked ~ .cards > .card-9
+{
+    display: inline-block;
+}
