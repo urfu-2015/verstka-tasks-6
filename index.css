@@ -64,13 +64,13 @@ section
 #page2 ~ section #check2,
 #page3 ~ section #check3
 {
-    content: url("http://www.iconsearch.ru/uploads/icons/uidesignicons/16x16/radiobutton_no.png");
+    content: url('http://www.iconsearch.ru/uploads/icons/uidesignicons/16x16/radiobutton_no.png');
 }
 #page1:checked ~ section #check1,
 #page2:checked ~ section #check2,
 #page3:checked ~ section #check3
 {
-    content: url("http://www.iconsearch.ru/uploads/icons/uidesignicons/16x16/radiobutton_yes.png");
+    content: url('http://www.iconsearch.ru/uploads/icons/uidesignicons/16x16/radiobutton_yes.png');
 }
 .small:hover
 {
@@ -100,7 +100,6 @@ section
     border: 20px solid white;
     box-shadow: 0 0 5px;
 }
-
 .biggest
 {
     position: fixed;
