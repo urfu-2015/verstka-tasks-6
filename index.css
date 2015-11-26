@@ -3,34 +3,38 @@ body
 {
     height: 98%;
     width: 100%;
-    overflow: hidden;
+    margin: 0;
 }
 
-body > section
+body > div
+{
+    width: 100%;
+    min-width: 1340px;
+    padding-top: 300px;
+}
+
+div > section
 {
     display: none;
     position: absolute;
     top: 0;
-    right: 0;
+    right: 50px;
     bottom: 0;
-    left: 0;
+    left: 50px;
     height: 300px;
     width: 80%;
-    min-width: 1200px;
+    min-width: 1240px;
     margin: auto;
+    text-align: center;
 }
 
-section > section
+section > article
 {
     display: inline-block;
     position: relative;
-    height: 300px;
     width: 25%;
-    min-width: 300px;
-    vertical-align: middle;
-    font-size: 300px;
-    text-align: center;
-    margin: -2.5px;
+    max-width: 300px;
+    vertical-align: top;
 }
 
 .description
@@ -46,18 +50,16 @@ section > article:hover
 {
     box-shadow: 0 0 10px #000;
 }
-section > section:hover input:not(:checked) ~ .description
+section > article:hover input:not(:checked) ~ .description
 {
     display: block;
-    margin-top: -70px;
 }
 
 img
 {
     margin-top: 5px;
     max-height: 300px;
-    max-width: 95%;
-    font-size: 16px;
+    max-width: 98%;
 }
 
 input
@@ -70,12 +72,12 @@ input:first-of-type:checked ~ section:nth-of-type(1)
     display: inline-block;
 }
 
-body > input:nth-of-type(2):checked ~ section:nth-of-type(2)
+div > input:nth-of-type(2):checked ~ section:nth-of-type(2)
 {
     display: inline-block;
 }
 
-body > input:nth-of-type(3):checked ~ section:nth-of-type(3)
+div > input:nth-of-type(3):checked ~ section:nth-of-type(3)
 {
     display: inline-block;
 }
@@ -106,9 +108,8 @@ article input:checked ~ label > img
     z-index: 7;
 }
 
-article input:checked ~ .shadow:before
+article input:checked ~ .shadow
 {
-    content: '';
     position: absolute;
     top: -500000px;
     left: -50000px;
@@ -124,58 +125,57 @@ article input:checked ~ label > .close
     display: block;
 }
 
-body > label
+div > label
 {
     display: none;
-    position: absolute;
-    top: 50%;
     height: 40px;
     width: 40px;
+
     background: url(
         'http://s1.iconbird.com/ico/0612/GooglePlusInterfaceIcons/w128h1281338911579directionalright.png');
     background-size: contain;
 }
 
-body > input:first-of-type:checked ~ label:nth-of-type(2)
+div > input:first-of-type:checked ~ label:nth-of-type(2)
 {
     display: block;
-    right: 20px;
+    float: right;
 }
 
-body > input:first-of-type:checked ~ label:nth-of-type(3)
+div > input:first-of-type:checked ~ label:nth-of-type(3)
 {
     display: block;
-    left: 20px;
+    float: left;
     background: url(
         'http://s1.iconbird.com/ico/0612/GooglePlusInterfaceIcons/w128h1281338911640directionalleft.png');
     background-size: contain;
 }
 
-body > input:nth-of-type(2):checked ~ label:nth-of-type(3)
+div > input:nth-of-type(2):checked ~ label:nth-of-type(3)
 {
     display: block;
-    right: 20px;
+    float: right;
 }
 
-body > input:nth-of-type(2):checked ~ label:nth-of-type(1)
+div > input:nth-of-type(2):checked ~ label:nth-of-type(1)
 {
     display: block;
-    left: 20px;
+    float: left;
     background: url(
         'http://s1.iconbird.com/ico/0612/GooglePlusInterfaceIcons/w128h1281338911640directionalleft.png');
     background-size: contain;
 }
 
-body > input:nth-of-type(3):checked ~ label:nth-of-type(1)
+div > input:nth-of-type(3):checked ~ label:nth-of-type(1)
 {
     display: block;
-    right: 20px;
+    float: right;
 }
 
-body > input:nth-of-type(3):checked ~ label:nth-of-type(2)
+div > input:nth-of-type(3):checked ~ label:nth-of-type(2)
 {
     display: block;
-    left: 20px;
+    float: left;
     background: url(
         'http://s1.iconbird.com/ico/0612/GooglePlusInterfaceIcons/w128h1281338911640directionalleft.png');
     background-size: contain;
