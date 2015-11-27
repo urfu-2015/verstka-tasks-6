@@ -4,9 +4,23 @@ h1
     text-align: center;
 }
 
+body
+{
+    overflow: hidden;
+}
+
+main
+{
+    white-space: nowrap;
+    max-width: 100%;
+    min-width: 100%;
+    transition: transform 3s ease;
+}
+
 .text
 {
     font-size: 13px;
+    white-space: normal;
 }
 
 .img,
@@ -36,19 +50,21 @@ article
     padding-top: 0;
     width: 20%;
     left: 0;
-    display: none;
+    display: inline-block;
     vertical-align: top;
+    margin: 0;
 }
 
-.shift
+#second:checked ~ main .first,
+#third:checked ~ main .second2
 {
     margin-left: 8%;
 }
 
-.first,
-.second2
+#first:checked ~ main .second1,
+#second:checked ~ main .third
 {
-    margin-left: 5%;
+    margin-left: 1%;
 }
 
 .all
@@ -73,15 +89,39 @@ article
     display: block;
 }
 
-#first:checked ~ main .one,
+#first:checked ~ main .shift
+{
+    margin-left: 8%;
+}
+
+#first:checked ~ main .pumpkin,
+#second:checked ~ main .carrot
+{
+    margin-left: 8%;
+}
+
+#first:checked ~ main
+{
+    margin-left: 0;
+}
+
+#second:checked ~ main
+{
+    transform: translateX(-62%);
+}
+
+#third:checked ~ main
+{
+    transform: translateX(-124%);
+}
+
 #first:checked ~ main .second1,
-#second:checked ~ main .two,
 #second:checked ~ main .first,
 #second:checked ~ main .third,
-#third:checked ~ main .three,
 #third:checked ~ main .second2
 {
     display: inline-block;
+    opacity: 1;
 }
 
 #first,
@@ -149,11 +189,17 @@ label
 {
     position: relative;
     margin-top: 5%;
-    width: 3%;
     display: none;
+    margin-left: 0;
+    opacity: 0;
+    width: 3%;
+    
+    transition: opacity 3s step-end;
+    -webkit-transition: opacity 3s step-end;
+    -moz-transition: opacity 3s step-end;
 }
 
 label img
 {
-    display: none;
+    width: 100%;
 }
