@@ -10,7 +10,9 @@ body > div
 {
     width: 100%;
     min-width: 1340px;
-    padding-top: 300px;
+    height: 300px;
+    position: relative;
+    top: calc(50% - 150px);
 }
 
 div > section
@@ -128,9 +130,11 @@ article input:checked ~ label > .close
 div > label
 {
     display: none;
+    position: absolute;
     height: 40px;
     width: 40px;
-
+    top: calc(50% - 20px);
+    right: 20px;
     background: url(
         'http://s1.iconbird.com/ico/0612/GooglePlusInterfaceIcons/w128h1281338911579directionalright.png');
     background-size: contain;
@@ -139,13 +143,12 @@ div > label
 div > input:first-of-type:checked ~ label:nth-of-type(2)
 {
     display: block;
-    float: right;
 }
 
 div > input:first-of-type:checked ~ label:nth-of-type(3)
 {
     display: block;
-    float: left;
+    left: 20px;
     background: url(
         'http://s1.iconbird.com/ico/0612/GooglePlusInterfaceIcons/w128h1281338911640directionalleft.png');
     background-size: contain;
@@ -154,13 +157,12 @@ div > input:first-of-type:checked ~ label:nth-of-type(3)
 div > input:nth-of-type(2):checked ~ label:nth-of-type(3)
 {
     display: block;
-    float: right;
 }
 
 div > input:nth-of-type(2):checked ~ label:nth-of-type(1)
 {
     display: block;
-    float: left;
+    left: 20px;
     background: url(
         'http://s1.iconbird.com/ico/0612/GooglePlusInterfaceIcons/w128h1281338911640directionalleft.png');
     background-size: contain;
@@ -169,13 +171,12 @@ div > input:nth-of-type(2):checked ~ label:nth-of-type(1)
 div > input:nth-of-type(3):checked ~ label:nth-of-type(1)
 {
     display: block;
-    float: right;
 }
 
 div > input:nth-of-type(3):checked ~ label:nth-of-type(2)
 {
     display: block;
-    float: left;
+    left: 20px;
     background: url(
         'http://s1.iconbird.com/ico/0612/GooglePlusInterfaceIcons/w128h1281338911640directionalleft.png');
     background-size: contain;
