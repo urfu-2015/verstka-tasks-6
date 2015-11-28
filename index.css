@@ -113,7 +113,7 @@ body
     display: none;
 }
 
-.big-img:checked ~.item > .modal
+.big-img:checked ~ .item > .modal
 {
     z-index: 3;
     display: block;
@@ -155,12 +155,12 @@ body
     height: 50px;
 }
 
-.exit-input:checked ~.item > .modal
+.exit-input:checked ~ .item > .modal
 {
     display: none;
 }
 
-.exit-input:checked ~.item > .exit
+.exit-input:checked ~ .item > .exit
 {
     display: none;
 }
