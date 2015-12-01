@@ -149,57 +149,31 @@ img
     position: absolute;
 }
 
-#slide1:checked ~ .menu > :nth-child(1),
-#slide1:checked ~ .menu > :nth-child(2),
-#slide1:checked ~ .menu > :nth-child(3),
-#slide1:checked ~ .menu > :nth-child(4),
-#slide1:checked ~ .menu > :nth-child(6),
-#slide1:checked ~ .menu > :nth-child(7),
-#slide2:checked ~ .menu > :nth-child(5),
-#slide2:checked ~ .menu > :nth-child(6),
-#slide2:checked ~ .menu > :nth-child(8),
-#slide2:checked ~ .menu > :nth-child(9),
-#slide2:checked ~ .menu > :nth-child(11),
-#slide2:checked ~ .menu > :nth-child(12),
-#slide3:checked ~ .menu > :nth-child(10),
-#slide3:checked ~ .menu > :nth-child(11),
-#slide3:checked ~ .menu > :nth-child(13),
-#slide3:checked ~ .menu > :nth-child(14),
-#slide3:checked ~ .menu > :nth-child(16),
-#slide3:checked ~ .menu > :nth-child(17),
-#slide4:checked ~ .menu > :nth-child(15),
-#slide4:checked ~ .menu > :nth-child(16),
-#slide4:checked ~ .menu > :nth-child(18),
-#slide4:checked ~ .menu > :nth-child(19),
-#slide4:checked ~ .menu > :nth-child(20)
+#slide1:checked ~ .menu > :nth-child(-n+4),
+#slide1:checked ~ .menu > :nth-child(n+6):nth-child(-n+7),
+#slide2:checked ~ .menu > :nth-child(n+5):nth-child(-n+6),
+#slide2:checked ~ .menu > :nth-child(n+8):nth-child(-n+9),
+#slide2:checked ~ .menu > :nth-child(n+11):nth-child(-n+12),
+#slide3:checked ~ .menu > :nth-child(n+10):nth-child(-n+11),
+#slide3:checked ~ .menu > :nth-child(n+13):nth-child(-n+14),
+#slide3:checked ~ .menu > :nth-child(n+16):nth-child(-n+17),
+#slide4:checked ~ .menu > :nth-child(n+15):nth-child(-n+16),
+#slide4:checked ~ .menu > :nth-child(n+18):nth-child(-n+21)
 {
     opacity: 1;
     display: inline-block;
 }
 
-#slide1:checked ~ .menu > :nth-child(1) > img:hover + .menu-info,
-#slide1:checked ~ .menu > :nth-child(2) > img:hover + .menu-info,
-#slide1:checked ~ .menu > :nth-child(3) > img:hover + .menu-info,
-#slide1:checked ~ .menu > :nth-child(4) > img:hover + .menu-info,
-#slide1:checked ~ .menu > :nth-child(6) > img:hover + .menu-info,
-#slide1:checked ~ .menu > :nth-child(7) > img:hover + .menu-info,
-#slide2:checked ~ .menu > :nth-child(5) > img:hover + .menu-info,
-#slide2:checked ~ .menu > :nth-child(6) > img:hover + .menu-info,
-#slide2:checked ~ .menu > :nth-child(8) > img:hover + .menu-info,
-#slide2:checked ~ .menu > :nth-child(9) > img:hover + .menu-info,
-#slide2:checked ~ .menu > :nth-child(11) > img:hover + .menu-info,
-#slide2:checked ~ .menu > :nth-child(12) > img:hover + .menu-info,
-#slide3:checked ~ .menu > :nth-child(10) > img:hover + .menu-info,
-#slide3:checked ~ .menu > :nth-child(11) > img:hover + .menu-info,
-#slide3:checked ~ .menu > :nth-child(13) > img:hover + .menu-info,
-#slide3:checked ~ .menu > :nth-child(14) > img:hover + .menu-info,
-#slide3:checked ~ .menu > :nth-child(16) > img:hover + .menu-info,
-#slide3:checked ~ .menu > :nth-child(17) > img:hover + .menu-info,
-#slide4:checked ~ .menu > :nth-child(15) > img:hover + .menu-info,
-#slide4:checked ~ .menu > :nth-child(16) > img:hover + .menu-info,
-#slide4:checked ~ .menu > :nth-child(18) > img:hover + .menu-info,
-#slide4:checked ~ .menu > :nth-child(19) > img:hover + .menu-info,
-#slide4:checked ~ .menu > :nth-child(20) > img:hover + .menu-info
+#slide1:checked ~ .menu > :nth-child(-n+4) > img:hover + .menu-info,
+#slide1:checked ~ .menu > :nth-child(n+6):nth-child(-n+7) > img:hover + .menu-info,
+#slide2:checked ~ .menu > :nth-child(n+5):nth-child(-n+6) > img:hover + .menu-info,
+#slide2:checked ~ .menu > :nth-child(n+8):nth-child(-n+9) > img:hover + .menu-info,
+#slide2:checked ~ .menu > :nth-child(n+11):nth-child(-n+12) > img:hover + .menu-info,
+#slide3:checked ~ .menu > :nth-child(n+10):nth-child(-n+11) > img:hover + .menu-info,
+#slide3:checked ~ .menu > :nth-child(n+13):nth-child(-n+14) > img:hover + .menu-info,
+#slide3:checked ~ .menu > :nth-child(n+16):nth-child(-n+17) > img:hover + .menu-info,
+#slide4:checked ~ .menu > :nth-child(n+15):nth-child(-n+16) > img:hover + .menu-info,
+#slide4:checked ~ .menu > :nth-child(n+18):nth-child(-n+21) > img:hover + .menu-info
 {
     z-index: 1000;
     display: inline-block;
