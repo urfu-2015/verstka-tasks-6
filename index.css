@@ -1,1 +1,195 @@
+body
+{
+    text-align: center;
+    overflow-x: hidden;
+    overflow-y: visible;
+}
 
+input
+{
+    display: none;
+}
+
+img
+{
+    width: 100%;
+}
+
+*
+{
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    box-sizing: border-box;
+}
+
+.menu
+{
+    font-size: 0;
+    width: 1024px;
+    padding: 0 100px;
+    position: relative;
+    white-space: nowrap;
+    display: inline-block;
+}
+
+.menu-item
+{
+    opacity: 0;
+    width: 200px;
+    padding: 8px;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.menu-info
+{
+    top: 0;
+    left: 50%;
+    width: 300px;
+    padding: 8px;
+    height: auto;
+    display: none;
+    text-align: left;
+    position: absolute;
+    border-radius: 8px;
+    margin-left: -150px;
+    background-color: white;
+    box-shadow: 0 0 10px black;
+}
+
+.menu-button
+{
+    left: 0;
+    top: 50%;
+    z-index: 999;
+    width: 100px;
+    padding: 8px;
+    height: 100px;
+    display: none;
+    color: #a0a0a0;
+    cursor: pointer;
+    font-size: 72px;
+    margin-top: -50px;
+    line-height: 100px;
+    position: absolute;
+    text-shadow: 0 0 4px black;
+}
+
+.right
+{
+    left: calc(100% - 100px);
+}
+
+.menu-info > p
+{
+    width: 100%;
+    height: auto;
+    font-size: 14px;
+    white-space: normal;
+}
+
+.menu-item > .menu-info:hover
+{
+    z-index: 1000;
+    display: inline-block;
+}
+
+.menu-big-image-close
+{
+    top: 3%;
+    right: 3%;
+    color: white;
+    display: none;
+    z-index: 2001;
+    cursor: pointer;
+    font-size: 48px;
+    position: fixed;
+    text-shadow: 0 0 32px black;
+}
+
+.menu-item > input:checked ~ .menu-big-image-close
+{
+    display: block;
+}
+
+.menu-item > input:checked ~ .menu-info
+{
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2000;
+    display: block;
+    position: fixed;
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.menu-item > input:checked ~ .menu-info > p
+{
+    display: none;
+}
+
+.menu-item > input:checked ~ .menu-info > img
+{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: auto;
+    height: 80%;
+    max-width: 100%;
+    position: absolute;
+}
+
+#slide1:checked ~ .menu > :nth-child(-n+4),
+#slide1:checked ~ .menu > :nth-child(n+6):nth-child(-n+7),
+#slide2:checked ~ .menu > :nth-child(n+5):nth-child(-n+6),
+#slide2:checked ~ .menu > :nth-child(n+8):nth-child(-n+9),
+#slide2:checked ~ .menu > :nth-child(n+11):nth-child(-n+12),
+#slide3:checked ~ .menu > :nth-child(n+10):nth-child(-n+11),
+#slide3:checked ~ .menu > :nth-child(n+13):nth-child(-n+14),
+#slide3:checked ~ .menu > :nth-child(n+16):nth-child(-n+17),
+#slide4:checked ~ .menu > :nth-child(n+15):nth-child(-n+16),
+#slide4:checked ~ .menu > :nth-child(n+18):nth-child(-n+21)
+{
+    opacity: 1;
+    display: inline-block;
+}
+
+#slide1:checked ~ .menu > :nth-child(-n+4) > img:hover + .menu-info,
+#slide1:checked ~ .menu > :nth-child(n+6):nth-child(-n+7) > img:hover + .menu-info,
+#slide2:checked ~ .menu > :nth-child(n+5):nth-child(-n+6) > img:hover + .menu-info,
+#slide2:checked ~ .menu > :nth-child(n+8):nth-child(-n+9) > img:hover + .menu-info,
+#slide2:checked ~ .menu > :nth-child(n+11):nth-child(-n+12) > img:hover + .menu-info,
+#slide3:checked ~ .menu > :nth-child(n+10):nth-child(-n+11) > img:hover + .menu-info,
+#slide3:checked ~ .menu > :nth-child(n+13):nth-child(-n+14) > img:hover + .menu-info,
+#slide3:checked ~ .menu > :nth-child(n+16):nth-child(-n+17) > img:hover + .menu-info,
+#slide4:checked ~ .menu > :nth-child(n+15):nth-child(-n+16) > img:hover + .menu-info,
+#slide4:checked ~ .menu > :nth-child(n+18):nth-child(-n+21) > img:hover + .menu-info
+{
+    z-index: 1000;
+    display: inline-block;
+}
+
+#slide2:checked ~ .menu > :nth-child(2)
+{
+    margin-left: -600px;
+}
+
+#slide3:checked ~ .menu > :nth-child(2)
+{
+    margin-left: -1200px;
+}
+
+#slide4:checked ~ .menu > :nth-child(2)
+{
+    margin-left: -1800px;
+}
