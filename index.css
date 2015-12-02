@@ -14,7 +14,6 @@ main
     white-space: nowrap;
     max-width: 100%;
     min-width: 100%;
-    transition: transform 3s ease;
 }
 
 .text
@@ -56,12 +55,12 @@ article
 }
 
 #second:checked ~ main .first,
-#third:checked ~ main .second2
+#third:checked ~ main .backfromthree
 {
     margin-left: 8%;
 }
 
-#first:checked ~ main .second1,
+#first:checked ~ main .tosecond,
 #second:checked ~ main .third
 {
     margin-left: 1%;
@@ -107,21 +106,20 @@ article
 
 #second:checked ~ main
 {
-    transform: translateX(-62%);
+    margin-left: -64%;
 }
 
 #third:checked ~ main
 {
-    transform: translateX(-124%);
+    margin-left: -125%;
 }
 
-#first:checked ~ main .second1,
+#first:checked ~ main .tosecond,
 #second:checked ~ main .first,
 #second:checked ~ main .third,
-#third:checked ~ main .second2
+#third:checked ~ main .backfromthree
 {
     display: inline-block;
-    opacity: 1;
 }
 
 #first,
@@ -191,12 +189,7 @@ label
     margin-top: 5%;
     display: none;
     margin-left: 0;
-    opacity: 0;
     width: 3%;
-    
-    transition: opacity 3s step-end;
-    -webkit-transition: opacity 3s step-end;
-    -moz-transition: opacity 3s step-end;
 }
 
 label img
