@@ -12,8 +12,7 @@ body
 main
 {
     white-space: nowrap;
-    max-width: 100%;
-    min-width: 100%;
+    width: 100%;
 }
 
 .text
@@ -38,7 +37,6 @@ main
 
 img
 {
-    position: relative;
     width: 100%;
 }
 
@@ -88,11 +86,7 @@ article
     display: block;
 }
 
-#first:checked ~ main .shift
-{
-    margin-left: 8%;
-}
-
+#first:checked ~ main .shift,
 #first:checked ~ main .pumpkin,
 #second:checked ~ main .carrot
 {
@@ -190,9 +184,4 @@ label
     display: none;
     margin-left: 0;
     width: 3%;
-}
-
-label img
-{
-    width: 100%;
 }
