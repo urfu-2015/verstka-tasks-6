@@ -1,1 +1,177 @@
+html,
+body
+{
+    width: 99%;
+    height: 99%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
 
+main
+{
+    position: relative;
+    width: 100%;
+}
+
+h1
+{
+    text-align: center;
+    font-size: 2em;
+    font-family: Verdana, sans-serif;
+}
+
+div
+{
+    text-align: center;
+    width: 20%;
+    height: auto;
+    display: inline-block;
+    margin: 2%;
+    vertical-align: top;
+}
+
+div a img
+{
+    position: relative;
+    top: 0;
+    width: 80%;
+}
+
+
+label
+{
+    background: url(img/checkbox.png);
+    height: 64px;
+    width: 64px;
+}
+
+footer
+{
+    position: fixed;
+    width: 100%;
+    height: 200px;
+    bottom: 0;
+    background: url(http://muz51.biz/wp-content/themes/poetry/img/footer2.png);
+    background-size: cover;
+}
+
+.hidden-text
+{
+    height: auto;
+    display: none;
+    padding: 30px;
+}
+
+input[type="radio"]
+{
+    margin-left: 5px;
+    position: fixed;
+    bottom: 300px;
+}
+
+#one
+{
+    left: 47%;
+}
+
+#two
+{
+    left: 49%;
+}
+
+#three
+{
+    left: 51%;
+}
+
+#four
+{
+    left: 53%;
+}
+
+input[value="one"]:checked ~ div:not(.first-window),
+input[value="two"]:checked ~ div:not(.second-window),
+input[value="three"]:checked ~ div:not(.third-window),
+input[value="four"]:checked ~ div:not(.fourth-window)
+{
+    display: none;
+}
+
+.first-card:hover,
+.second-card:hover,
+.third-card:hover,
+.fourth-card:hover
+{
+    position: absolute;
+    box-shadow: 0px 0px 10px black;
+    z-index: 20;
+    width: 23%;
+}
+
+
+.hidden-block
+{
+    display: none;
+}
+
+.first-card:hover + .hidden-block,
+.second-card:hover + .hidden-block,
+.third-card:hover + .hidden-block,
+.fourth-card:hover + .hidden-block
+{
+    display: inline-block;
+}
+
+.first-card:hover > .hidden-text.first,
+.second-card:hover > .hidden-text.second,
+.third-card:hover > .hidden-text.third,
+.fourth-card:hover > .hidden-text.fourth
+{
+    padding: 20px;
+    width: 100%;
+    display: table-row;
+}
+
+.bg
+{
+    margin: 0;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #8A8391;
+    opacity: 0.5;
+    z-index: 15;
+}
+
+.close
+{
+    width: auto;
+    height: auto;
+    display: none;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 20;
+}
+.hidden-image
+{
+    position: fixed;
+    display: none;
+    margin:auto;
+    left: 0;
+    right: 0;
+    top: 150px;
+    z-index: 30;
+    width: 50%;
+}
+
+.bg:target,
+.bg:target + .hidden-image,
+.bg:target ~ a .close
+{
+    display: block;
+}
