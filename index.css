@@ -1,1 +1,153 @@
+.hidden-input
+{
+    display: none;
+}
 
+.gallery
+{
+    margin-top: 10%;
+    text-align: center;
+    height: auto;
+}
+
+.background
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    opacity: .3;
+    background-color: #000;
+    display: none;
+}
+
+.background-close
+{
+    display: none;
+    position: absolute;
+    z-index: 10;
+    top: 2px;
+    right: 2px;
+    width: 50px;
+    height: 50px;
+    background-image: url(close.png);
+    background-size: 100%;
+}
+
+#background-close:checked ~ .background
+{
+    display: none;
+}
+
+.img-label
+{
+    display: none;
+    width: 20%;
+    padding: 7px;
+    vertical-align: top;
+}
+
+.img-description
+{    display: none;
+}
+
+.img-label:hover
+{
+    box-shadow: 0 0 10px #000;
+}
+
+.img-label:hover .img-description
+{
+    display: block;
+}
+
+img
+{
+    width: 100%;
+    height: 300px;
+}
+
+.img-full
+{
+    position: absolute;
+    top: 15%;
+    left: 20%;
+    height: auto;
+    max-width: 60%;
+    max-height: 80%;
+    display: none;
+    z-index: 3;
+}
+
+.controllers
+{
+    /*Так его перекрывает длинный текст, но он не скачет туда-сюда и во всех
+    браузерах на одинаковом расстоянии снизу*/
+    /*display: block;
+    position: absolute;
+    left: 45%;
+    bottom: 10px;*/
+    /*А так он не перекрывается текстом, но в разных браузерах на разном
+    расстоянии от низа*/
+    margin-top: 15%;
+    text-align: center;
+}
+
+.controllers label
+{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url(unchecked.png);
+    background-size: 100%;
+}
+
+#photo-1:checked ~ .background,
+#photo-2:checked ~ .background,
+#photo-3:checked ~ .background,
+#photo-4:checked ~ .background,
+#photo-5:checked ~ .background,
+#photo-6:checked ~ .background,
+#photo-7:checked ~ .background,
+#photo-8:checked ~ .background,
+#photo-9:checked ~ .background,
+#photo-10:checked ~ .background,
+#photo-1:checked ~ .background-close,
+#photo-2:checked ~ .background-close,
+#photo-3:checked ~ .background-close,
+#photo-4:checked ~ .background-close,
+#photo-5:checked ~ .background-close,
+#photo-6:checked ~ .background-close,
+#photo-7:checked ~ .background-close,
+#photo-8:checked ~ .background-close,
+#photo-9:checked ~ .background-close,
+#photo-10:checked ~ .background-close,
+#photo-1:checked ~ .gallery .img-full-1,
+#photo-2:checked ~ .gallery .img-full-2,
+#photo-3:checked ~ .gallery .img-full-3,
+#photo-4:checked ~ .gallery .img-full-4,
+#photo-5:checked ~ .gallery .img-full-5,
+#photo-6:checked ~ .gallery .img-full-6,
+#photo-7:checked ~ .gallery .img-full-7,
+#photo-8:checked ~ .gallery .img-full-8,
+#photo-9:checked ~ .gallery .img-full-9,
+#photo-10:checked ~ .gallery .img-full-10
+{
+    display: block;
+}
+
+#controller-1:checked ~ .gallery .page-first,
+#controller-2:checked ~ .gallery .page-second,
+#controller-3:checked ~ .gallery .page-third
+{
+    display: inline-block;
+}
+
+#controller-1:checked ~ .controllers .controller-label-1,
+#controller-2:checked ~ .controllers .controller-label-2,
+#controller-3:checked ~ .controllers .controller-label-3
+{
+    background-image: url(checked.png);
+}
