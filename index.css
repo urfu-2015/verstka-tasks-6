@@ -5,7 +5,7 @@
 
 .gallery
 {
-    margin-top: 10%;
+    margin-top: 5%;
     text-align: center;
     height: auto;
 }
@@ -44,7 +44,7 @@
 .img-label
 {
     display: none;
-    width: 20%;
+    width: 22%;
     padding: 7px;
     vertical-align: top;
 }
@@ -52,6 +52,7 @@
 .img-description
 {
     display: none;
+    font-size: 11px;
 }
 
 .img-label:hover
@@ -84,16 +85,10 @@ img
 
 .controllers
 {
-    /*Так его перекрывает длинный текст, но он не скачет туда-сюда и во всех
-    браузерах на одинаковом расстоянии снизу*/
-    /*display: block;
+    display: block;
     position: absolute;
     left: 45%;
-    bottom: 10px;*/
-    /*А так он не перекрывается текстом, но в разных браузерах на разном
-    расстоянии от низа*/
-    margin-top: 15%;
-    text-align: center;
+    bottom: 10px;
 }
 
 .controllers label
