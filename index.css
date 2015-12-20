@@ -43,10 +43,12 @@
 
 .img-label
 {
+    position: relative;
     display: none;
     width: 22%;
     padding: 7px;
     vertical-align: top;
+    background-color: #fff;
 }
 
 .img-description
@@ -57,9 +59,7 @@
 
 .img-label:hover
 {
-    position: relative;
-    box-shadow: 0 0 10px #000;
-    background: rgba(255, 255, 255, .999999999);
+    box-shadow: 0 0 10px #000;    
 }
 
 .img-label:hover .img-description
@@ -89,7 +89,7 @@ img
 
 .controllers
 {
-    margin-top: 5px;
+    margin-top: 25px;
     text-align: center;
 }
 
