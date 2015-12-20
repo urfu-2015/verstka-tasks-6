@@ -46,7 +46,7 @@
     position: relative;
     display: none;
     width: 22%;
-    padding: 7px;
+    padding: 10px;
     vertical-align: top;
     background-color: #fff;
 }
@@ -59,6 +59,7 @@
 
 .img-label:hover
 {
+    z-index: 2;
     box-shadow: 0 0 10px #000;    
 }
 
