@@ -60,7 +60,7 @@
 .img-label:hover
 {
     z-index: 2;
-    box-shadow: 0 0 10px #000;    
+    box-shadow: 0 0 10px #000;
 }
 
 .img-label:hover .img-description
