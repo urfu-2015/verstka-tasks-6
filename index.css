@@ -27,7 +27,6 @@ body
 
 .slides
 {
-    z-index: 0;
     display: none;
 }
 
@@ -37,12 +36,6 @@ body
 {
     display: block;
     z-index: 1;
-}
-
-.photos .controls
-{
-    left: 50%;
-    position: absolute;
 }
 
 .control
@@ -128,9 +121,8 @@ body
 
 .big-img:checked ~ .item > .modal img
 {
-    top: 150px;
-    position: relative;
-    height: 60%;
+    margin-top: 100px;
+    /*position: absolute;*/
     width: 60%;
 }
 
