@@ -1,1 +1,158 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
 
+body
+{
+    padding-top: 50px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.photos
+{
+    position: relative;
+    display: table;
+    margin: 0 auto;
+}
+
+.exit
+{
+    display: none;
+}
+
+.photos
+{
+    text-align: center;
+}
+
+.slides
+{
+    display: none;
+}
+
+#slide1:checked ~ .slide1,
+#slide2:checked ~ .slide2,
+#slide3:checked ~ .slide3
+{
+    display: block;
+    z-index: 1;
+}
+
+.control
+{
+    position: relative;
+    display: table-cell;
+    box-sizing: border-box;
+    width: 300px;
+}
+
+.item
+{
+    background: #fff;
+    padding: 20px;
+}
+
+.item .image img
+{
+    height: 200px;
+    width: 100%;
+}
+
+.item .description
+{
+    text-align: justify;
+    display: none;
+    padding-top: 15px;
+}
+
+.item:hover
+{
+    position: absolute;
+    left: -25%;
+    z-index: 2;
+    width: 130%;
+    box-shadow: 0 0 10px rgba(0,0,0,.5);
+}
+
+.item:hover .image img
+{
+    height: 130%;
+}
+
+.item:hover .description
+{
+    display: block;
+}
+
+.slides input
+{
+    display: none;
+}
+
+.modal
+{
+    display: none;
+}
+
+.big-img:checked ~ .item
+{
+    box-shadow: none;
+    left: 0;
+    width: 100%;
+}
+
+.big-img:checked ~ .item .description
+{
+    display: none;
+}
+
+.big-img:checked ~ .item > .modal
+{
+    z-index: 3;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    background: rgba(0,0,0,.3);
+}
+
+.big-img:checked ~ .item > .modal img
+{
+    margin-top: 100px;
+    /*position: absolute;*/
+    width: 60%;
+}
+
+.exit
+{
+    display: none;
+}
+
+.exit img
+{
+    width: 100%;
+}
+
+.big-img:checked ~ .item > .exit
+{
+    z-index: 3;
+    position: fixed;
+    display: block;
+    top: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+.exit-input:checked ~ .item > .modal
+{
+    display: none;
+}
+
+.exit-input:checked ~ .item > .exit
+{
+    display: none;
+}
