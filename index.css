@@ -32,6 +32,16 @@
     border-right: 0;
 }
 
+.page__right
+{
+    width: 0;
+    height: 0;
+    display: inline-block;
+    border: 40px solid transparent;
+    border-right-color: steelblue;
+    border-left: 0;
+}
+
 .slide
 {
     width: 300px;
