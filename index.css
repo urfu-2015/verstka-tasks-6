@@ -1,1 +1,125 @@
+body
+{
+    box-sizing: border-box;
+}
+
+
+.list1, .list2, .list3
+{
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    z-index: -1;
+}
+
+.item
+{
+    margin: 8px;
+    padding: 8px;
+    width: calc(25% - 10px);
+    float: left;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, .2);
+    background-color: white;
+}
+
+.item .image
+{
+    display: block;
+    height: 200px;
+    width: 100%;
+}
+
+p
+{
+    display: none;
+}
+
+input[type="checkbox"]:not(:checked) ~ .main .list article:hover p
+{
+  display:block;
+}
+
+input
+{
+    position: relative;
+    left: calc(50% - 55px);
+    top: 0px;
+}
+
+input[id="1st"]:checked ~ .main .list1,
+input[id="2nd"]:checked ~ .main .list2,
+input[id="3rd"]:checked ~ .main .list3
+{
+    display: inline-block;
+    z-index: 0;
+}
+
+input[type="checkbox"]
+{
+    display:none;
+}
+
+input[id="img1"]:checked ~ .main .list1 .item:nth-child(1) .image,
+input[id="img2"]:checked ~ .main .list1 .item:nth-child(2) .image,
+input[id="img3"]:checked ~ .main .list1 .item:nth-child(3) .image,
+input[id="img4"]:checked ~ .main .list2 .item:nth-child(1) .image,
+input[id="img5"]:checked ~ .main .list2 .item:nth-child(2) .image,
+input[id="img6"]:checked ~ .main .list2 .item:nth-child(3) .image,
+input[id="img7"]:checked ~ .main .list3 .item:nth-child(1) .image,
+input[id="img8"]:checked ~ .main .list3 .item:nth-child(2) .image,
+input[id="img9"]:checked ~ .main .list3 .item:nth-child(3) .image
+{
+    position: absolute;
+    width: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    height: 200%;
+    max-height: 400px;
+    max-width: 1000px;
+    z-index: 3;
+}
+
+
+input[id="img1"]:checked ~ .main .list .fill,
+input[id="img2"]:checked ~ .main .list .fill,
+input[id="img3"]:checked ~ .main .list .fill,
+input[id="img4"]:checked ~ .main .list .fill,
+input[id="img5"]:checked ~ .main .list .fill,
+input[id="img6"]:checked ~ .main .list .fill,
+input[id="img7"]:checked ~ .main .list .fill,
+input[id="img8"]:checked ~ .main .list .fill,
+input[id="img9"]:checked ~ .main .list .fill
+{
+    position: absolute;
+    top:0;
+    left:0;
+    height: 100000px;
+    width: 100000px;
+    margin-left: -5000px;
+    margin-top: -5000px;
+    background-color: rgba(0,0,0,.3);
+    z-index: 1;
+}
+
+.close
+{
+    display: none;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    height: 30px;
+    width: 30px;
+    z-index: 5;
+    background: url('http://www.vokrugsveta.ru/img/cmn/2014/02/11/200xNx023.jpg.pagespeed.ic.5dIhuwoiHp.jpg');
+    background-size: contain;
+}
+
+input[type="checkbox"]:checked ~ .main .list1 .item .close
+{
+    display: block;
+}
+
 
