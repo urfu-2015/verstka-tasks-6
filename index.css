@@ -1,7 +1,3 @@
-*
-{
-    box-sizing: border-box;
-}
 header
 {
     text-transform: uppercase;
@@ -9,6 +5,7 @@ header
 }
 section
 {
+    box-sizing: border-box;
     padding: 5%;
     margin: 0 auto;
     text-align: center;
